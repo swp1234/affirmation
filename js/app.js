@@ -264,14 +264,14 @@ class AffirmationApp {
     }
 
     favoritesList.innerHTML = this.favorites.map((fav, index) => {
-      const categoryInfo = categories[fav.category];
+      const categoryInfo = categories[fav.category] || { emoji: '💬', name: '명언' };
       return `
         <div class="favorite-item slide-in" style="animation-delay: ${index * 0.05}s">
           <div class="favorite-text">
             <span style="margin-right: 8px">${categoryInfo.emoji}</span>
             ${fav.text}
           </div>
-          <button class="remove-favorite" onclick="app.removeFavorite(${fav.id})">
+          <button class="remove-favorite" onclick="app.removeFavorite('${fav.id}')">
             ✕
           </button>
         </div>
@@ -281,9 +281,10 @@ class AffirmationApp {
 
   // 즐겨찾기 제거
   removeFavorite(id) {
-    this.favorites = this.favorites.filter(f => f.id !== id);
+    this.favorites = this.favorites.filter(f => String(f.id) !== String(id));
     this.saveToStorage('favorites', this.favorites);
     this.renderFavorites();
+    this.renderCard();
     this.renderStats();
   }
 
@@ -356,6 +357,236 @@ class AffirmationApp {
     localStorage.setItem('affirmation_theme', isLight ? 'light' : 'dark');
   }
 
+  // 전면 광고 표시
+  showInterstitialAd() {
+    return new Promise((resolve) => {
+      const overlay = document.getElementById('interstitialAd');
+      const closeBtn = document.getElementById('closeAdBtn');
+      const countdown = document.getElementById('adCountdown');
+
+      overlay.classList.remove('hidden');
+      closeBtn.disabled = true;
+      let seconds = 5;
+      countdown.textContent = seconds;
+
+      const timer = setInterval(() => {
+        seconds--;
+        countdown.textContent = seconds;
+        if (seconds <= 0) {
+          clearInterval(timer);
+          closeBtn.disabled = false;
+          closeBtn.textContent = '닫기';
+        }
+      }, 1000);
+
+      closeBtn.addEventListener('click', () => {
+        overlay.classList.add('hidden');
+        closeBtn.disabled = true;
+        countdown.textContent = '5';
+        resolve();
+      }, { once: true });
+    });
+  }
+
+  // 프리미엄 콘텐츠 표시
+  async showPremiumContent() {
+    if (!this.currentCard) return;
+
+    // 전면 광고 표시 후 프리미엄 콘텐츠
+    await this.showInterstitialAd();
+
+    const premiumModal = document.getElementById('premiumModal');
+    const premiumBody = document.getElementById('premiumBody');
+
+    const card = this.currentCard;
+    const categoryInfo = categories[card.category] || { emoji: '💬', name: '오늘의 명언' };
+
+    // AI 심층 확언 생성
+    const deepAffirmation = this.generateDeepAffirmation(card);
+
+    premiumBody.innerHTML = `
+      <div class="premium-category">${categoryInfo.emoji} ${categoryInfo.name}</div>
+      <div class="premium-original">
+        <h3>오늘의 확언</h3>
+        <p>"${card.text}"</p>
+      </div>
+      <div class="premium-deep">
+        <h3>AI 심층 해석</h3>
+        <p>${deepAffirmation.interpretation}</p>
+      </div>
+      <div class="premium-practice">
+        <h3>실천 가이드</h3>
+        <ul>
+          ${deepAffirmation.practices.map(p => `<li>${p}</li>`).join('')}
+        </ul>
+      </div>
+      <div class="premium-meditation">
+        <h3>명상 문구</h3>
+        <p class="meditation-text">"${deepAffirmation.meditation}"</p>
+      </div>
+      <div class="premium-journal">
+        <h3>오늘의 저널 질문</h3>
+        <p>${deepAffirmation.journal}</p>
+      </div>
+    `;
+
+    premiumModal.classList.remove('hidden');
+  }
+
+  // 심층 확언 생성
+  generateDeepAffirmation(card) {
+    const deepData = {
+      'self-love': {
+        interpretations: [
+          '자기 사랑은 모든 성장의 근원입니다. 이 확언은 당신이 외부의 인정 없이도 스스로 충분하다는 것을 일깨워줍니다.',
+          '자존감은 하루아침에 세워지지 않습니다. 매일 이 확언을 반복하며 내면의 목소리를 긍정적으로 바꿔보세요.',
+          '자신에 대한 사랑은 이기적인 것이 아닙니다. 자기를 먼저 채워야 타인에게도 나눌 수 있습니다.'
+        ],
+        practices: [
+          '거울 앞에서 3분간 자신에게 긍정적인 말을 해보세요',
+          '오늘 자신에게 감사한 점 3가지를 적어보세요',
+          '좋아하는 활동에 30분을 투자해 자신을 보살펴주세요',
+          '부정적인 자기 대화가 떠오를 때, 이 확언으로 대체해보세요'
+        ],
+        meditations: [
+          '눈을 감고 천천히 숨을 쉬며, "나는 충분하다"를 5번 반복하세요',
+          '가슴에 손을 얹고, 심장 박동을 느끼며 자신의 존재에 감사하세요',
+          '따뜻한 빛이 몸 전체를 감싸는 상상을 하며 안정감을 느껴보세요'
+        ],
+        journals: [
+          '오늘 나 자신을 위해 한 가장 좋은 일은 무엇인가요?',
+          '나를 가장 행복하게 만드는 나만의 특성은 무엇인가요?',
+          '내가 스스로에게 더 친절할 수 있는 방법 한 가지는?'
+        ]
+      },
+      'motivation': {
+        interpretations: [
+          '동기부여는 감정이 아닌 습관입니다. 이 확언은 매일의 작은 행동이 큰 변화를 만든다는 것을 상기시켜줍니다.',
+          '성공은 한 번의 도약이 아닌 꾸준한 발걸음입니다. 오늘의 노력이 내일의 결실이 됩니다.',
+          '두려움은 성장의 신호입니다. 도전을 피하지 말고 그 안에서 힘을 찾아보세요.'
+        ],
+        practices: [
+          '오늘의 가장 중요한 목표 하나를 정하고 반드시 실행하세요',
+          '5분 타이머를 맞추고 미루던 일을 시작해보세요',
+          '성공한 순간들을 리스트로 적어 자신감을 보충하세요',
+          '저녁에 오늘 달성한 것들을 되돌아보며 성취감을 느껴보세요'
+        ],
+        meditations: [
+          '목표를 이룬 미래의 나를 생생하게 상상하며 그 감정을 느껴보세요',
+          '어려운 순간을 극복한 과거의 경험을 떠올리며 힘을 얻으세요',
+          '"나는 할 수 있다"를 깊은 호흡과 함께 반복하세요'
+        ],
+        journals: [
+          '올해 반드시 이루고 싶은 목표와 그 이유는 무엇인가요?',
+          '지난주 가장 자랑스러운 성취는 무엇이었나요?',
+          '내일의 나에게 해주고 싶은 응원의 한마디는?'
+        ]
+      },
+      'gratitude': {
+        interpretations: [
+          '감사는 마음의 근육입니다. 매일 훈련할수록 더 많은 행복을 발견하게 됩니다.',
+          '감사하는 마음은 현재를 풍요롭게 만들고, 미래에 대한 긍정적 기대를 높여줍니다.',
+          '작은 것에 감사할 줄 아는 사람은 큰 행복도 알아볼 수 있습니다.'
+        ],
+        practices: [
+          '잠들기 전 감사한 3가지를 적어보세요',
+          '오늘 만난 누군가에게 감사의 메시지를 보내보세요',
+          '식사 전 잠시 멈추고 음식에 감사하는 시간을 가져보세요',
+          '산책하며 주변의 아름다움을 하나씩 발견해보세요'
+        ],
+        meditations: [
+          '호흡에 집중하며, 매 숨이 주어지는 것에 감사하세요',
+          '사랑하는 사람들의 얼굴을 떠올리며 따뜻한 감정을 보내세요',
+          '지금 이 순간 당연하게 여기는 것들에 의미를 부여해보세요'
+        ],
+        journals: [
+          '최근 가장 감사했던 순간은 언제인가요?',
+          '당연하게 여기던 것 중 새삼 감사한 것은?',
+          '감사 일기를 시작한다면 첫 페이지에 뭘 쓰고 싶나요?'
+        ]
+      },
+      'relationships': {
+        interpretations: [
+          '좋은 관계는 소통과 이해에서 시작됩니다. 이 확언은 타인과의 연결이 삶을 풍요롭게 한다는 것을 일깨워줍니다.',
+          '건강한 경계를 세우는 것도 사랑의 일부입니다. 자신을 보호하면서 타인을 존중하는 균형을 찾아보세요.',
+          '모든 관계는 나 자신과의 관계에서 시작됩니다. 내면이 건강해야 외부 관계도 건강해집니다.'
+        ],
+        practices: [
+          '오늘 소중한 사람에게 진심 어린 한마디를 전해보세요',
+          '대화할 때 상대방의 말에 온전히 집중해보세요',
+          '갈등 상황에서 "나" 메시지로 감정을 표현해보세요',
+          '오래 연락하지 못한 친구에게 안부를 전해보세요'
+        ],
+        meditations: [
+          '사랑하는 사람들에게 빛과 평화를 보내는 상상을 해보세요',
+          '힘든 관계가 있다면 그 사람에게도 상처가 있었음을 이해해보세요',
+          '내 주변의 소중한 인연들에 감사하며 미소를 지어보세요'
+        ],
+        journals: [
+          '내 인생에서 가장 소중한 관계는 누구이고, 왜인가요?',
+          '최근 누군가에게 받은 따뜻한 행동은 무엇인가요?',
+          '더 나은 관계를 위해 내가 할 수 있는 한 가지는?'
+        ]
+      },
+      'success': {
+        interpretations: [
+          '성공은 목적지가 아닌 여정입니다. 과정에서의 배움과 성장 자체가 가장 큰 성공입니다.',
+          '성공의 정의는 사람마다 다릅니다. 자신만의 성공 기준을 세우고 그것을 향해 나아가세요.',
+          '실패는 성공의 반대가 아니라 성공으로 가는 길의 일부입니다.'
+        ],
+        practices: [
+          '오늘의 우선순위 TOP 3를 정하고 집중해보세요',
+          '성공한 롤모델의 습관 하나를 오늘부터 실천해보세요',
+          '비전보드를 만들어 목표를 시각화해보세요',
+          '매일 15분씩 자기 개발에 투자하는 시간을 만들어보세요'
+        ],
+        meditations: [
+          '목표를 달성한 순간을 구체적으로 상상하며 그 기쁨을 미리 느껴보세요',
+          '지금까지의 여정을 돌아보며 얼마나 멀리 왔는지 인식하세요',
+          '"나는 성공할 자격이 있다"를 확신을 가지고 반복하세요'
+        ],
+        journals: [
+          '나에게 성공이란 무엇을 의미하나요?',
+          '5년 후 이상적인 나의 모습은 어떤가요?',
+          '지금까지의 인생에서 가장 큰 성취는 무엇이었나요?'
+        ]
+      },
+      'quote': {
+        interpretations: [
+          '위대한 인물의 말에는 시대를 초월한 지혜가 담겨 있습니다. 이 명언이 당신의 하루에 영감을 주길 바랍니다.',
+          '명언은 거울과 같습니다. 읽는 사람의 상황에 따라 다른 의미로 다가옵니다.',
+          '진정한 지혜는 아는 것에서 끝나지 않고 실천하는 것에서 빛납니다.'
+        ],
+        practices: [
+          '이 명언을 메모장에 적어 하루 동안 수시로 읽어보세요',
+          '이 말의 의미를 자신의 상황에 적용해보세요',
+          '비슷한 명언을 찾아보며 같은 주제로 깊이 사색해보세요',
+          '이 명언을 소중한 사람에게 공유해보세요'
+        ],
+        meditations: [
+          '이 명언을 마음속으로 천천히 반복하며 그 의미를 음미해보세요',
+          '명언의 저자가 이 말을 했을 때의 상황을 상상해보세요',
+          '이 지혜가 당신의 삶에 어떻게 적용될 수 있는지 생각해보세요'
+        ],
+        journals: [
+          '이 명언이 지금의 나에게 어떤 의미로 다가오나요?',
+          '이 말을 실천하기 위해 오늘 할 수 있는 일은?',
+          '나만의 인생 명언을 만든다면 어떤 말을 남기고 싶나요?'
+        ]
+      }
+    };
+
+    const catData = deepData[card.category] || deepData['self-love'];
+    const randIdx = (arr) => Math.floor(Math.random() * arr.length);
+
+    return {
+      interpretation: catData.interpretations[randIdx(catData.interpretations)],
+      practices: catData.practices,
+      meditation: catData.meditations[randIdx(catData.meditations)],
+      journal: catData.journals[randIdx(catData.journals)]
+    };
+  }
+
   // 이벤트 리스너 설정
   setupEventListeners() {
     // 새 카드 버튼
@@ -384,11 +615,30 @@ class AffirmationApp {
     document.getElementById('themeToggle').addEventListener('click', () => {
       this.toggleTheme();
     });
+
+    // 프리미엄 콘텐츠 버튼
+    document.getElementById('premiumBtn').addEventListener('click', () => {
+      this.showPremiumContent();
+    });
+
+    // 프리미엄 모달 닫기
+    document.getElementById('closePremiumBtn').addEventListener('click', () => {
+      document.getElementById('premiumModal').classList.add('hidden');
+    });
   }
 }
 
 // 앱 초기화
 const app = new AffirmationApp();
+
+// Service Worker 등록
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then((reg) => console.log('SW registered:', reg.scope))
+      .catch((err) => console.log('SW registration failed:', err));
+  });
+}
 
 // PWA 설치 프롬프트
 let deferredPrompt;

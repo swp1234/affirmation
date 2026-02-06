@@ -637,5 +637,10 @@ const categories = {
     name: '성공',
     emoji: '⭐',
     color: '#1dd1a1'
+  },
+  'quote': {
+    name: '오늘의 명언',
+    emoji: '💬',
+    color: '#9b59b6'
   }
 };

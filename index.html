@@ -24,6 +24,11 @@
     </div>
   </header>
 
+  <!-- 광고 영역 (상단) -->
+  <div class="ad-banner ad-top">
+    <span class="ad-placeholder">광고 영역</span>
+  </div>
+
   <!-- 메인 컨텐츠 -->
   <main class="main-container">
     <!-- 오늘의 카드 섹션 -->
@@ -37,6 +42,13 @@
           </button>
         </div>
       </div>
+
+      <!-- 프리미엄 콘텐츠 버튼 -->
+      <button class="premium-btn" id="premiumBtn">
+        <span class="premium-icon">✨</span>
+        <span>AI 심층 확언 받기</span>
+        <span class="premium-badge">PREMIUM</span>
+      </button>
 
       <!-- 액션 버튼 -->
       <div class="action-buttons">
@@ -123,10 +135,38 @@
     </section>
   </main>
 
+  <!-- 광고 영역 (하단) -->
+  <div class="ad-banner ad-bottom">
+    <span class="ad-placeholder">광고 영역</span>
+  </div>
+
   <!-- 푸터 -->
   <footer class="footer">
     <p>매일 긍정적인 마음으로 시작하세요 ✨</p>
   </footer>
+
+  <!-- 전면 광고 -->
+  <div id="interstitialAd" class="interstitial-overlay hidden">
+    <div class="interstitial-content">
+      <p class="interstitial-label">광고</p>
+      <div class="ad-placeholder-large">광고 영역</div>
+      <button id="closeAdBtn" class="close-ad-btn" disabled>닫기 (<span id="adCountdown">5</span>)</button>
+    </div>
+  </div>
+
+  <!-- 프리미엄 결과 모달 -->
+  <div id="premiumModal" class="premium-modal hidden">
+    <div class="premium-modal-content">
+      <button class="premium-close" id="closePremiumBtn">&times;</button>
+      <div class="premium-header">
+        <span class="premium-modal-icon">✨</span>
+        <h2>AI 심층 확언</h2>
+      </div>
+      <div class="premium-body" id="premiumBody">
+        <!-- Dynamic content -->
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/affirmations.js"></script>

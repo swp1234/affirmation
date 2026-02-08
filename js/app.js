@@ -335,6 +335,53 @@ class AffirmationApp {
     document.getElementById('totalCards').textContent = this.stats.totalCards;
     document.getElementById('streakDays').textContent = this.stats.streakDays;
     document.getElementById('favoriteCount').textContent = this.favorites.length;
+    this.renderStreakCalendar();
+  }
+
+  // 스트릭 캘린더 렌더링
+  renderStreakCalendar() {
+    const container = document.getElementById('streakCalendar');
+    if (!container) return;
+
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth();
+    const today = now.getDate();
+    const todayStr = now.toDateString();
+
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    // 방문한 날짜 세트 생성
+    const visitedSet = new Set();
+    if (this.stats.visitDates) {
+      this.stats.visitDates.forEach(dateStr => {
+        const d = new Date(dateStr);
+        if (d.getFullYear() === year && d.getMonth() === month) {
+          visitedSet.add(d.getDate());
+        }
+      });
+    }
+
+    const monthNames = ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];
+    const dayNames = ['일','월','화','수','목','금','토'];
+
+    let html = `<div class="streak-cal-header">${year}년 ${monthNames[month]} 방문 기록</div>`;
+    html += '<div class="streak-cal-days">';
+    dayNames.forEach(d => { html += `<div class="streak-cal-day-name">${d}</div>`; });
+
+    for (let i = 0; i < firstDay; i++) {
+      html += '<div class="streak-cal-cell empty"></div>';
+    }
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const isToday = d === today ? ' today' : '';
+      const isVisited = visitedSet.has(d) ? ' visited' : '';
+      html += `<div class="streak-cal-cell${isToday}${isVisited}">${d}</div>`;
+    }
+
+    html += '</div>';
+    container.innerHTML = html;
   }
 
   // 카테고리 변경

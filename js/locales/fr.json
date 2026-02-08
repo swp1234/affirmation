@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Cartes d'Affirmation Quotidienne - Messages Positifs | DopaBrain",
+    "description": "Commencez votre journée avec des affirmations positives ! Messages d'amour-propre, de motivation et de gratitude."
+  },
+  "header": {
+    "title": "✨ Affirmations"
+  },
+  "premium": {
+    "button": "Obtenir une Affirmation Profonde IA",
+    "badge": "PREMIUM",
+    "title": "Affirmation Profonde IA"
+  },
+  "actions": {
+    "newCard": "Tirer une Nouvelle Carte",
+    "share": "Partager"
+  },
+  "categories": {
+    "title": "Catégories",
+    "all": "Tous",
+    "selfLove": "Amour-Propre",
+    "motivation": "Motivation",
+    "gratitude": "Gratitude",
+    "relationships": "Relations",
+    "success": "Succès",
+    "quote": "Citation du Jour"
+  },
+  "history": {
+    "title": "Affirmations Récentes",
+    "empty": "Pas d'historique encore"
+  },
+  "favorites": {
+    "title": "Favoris",
+    "empty": "Pas de favoris encore"
+  },
+  "stats": {
+    "title": "Mes Statistiques",
+    "cards": "Cartes Lues",
+    "streak": "Série de Jours",
+    "favorites": "Favoris"
+  },
+  "footer": {
+    "text": "Commence chaque jour avec positivité ✨"
+  },
+  "ads": {
+    "banner": "Publicité"
+  },
+  "rec": {
+    "title": "Essaie aussi"
+  },
+  "theme": {
+    "toggle": "Basculer le mode sombre"
+  }
+}

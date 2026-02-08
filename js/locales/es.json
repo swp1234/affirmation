@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Tarjetas de Afirmaciones Diarias - Mensajes Positivos | DopaBrain",
+    "description": "¡Comienza tu día con afirmaciones positivas! Mensajes de amor propio, motivación y gratitud."
+  },
+  "header": {
+    "title": "✨ Afirmaciones"
+  },
+  "premium": {
+    "button": "Obtener Afirmación Profunda de IA",
+    "badge": "PREMIUM",
+    "title": "Afirmación Profunda de IA"
+  },
+  "actions": {
+    "newCard": "Sacar Nueva Tarjeta",
+    "share": "Compartir"
+  },
+  "categories": {
+    "title": "Categorías",
+    "all": "Todas",
+    "selfLove": "Amor Propio",
+    "motivation": "Motivación",
+    "gratitude": "Gratitud",
+    "relationships": "Relaciones",
+    "success": "Éxito",
+    "quote": "Cita Diaria"
+  },
+  "history": {
+    "title": "Afirmaciones Recientes",
+    "empty": "Sin historial aún"
+  },
+  "favorites": {
+    "title": "Favoritos",
+    "empty": "Sin favoritos aún"
+  },
+  "stats": {
+    "title": "Mis Estadísticas",
+    "cards": "Tarjetas Leídas",
+    "streak": "Racha Diaria",
+    "favorites": "Favoritos"
+  },
+  "footer": {
+    "text": "Comienza cada día con positividad ✨"
+  },
+  "ads": {
+    "banner": "Publicidad"
+  },
+  "rec": {
+    "title": "Prueba estos también"
+  },
+  "theme": {
+    "toggle": "Alternar modo oscuro"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Cartões de Afirmações Diárias - Mensagens Positivas | DopaBrain",
+    "description": "Comece seu dia com afirmações positivas! Mensagens de amor próprio, motivação e gratidão."
+  },
+  "header": {
+    "title": "✨ Afirmações"
+  },
+  "premium": {
+    "button": "Obter Afirmação Profunda com IA",
+    "badge": "PREMIUM",
+    "title": "Afirmação Profunda com IA"
+  },
+  "actions": {
+    "newCard": "Puxar Novo Cartão",
+    "share": "Compartilhar"
+  },
+  "categories": {
+    "title": "Categorias",
+    "all": "Todas",
+    "selfLove": "Amor Próprio",
+    "motivation": "Motivação",
+    "gratitude": "Gratidão",
+    "relationships": "Relacionamentos",
+    "success": "Sucesso",
+    "quote": "Citação Diária"
+  },
+  "history": {
+    "title": "Afirmações Recentes",
+    "empty": "Sem histórico ainda"
+  },
+  "favorites": {
+    "title": "Favoritos",
+    "empty": "Sem favoritos ainda"
+  },
+  "stats": {
+    "title": "Minhas Estatísticas",
+    "cards": "Cartões Lidos",
+    "streak": "Sequência de Dias",
+    "favorites": "Favoritos"
+  },
+  "footer": {
+    "text": "Comece cada dia com positividade ✨"
+  },
+  "ads": {
+    "banner": "Publicidade"
+  },
+  "rec": {
+    "title": "Experimente também"
+  },
+  "theme": {
+    "toggle": "Alternar modo escuro"
+  }
+}

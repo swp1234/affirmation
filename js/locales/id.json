@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Kartu Afirmasi Harian - Pesan Positif | DopaBrain",
+    "description": "Mulai hari Anda dengan afirmasi positif! Pesan cinta diri, motivasi, dan rasa syukur."
+  },
+  "header": {
+    "title": "✨ Afirmasi"
+  },
+  "premium": {
+    "button": "Dapatkan Afirmasi Mendalam AI",
+    "badge": "PREMIUM",
+    "title": "Afirmasi Mendalam AI"
+  },
+  "actions": {
+    "newCard": "Ambil Kartu Baru",
+    "share": "Bagikan"
+  },
+  "categories": {
+    "title": "Kategori",
+    "all": "Semua",
+    "selfLove": "Cinta Diri",
+    "motivation": "Motivasi",
+    "gratitude": "Rasa Syukur",
+    "relationships": "Hubungan",
+    "success": "Kesuksesan",
+    "quote": "Kutipan Harian"
+  },
+  "history": {
+    "title": "Afirmasi Terbaru",
+    "empty": "Belum ada riwayat"
+  },
+  "favorites": {
+    "title": "Favorit",
+    "empty": "Belum ada favorit"
+  },
+  "stats": {
+    "title": "Statistik Saya",
+    "cards": "Kartu Dibaca",
+    "streak": "Hari Berturut-turut",
+    "favorites": "Favorit"
+  },
+  "footer": {
+    "text": "Mulai setiap hari dengan positif ✨"
+  },
+  "ads": {
+    "banner": "Iklan"
+  },
+  "rec": {
+    "title": "Coba juga"
+  },
+  "theme": {
+    "toggle": "Aktifkan mode gelap"
+  }
+}

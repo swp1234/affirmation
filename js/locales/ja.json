@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Daily Affirmation Cards - Positive Messages | DopaBrain",
+    "description": "毎日のアファメーション。自己愛、モチベーション、感謝のメッセージをお届けします。"
+  },
+  "header": {
+    "title": "✨ アファメーション"
+  },
+  "premium": {
+    "button": "AI深い癒しのアファメーション",
+    "badge": "プレミアム",
+    "title": "AI深い癒しのアファメーション"
+  },
+  "actions": {
+    "newCard": "新しいカードを引く",
+    "share": "共有する"
+  },
+  "categories": {
+    "title": "カテゴリー",
+    "all": "すべて",
+    "selfLove": "自己愛",
+    "motivation": "モチベーション",
+    "gratitude": "感謝",
+    "relationships": "人間関係",
+    "success": "成功",
+    "quote": "今日の名言"
+  },
+  "history": {
+    "title": "最近のアファメーション",
+    "empty": "まだ履歴がありません"
+  },
+  "favorites": {
+    "title": "お気に入り",
+    "empty": "まだお気に入りはありません"
+  },
+  "stats": {
+    "title": "マイ統計",
+    "cards": "カード数",
+    "streak": "連続日数",
+    "favorites": "お気に入り"
+  },
+  "footer": {
+    "text": "毎日をポジティブに始めましょう ✨"
+  },
+  "ads": {
+    "banner": "広告"
+  },
+  "rec": {
+    "title": "こちらも試してみてください"
+  },
+  "theme": {
+    "toggle": "ダークモードを切り替える"
+  }
+}

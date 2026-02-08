@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Günlük Onaylama Kartları - Olumlu İletiler | DopaBrain",
+    "description": "Gününü olumlu onaylamalarla başla! Öz-sevgi, motivasyon ve şükran mesajları."
+  },
+  "header": {
+    "title": "✨ Onaylamalar"
+  },
+  "premium": {
+    "button": "YZ Derinlemesine Onaylama Sistemi",
+    "badge": "PREMIUM",
+    "title": "YZ Derinlemesine Onaylama"
+  },
+  "actions": {
+    "newCard": "Yeni Kart Çek",
+    "share": "Paylaş"
+  },
+  "categories": {
+    "title": "Kategoriler",
+    "all": "Tümü",
+    "selfLove": "Öz-Sevgi",
+    "motivation": "Motivasyon",
+    "gratitude": "Şükran",
+    "relationships": "İlişkiler",
+    "success": "Başarı",
+    "quote": "Günlük Alıntı"
+  },
+  "history": {
+    "title": "Son Onaylamalar",
+    "empty": "Henüz geçmiş yok"
+  },
+  "favorites": {
+    "title": "Favoriler",
+    "empty": "Henüz favori yok"
+  },
+  "stats": {
+    "title": "Benim İstatistiklerim",
+    "cards": "Okuyulan Kartlar",
+    "streak": "Gün Serisi",
+    "favorites": "Favoriler"
+  },
+  "footer": {
+    "text": "Her günü pozitiflikle başla ✨"
+  },
+  "ads": {
+    "banner": "Reklam"
+  },
+  "rec": {
+    "title": "Bunları da dene"
+  },
+  "theme": {
+    "toggle": "Karanlık modu aç/kapat"
+  }
+}

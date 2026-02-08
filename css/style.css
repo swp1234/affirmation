@@ -471,6 +471,69 @@ body {
   color: var(--text-secondary);
 }
 
+/* Streak Calendar */
+.streak-calendar {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.streak-cal-header {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+}
+
+.streak-cal-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    text-align: center;
+}
+
+.streak-cal-day-name {
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+    padding: 2px 0;
+    font-weight: 600;
+}
+
+.streak-cal-cell {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+}
+
+.streak-cal-cell.empty { visibility: hidden; }
+
+.streak-cal-cell.today {
+    border: 2px solid var(--primary);
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.streak-cal-cell.visited {
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+}
+
+.streak-cal-cell.visited.today {
+    background: var(--primary);
+    border-color: #fff;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(233, 30, 99, 0.5);
+}
+
 /* Footer */
 .footer {
   text-align: center;

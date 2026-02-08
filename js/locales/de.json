@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Tägliche Affirmationskarten - Positive Botschaften | DopaBrain",
+    "description": "Starte deinen Tag mit positiven Affirmationen! Selbstliebe, Motivations- und Dankbarkeitsmeldungen."
+  },
+  "header": {
+    "title": "✨ Affirmationen"
+  },
+  "premium": {
+    "button": "Hol dir Tiefe KI-Affirmation",
+    "badge": "PREMIUM",
+    "title": "Tiefe KI-Affirmation"
+  },
+  "actions": {
+    "newCard": "Neue Karte ziehen",
+    "share": "Teilen"
+  },
+  "categories": {
+    "title": "Kategorien",
+    "all": "Alle",
+    "selfLove": "Selbstliebe",
+    "motivation": "Motivation",
+    "gratitude": "Dankbarkeit",
+    "relationships": "Beziehungen",
+    "success": "Erfolg",
+    "quote": "Tagesspruch"
+  },
+  "history": {
+    "title": "Kürzliche Affirmationen",
+    "empty": "Noch kein Verlauf"
+  },
+  "favorites": {
+    "title": "Favoriten",
+    "empty": "Noch keine Favoriten"
+  },
+  "stats": {
+    "title": "Meine Statistik",
+    "cards": "Karten gelesen",
+    "streak": "Tagesserie",
+    "favorites": "Favoriten"
+  },
+  "footer": {
+    "text": "Starte jeden Tag mit Positivität ✨"
+  },
+  "ads": {
+    "banner": "Werbung"
+  },
+  "rec": {
+    "title": "Probiere auch diese"
+  },
+  "theme": {
+    "toggle": "Dunklen Modus umschalten"
+  }
+}

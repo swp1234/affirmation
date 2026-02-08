@@ -326,7 +326,7 @@ affirmation, positive quotes, healing, self-esteem, mindfulness, meditation, gra
 - 욕설: 없음
 
 **개인정보 처리방침**:
-- URL: https://swp1234.github.io/affirmation/privacy-policy.html
+- URL: https://dopabrain.com/affirmation/privacy-policy.html
 - 수집 정보: 없음 (로컬 저장소만 사용)
 - 연락처: woodori1234@gmail.com
 
@@ -366,7 +366,7 @@ affirmation, positive quotes, healing, self-esteem, mindfulness, meditation, gra
    - 도메인 소유권 검증
 
 3. **manifest.xml 설정**
-   - TWA URL: https://swp1234.github.io/affirmation/
+   - TWA URL: https://dopabrain.com/affirmation/
    - Theme color: #e91e63
    - App name (각 언어별 values 폴더)
      - `values/strings.xml`: 긍정 확언 카드

@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Daily Affirmation Cards - Positive Messages | DopaBrain",
+    "description": "Start your day with positive affirmations! Self-love, motivation, gratitude messages."
+  },
+  "header": {
+    "title": "✨ Affirmations"
+  },
+  "premium": {
+    "button": "Get AI Deep Affirmation",
+    "badge": "PREMIUM",
+    "title": "AI Deep Affirmation"
+  },
+  "actions": {
+    "newCard": "Draw New Card",
+    "share": "Share"
+  },
+  "categories": {
+    "title": "Categories",
+    "all": "All",
+    "selfLove": "Self-Love",
+    "motivation": "Motivation",
+    "gratitude": "Gratitude",
+    "relationships": "Relationships",
+    "success": "Success",
+    "quote": "Daily Quote"
+  },
+  "history": {
+    "title": "Recent Affirmations",
+    "empty": "No history yet"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "empty": "No favorites yet"
+  },
+  "stats": {
+    "title": "My Stats",
+    "cards": "Cards Read",
+    "streak": "Day Streak",
+    "favorites": "Favorites"
+  },
+  "footer": {
+    "text": "Start each day with positivity ✨"
+  },
+  "ads": {
+    "banner": "Advertisement"
+  },
+  "rec": {
+    "title": "Try these too"
+  },
+  "theme": {
+    "toggle": "Toggle dark mode"
+  }
+}

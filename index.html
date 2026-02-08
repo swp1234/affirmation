@@ -47,17 +47,29 @@
     <div class="header-content">
       <h1 class="app-title">
         <span class="emoji">✨</span>
-        긍정 확언
+        <span data-i18n="header.title">긍정 확언</span>
       </h1>
-      <button class="theme-toggle" id="themeToggle" aria-label="다크모드 전환">
-        <span class="theme-icon">🌙</span>
-      </button>
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <button class="theme-toggle" id="themeToggle" aria-label="다크모드 전환">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <div class="language-selector">
+          <button class="lang-btn" id="lang-toggle">🌐</button>
+          <div class="lang-menu hidden" id="lang-menu">
+            <button class="lang-option" data-lang="ko">한국어</button>
+            <button class="lang-option" data-lang="en">English</button>
+            <button class="lang-option" data-lang="zh">简体中文</button>
+            <button class="lang-option" data-lang="hi">हिन्दी</button>
+            <button class="lang-option" data-lang="ru">Русский</button>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- 광고 영역 (상단) -->
   <div class="ad-banner ad-top">
-    <span class="ad-placeholder">광고 영역</span>
+    <span class="ad-placeholder" data-i18n="ads.banner">광고 영역</span>
   </div>
 
   <!-- 메인 컨텐츠 -->
@@ -77,96 +89,96 @@
       <!-- 프리미엄 콘텐츠 버튼 -->
       <button class="premium-btn" id="premiumBtn">
         <span class="premium-icon">✨</span>
-        <span>AI 심층 확언 받기</span>
-        <span class="premium-badge">PREMIUM</span>
+        <span data-i18n="premium.button">AI 심층 확언 받기</span>
+        <span class="premium-badge" data-i18n="premium.badge">PREMIUM</span>
       </button>
 
       <!-- 액션 버튼 -->
       <div class="action-buttons">
         <button class="action-btn primary-btn" id="newCardBtn">
-          <span>새로운 카드 뽑기</span>
+          <span data-i18n="actions.newCard">새로운 카드 뽑기</span>
         </button>
         <button class="action-btn secondary-btn" id="shareBtn">
-          <span>공유하기</span>
+          <span data-i18n="actions.share">공유하기</span>
         </button>
       </div>
     </section>
 
     <!-- 카테고리 필터 -->
     <section class="category-section">
-      <h2 class="section-title">카테고리</h2>
+      <h2 class="section-title" data-i18n="categories.title">카테고리</h2>
       <div class="category-buttons" id="categoryButtons">
         <button class="category-btn active" data-category="all">
           <span class="category-emoji">✨</span>
-          <span class="category-name">전체</span>
+          <span class="category-name" data-i18n="categories.all">전체</span>
         </button>
         <button class="category-btn" data-category="self-love">
           <span class="category-emoji">💖</span>
-          <span class="category-name">자존감</span>
+          <span class="category-name" data-i18n="categories.selfLove">자존감</span>
         </button>
         <button class="category-btn" data-category="motivation">
           <span class="category-emoji">🔥</span>
-          <span class="category-name">동기부여</span>
+          <span class="category-name" data-i18n="categories.motivation">동기부여</span>
         </button>
         <button class="category-btn" data-category="gratitude">
           <span class="category-emoji">🙏</span>
-          <span class="category-name">감사</span>
+          <span class="category-name" data-i18n="categories.gratitude">감사</span>
         </button>
         <button class="category-btn" data-category="relationships">
           <span class="category-emoji">🤝</span>
-          <span class="category-name">관계</span>
+          <span class="category-name" data-i18n="categories.relationships">관계</span>
         </button>
         <button class="category-btn" data-category="success">
           <span class="category-emoji">⭐</span>
-          <span class="category-name">성공</span>
+          <span class="category-name" data-i18n="categories.success">성공</span>
         </button>
         <button class="category-btn" data-category="quote">
           <span class="category-emoji">💬</span>
-          <span class="category-name">오늘의 명언</span>
+          <span class="category-name" data-i18n="categories.quote">오늘의 명언</span>
         </button>
       </div>
     </section>
 
     <!-- 히스토리 섹션 -->
     <section class="history-section">
-      <h2 class="section-title">최근 본 확언</h2>
+      <h2 class="section-title" data-i18n="history.title">최근 본 확언</h2>
       <div class="history-list" id="historyList">
-        <p class="empty-message">아직 기록이 없습니다</p>
+        <p class="empty-message" data-i18n="history.empty">아직 기록이 없습니다</p>
       </div>
     </section>
 
     <!-- 즐겨찾기 섹션 -->
     <section class="favorites-section" id="favoritesSection">
-      <h2 class="section-title">즐겨찾기</h2>
+      <h2 class="section-title" data-i18n="favorites.title">즐겨찾기</h2>
       <div class="favorites-list" id="favoritesList">
-        <p class="empty-message">아직 즐겨찾기한 카드가 없습니다</p>
+        <p class="empty-message" data-i18n="favorites.empty">아직 즐겨찾기한 카드가 없습니다</p>
       </div>
     </section>
 
     <!-- 통계 섹션 -->
     <section class="stats-section">
-      <h2 class="section-title">나의 통계</h2>
+      <h2 class="section-title" data-i18n="stats.title">나의 통계</h2>
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-icon">📖</div>
           <div class="stat-value" id="totalCards">0</div>
-          <div class="stat-label">읽은 카드</div>
+          <div class="stat-label" data-i18n="stats.cards">읽은 카드</div>
         </div>
         <div class="stat-card">
           <div class="stat-icon">🔥</div>
           <div class="stat-value" id="streakDays">0</div>
-          <div class="stat-label">연속 일수</div>
+          <div class="stat-label" data-i18n="stats.streak">연속 일수</div>
         </div>
         <div class="stat-card">
           <div class="stat-icon">❤️</div>
           <div class="stat-value" id="favoriteCount">0</div>
-          <div class="stat-label">즐겨찾기</div>
+          <div class="stat-label" data-i18n="stats.favorites">즐겨찾기</div>
         </div>
       </div>
     </section>
 
     <div class="recommendations-section">
-      <div class="rec-title">이것도 해보세요</div>
+      <div class="rec-title" data-i18n="rec.title">이것도 해보세요</div>
       <div class="rec-grid">
         <a href="https://dopabrain.com/detox-timer/" class="rec-card" target="_blank">
           <span class="rec-icon">📵</span>
@@ -202,19 +214,19 @@
 
   <!-- 광고 영역 (하단) -->
   <div class="ad-banner ad-bottom">
-    <span class="ad-placeholder">광고 영역</span>
+    <span class="ad-placeholder" data-i18n="ads.banner">광고 영역</span>
   </div>
 
   <!-- 푸터 -->
   <footer class="footer">
-    <p>매일 긍정적인 마음으로 시작하세요 ✨</p>
+    <p data-i18n="footer.text">매일 긍정적인 마음으로 시작하세요 ✨</p>
   </footer>
 
   <!-- 전면 광고 -->
   <div id="interstitialAd" class="interstitial-overlay hidden">
     <div class="interstitial-content">
       <p class="interstitial-label">광고</p>
-      <div class="ad-placeholder-large">광고 영역</div>
+      <div class="ad-placeholder-large" data-i18n="ads.banner">광고 영역</div>
       <button id="closeAdBtn" class="close-ad-btn" disabled>닫기 (<span id="adCountdown">5</span>)</button>
     </div>
   </div>
@@ -225,7 +237,7 @@
       <button class="premium-close" id="closePremiumBtn">&times;</button>
       <div class="premium-header">
         <span class="premium-modal-icon">✨</span>
-        <h2>AI 심층 확언</h2>
+        <h2 data-i18n="premium.title">AI 심층 확언</h2>
       </div>
       <div class="premium-body" id="premiumBody">
         <!-- Dynamic content -->
@@ -234,6 +246,7 @@
   </div>
 
   <!-- Scripts -->
+  <script src="js/i18n.js"></script>
   <script src="js/affirmations.js"></script>
   <script src="js/app.js"></script>
 </body>

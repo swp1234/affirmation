@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "每日正能量卡片 - 积极肯定语 | DopaBrain",
+    "description": "每天以积极肯定语开始新的一天！自爱、动力、感恩信息。"
+  },
+  "header": {
+    "title": "✨ 正能量"
+  },
+  "premium": {
+    "button": "获取AI深度肯定语",
+    "badge": "高级",
+    "title": "AI深度肯定语"
+  },
+  "actions": {
+    "newCard": "抽取新卡片",
+    "share": "分享"
+  },
+  "categories": {
+    "title": "分类",
+    "all": "全部",
+    "selfLove": "自爱",
+    "motivation": "动力",
+    "gratitude": "感恩",
+    "relationships": "人际关系",
+    "success": "成功",
+    "quote": "每日名言"
+  },
+  "history": {
+    "title": "最近浏览",
+    "empty": "暂无记录"
+  },
+  "favorites": {
+    "title": "收藏夹",
+    "empty": "暂无收藏"
+  },
+  "stats": {
+    "title": "我的统计",
+    "cards": "已读卡片",
+    "streak": "连续天数",
+    "favorites": "收藏数"
+  },
+  "footer": {
+    "text": "每天以积极的心态开始 ✨"
+  },
+  "ads": {
+    "banner": "广告区域"
+  },
+  "rec": {
+    "title": "还可以试试这些"
+  },
+  "theme": {
+    "toggle": "切换暗色模式"
+  }
+}

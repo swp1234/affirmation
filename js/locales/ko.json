@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "일일 긍정 확언 카드 - 매일 새로운 긍정 메시지 | DopaBrain",
+    "description": "매일 새로운 긍정 확언으로 하루를 시작하세요! 자존감, 동기부여, 감사 메시지."
+  },
+  "header": {
+    "title": "✨ 긍정 확언"
+  },
+  "premium": {
+    "button": "AI 심층 확언 받기",
+    "badge": "PREMIUM",
+    "title": "AI 심층 확언"
+  },
+  "actions": {
+    "newCard": "새로운 카드 뽑기",
+    "share": "공유하기"
+  },
+  "categories": {
+    "title": "카테고리",
+    "all": "전체",
+    "selfLove": "자존감",
+    "motivation": "동기부여",
+    "gratitude": "감사",
+    "relationships": "관계",
+    "success": "성공",
+    "quote": "오늘의 명언"
+  },
+  "history": {
+    "title": "최근 본 확언",
+    "empty": "아직 기록이 없습니다"
+  },
+  "favorites": {
+    "title": "즐겨찾기",
+    "empty": "아직 즐겨찾기한 카드가 없습니다"
+  },
+  "stats": {
+    "title": "나의 통계",
+    "cards": "읽은 카드",
+    "streak": "연속 일수",
+    "favorites": "즐겨찾기"
+  },
+  "footer": {
+    "text": "매일 긍정적인 마음으로 시작하세요 ✨"
+  },
+  "ads": {
+    "banner": "광고 영역"
+  },
+  "rec": {
+    "title": "이것도 해보세요"
+  },
+  "theme": {
+    "toggle": "다크모드 전환"
+  }
+}

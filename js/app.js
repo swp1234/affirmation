@@ -1,4 +1,46 @@
 // ========================================
+// I18n 초기화
+// ========================================
+
+(async function initI18n() {
+    await i18n.loadTranslations(i18n.getCurrentLanguage());
+    i18n.updateUI();
+
+    const langToggle = document.getElementById('lang-toggle');
+    const langMenu = document.getElementById('lang-menu');
+    const langOptions = document.querySelectorAll('.lang-option');
+
+    // 현재 언어 활성화
+    document.querySelector(`[data-lang="${i18n.getCurrentLanguage()}"]`)?.classList.add('active');
+
+    // 언어 메뉴 토글
+    langToggle?.addEventListener('click', () => langMenu.classList.toggle('hidden'));
+
+    // 외부 클릭 시 메뉴 닫기
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.language-selector')) {
+            langMenu?.classList.add('hidden');
+        }
+    });
+
+    // 언어 선택
+    langOptions.forEach(opt => {
+        opt.addEventListener('click', async () => {
+            await i18n.setLanguage(opt.getAttribute('data-lang'));
+            langOptions.forEach(o => o.classList.remove('active'));
+            opt.classList.add('active');
+            langMenu.classList.add('hidden');
+
+            // 앱 UI 업데이트 트리거
+            if (app && app.renderHistory && app.renderFavorites) {
+                app.renderHistory();
+                app.renderFavorites();
+            }
+        });
+    });
+})();
+
+// ========================================
 // 긍정 확언 앱 - 메인 로직
 // ========================================
 
@@ -205,7 +247,7 @@ class AffirmationApp {
     const historyList = document.getElementById('historyList');
 
     if (this.history.length === 0) {
-      historyList.innerHTML = '<p class="empty-message">아직 기록이 없습니다</p>';
+      historyList.innerHTML = `<p class="empty-message" data-i18n="history.empty">${i18n.t('history.empty')}</p>`;
       return;
     }
 
@@ -259,7 +301,7 @@ class AffirmationApp {
     const favoritesList = document.getElementById('favoritesList');
 
     if (this.favorites.length === 0) {
-      favoritesList.innerHTML = '<p class="empty-message">아직 즐겨찾기한 카드가 없습니다</p>';
+      favoritesList.innerHTML = `<p class="empty-message" data-i18n="favorites.empty">${i18n.t('favorites.empty')}</p>`;
       return;
     }
 
@@ -309,12 +351,13 @@ class AffirmationApp {
 
   // 공유하기
   async shareCard() {
-    const text = `${this.currentCard.text}\n\n- 일일 긍정 확언 카드`;
+    const appTitle = i18n.t('header.title').replace('✨ ', '').trim();
+    const text = `${this.currentCard.text}\n\n- ${appTitle}`;
 
     if (navigator.share) {
       try {
         await navigator.share({
-          title: '긍정 확언',
+          title: appTitle,
           text: text
         });
       } catch (err) {

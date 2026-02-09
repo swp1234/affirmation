@@ -247,24 +247,40 @@ class AffirmationApp {
     const historyList = document.getElementById('historyList');
 
     if (this.history.length === 0) {
-      historyList.innerHTML = `<p class="empty-message" data-i18n="history.empty">${i18n.t('history.empty')}</p>`;
+      historyList.innerHTML = '';
+      const emptyMsg = document.createElement('p');
+      emptyMsg.className = 'empty-message';
+      emptyMsg.setAttribute('data-i18n', 'history.empty');
+      emptyMsg.textContent = i18n.t('history.empty');
+      historyList.appendChild(emptyMsg);
       return;
     }
 
-    historyList.innerHTML = this.history.map((item, index) => {
+    historyList.innerHTML = '';
+    this.history.forEach((item, index) => {
       const categoryInfo = item.category === 'quote'
         ? { emoji: '💬', name: '명언' }
         : categories[item.category];
 
-      return `
-        <div class="history-item slide-in" style="animation-delay: ${index * 0.05}s">
-          <div class="history-text">
-            <span style="margin-right: 8px">${categoryInfo.emoji}</span>
-            ${item.text.substring(0, 50)}${item.text.length > 50 ? '...' : ''}
-          </div>
-        </div>
-      `;
-    }).join('');
+      const div = document.createElement('div');
+      div.className = 'history-item slide-in';
+      div.style.animationDelay = `${index * 0.05}s`;
+
+      const textDiv = document.createElement('div');
+      textDiv.className = 'history-text';
+
+      const emoji = document.createElement('span');
+      emoji.style.marginRight = '8px';
+      emoji.textContent = categoryInfo.emoji;
+      textDiv.appendChild(emoji);
+
+      const text = document.createTextNode(
+        item.text.substring(0, 50) + (item.text.length > 50 ? '...' : '')
+      );
+      textDiv.appendChild(text);
+      div.appendChild(textDiv);
+      historyList.appendChild(div);
+    });
   }
 
   // 총 카드 수 증가
@@ -301,24 +317,44 @@ class AffirmationApp {
     const favoritesList = document.getElementById('favoritesList');
 
     if (this.favorites.length === 0) {
-      favoritesList.innerHTML = `<p class="empty-message" data-i18n="favorites.empty">${i18n.t('favorites.empty')}</p>`;
+      favoritesList.innerHTML = '';
+      const emptyMsg = document.createElement('p');
+      emptyMsg.className = 'empty-message';
+      emptyMsg.setAttribute('data-i18n', 'favorites.empty');
+      emptyMsg.textContent = i18n.t('favorites.empty');
+      favoritesList.appendChild(emptyMsg);
       return;
     }
 
-    favoritesList.innerHTML = this.favorites.map((fav, index) => {
+    favoritesList.innerHTML = '';
+    this.favorites.forEach((fav, index) => {
       const categoryInfo = categories[fav.category] || { emoji: '💬', name: '명언' };
-      return `
-        <div class="favorite-item slide-in" style="animation-delay: ${index * 0.05}s">
-          <div class="favorite-text">
-            <span style="margin-right: 8px">${categoryInfo.emoji}</span>
-            ${fav.text}
-          </div>
-          <button class="remove-favorite" onclick="app.removeFavorite('${fav.id}')">
-            ✕
-          </button>
-        </div>
-      `;
-    }).join('');
+
+      const div = document.createElement('div');
+      div.className = 'favorite-item slide-in';
+      div.style.animationDelay = `${index * 0.05}s`;
+
+      const textDiv = document.createElement('div');
+      textDiv.className = 'favorite-text';
+
+      const emoji = document.createElement('span');
+      emoji.style.marginRight = '8px';
+      emoji.textContent = categoryInfo.emoji;
+      textDiv.appendChild(emoji);
+
+      const text = document.createTextNode(fav.text);
+      textDiv.appendChild(text);
+      div.appendChild(textDiv);
+
+      const btn = document.createElement('button');
+      btn.className = 'remove-favorite';
+      btn.textContent = '✕';
+      btn.dataset.id = fav.id;
+      btn.addEventListener('click', () => this.removeFavorite(fav.id));
+      div.appendChild(btn);
+
+      favoritesList.appendChild(div);
+    });
   }
 
   // 즐겨찾기 제거
@@ -494,31 +530,68 @@ class AffirmationApp {
     // AI 심층 확언 생성
     const deepAffirmation = this.generateDeepAffirmation(card);
 
-    premiumBody.innerHTML = `
-      <div class="premium-category">${categoryInfo.emoji} ${categoryInfo.name}</div>
-      <div class="premium-original">
-        <h3>오늘의 확언</h3>
-        <p>"${card.text}"</p>
-      </div>
-      <div class="premium-deep">
-        <h3>AI 심층 해석</h3>
-        <p>${deepAffirmation.interpretation}</p>
-      </div>
-      <div class="premium-practice">
-        <h3>실천 가이드</h3>
-        <ul>
-          ${deepAffirmation.practices.map(p => `<li>${p}</li>`).join('')}
-        </ul>
-      </div>
-      <div class="premium-meditation">
-        <h3>명상 문구</h3>
-        <p class="meditation-text">"${deepAffirmation.meditation}"</p>
-      </div>
-      <div class="premium-journal">
-        <h3>오늘의 저널 질문</h3>
-        <p>${deepAffirmation.journal}</p>
-      </div>
-    `;
+    // DOM 요소 안전하게 생성
+    premiumBody.innerHTML = '';
+
+    const categoryDiv = document.createElement('div');
+    categoryDiv.className = 'premium-category';
+    categoryDiv.appendChild(document.createTextNode(`${categoryInfo.emoji} ${categoryInfo.name}`));
+    premiumBody.appendChild(categoryDiv);
+
+    const originalDiv = document.createElement('div');
+    originalDiv.className = 'premium-original';
+    const h3a = document.createElement('h3');
+    h3a.textContent = '오늘의 확언';
+    const pa = document.createElement('p');
+    pa.textContent = `"${card.text}"`;
+    originalDiv.appendChild(h3a);
+    originalDiv.appendChild(pa);
+    premiumBody.appendChild(originalDiv);
+
+    const deepDiv = document.createElement('div');
+    deepDiv.className = 'premium-deep';
+    const h3b = document.createElement('h3');
+    h3b.textContent = 'AI 심층 해석';
+    const pb = document.createElement('p');
+    pb.textContent = deepAffirmation.interpretation;
+    deepDiv.appendChild(h3b);
+    deepDiv.appendChild(pb);
+    premiumBody.appendChild(deepDiv);
+
+    const practiceDiv = document.createElement('div');
+    practiceDiv.className = 'premium-practice';
+    const h3c = document.createElement('h3');
+    h3c.textContent = '실천 가이드';
+    const ul = document.createElement('ul');
+    deepAffirmation.practices.forEach(p => {
+      const li = document.createElement('li');
+      li.textContent = p;
+      ul.appendChild(li);
+    });
+    practiceDiv.appendChild(h3c);
+    practiceDiv.appendChild(ul);
+    premiumBody.appendChild(practiceDiv);
+
+    const meditationDiv = document.createElement('div');
+    meditationDiv.className = 'premium-meditation';
+    const h3d = document.createElement('h3');
+    h3d.textContent = '명상 문구';
+    const pm = document.createElement('p');
+    pm.className = 'meditation-text';
+    pm.textContent = `"${deepAffirmation.meditation}"`;
+    meditationDiv.appendChild(h3d);
+    meditationDiv.appendChild(pm);
+    premiumBody.appendChild(meditationDiv);
+
+    const journalDiv = document.createElement('div');
+    journalDiv.className = 'premium-journal';
+    const h3e = document.createElement('h3');
+    h3e.textContent = '오늘의 저널 질문';
+    const pj = document.createElement('p');
+    pj.textContent = deepAffirmation.journal;
+    journalDiv.appendChild(h3e);
+    journalDiv.appendChild(pj);
+    premiumBody.appendChild(journalDiv);
 
     premiumModal.classList.remove('hidden');
   }

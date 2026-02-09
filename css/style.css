@@ -970,6 +970,36 @@ body {
   color: var(--primary);
 }
 
+/* Scrollbar Styling - Dark Theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px;
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}
+
+/* Selection Color */
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--primary);
+  color: white;
+}
+
 /* Recommendations Section */
 .recommendations-section { margin: 24px 0 0; padding: 0 16px; }
 .rec-title { font-size: 15px; font-weight: 700; color: rgba(255,255,255,0.65); margin-bottom: 12px; text-align: center; letter-spacing: 0.5px; }

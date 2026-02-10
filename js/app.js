@@ -562,7 +562,13 @@ class AffirmationApp {
     const premiumBody = document.getElementById('premiumBody');
 
     const card = this.currentCard;
-    const categoryInfo = categories[card.category] || { emoji: '💬', name: '오늘의 명언' };
+    const categoryKey = card.category === 'quote'
+      ? 'categories.quote'
+      : `categories.${card.category}`;
+    const categoryName = i18n.t(categoryKey);
+    const categoryInfo = card.category === 'quote'
+      ? { emoji: '💬', name: categoryName }
+      : { emoji: categories[card.category].emoji, name: categoryName };
 
     // AI 심층 확언 생성
     const deepAffirmation = this.generateDeepAffirmation(card);

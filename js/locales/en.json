@@ -93,5 +93,145 @@
   },
   "recommendations": {
     "title": "Try these too"
+  },
+  "deepAffirmation": {
+    "selfLove": {
+      "psychology": [
+        "Self-love is the foundation of all growth. This affirmation reminds you that you are enough without external validation.",
+        "Self-esteem is not built overnight. Repeat this affirmation daily to transform your inner voice into a positive one.",
+        "Loving yourself is not selfish. When you fill your own cup first, you have more to give to others."
+      ],
+      "actions": [
+        "Spend 3 minutes in front of a mirror speaking positive words to yourself",
+        "Write down 3 things you're grateful for about yourself today",
+        "Invest 30 minutes in an activity you love to care for yourself",
+        "When negative self-talk arises, replace it with this affirmation"
+      ],
+      "meditation": [
+        "Close your eyes and breathe slowly, repeating 'I am enough' 5 times",
+        "Place your hand on your heart, feel your heartbeat, and appreciate your existence",
+        "Imagine warm light surrounding your entire body and feel the peace it brings"
+      ],
+      "journal": [
+        "What is the best thing you did for yourself today?",
+        "What is your unique quality that makes you happiest?",
+        "How could you be kinder to yourself?"
+      ]
+    },
+    "motivation": {
+      "psychology": [
+        "Motivation is not a feeling but a habit. This affirmation reminds you that small daily actions create big change.",
+        "Success is not a single leap but consistent steps. Your effort today becomes tomorrow's results.",
+        "Fear is a signal of growth. Don't avoid challenges; find strength within them."
+      ],
+      "actions": [
+        "Set one important goal for today and commit to completing it",
+        "Set a 5-minute timer and start that task you've been putting off",
+        "Write down moments of success to boost your confidence",
+        "Reflect on what you achieved today and feel the accomplishment"
+      ],
+      "meditation": [
+        "Vividly imagine your future self achieving your goals and feel that emotion",
+        "Recall a past challenge you overcame and draw strength from it",
+        "Repeat 'I can do this' with deep, intentional breathing"
+      ],
+      "journal": [
+        "What is your goal for this year and why does it matter to you?",
+        "What was your proudest achievement last week?",
+        "What encouraging words would you give to tomorrow's you?"
+      ]
+    },
+    "gratitude": {
+      "psychology": [
+        "Gratitude is a muscle of the heart. The more you practice it daily, the more happiness you discover.",
+        "A grateful mind enriches the present and raises positive expectations for the future.",
+        "Those who appreciate small things can recognize great happiness too."
+      ],
+      "actions": [
+        "Before sleep, write down 3 things you're grateful for",
+        "Send a message of thanks to someone you met today",
+        "Pause before eating and take a moment to thank your food",
+        "Take a walk and discover the beauty around you one thing at a time"
+      ],
+      "meditation": [
+        "Focus on your breath and appreciate each breath you receive",
+        "Picture the faces of loved ones and send them warm energy",
+        "Find meaning in the things you usually take for granted"
+      ],
+      "journal": [
+        "When was the most recent moment you felt truly grateful?",
+        "What did you take for granted that you're newly grateful for?",
+        "If you started a gratitude journal today, what would you write on the first page?"
+      ]
+    },
+    "relationships": {
+      "psychology": [
+        "Good relationships begin with communication and understanding. This affirmation reminds you that connection enriches life.",
+        "Setting healthy boundaries is also an act of love. Balance protecting yourself while respecting others.",
+        "All relationships begin with your relationship with yourself. Inner health creates healthy external relationships."
+      ],
+      "actions": [
+        "Share a heartfelt word with someone important to you today",
+        "When listening to someone, give them your full attention",
+        "In conflict, express your feelings using 'I' statements",
+        "Reach out to an old friend you haven't connected with in a while"
+      ],
+      "meditation": [
+        "Imagine sending light and peace to the people you love",
+        "If there's a difficult relationship, recognize that person also carries pain",
+        "Feel gratitude for the meaningful connections in your life"
+      ],
+      "journal": [
+        "Who is the most important relationship in your life and why?",
+        "What is a kind gesture someone did for you recently?",
+        "What is one thing you can do to nurture your relationships?"
+      ]
+    },
+    "success": {
+      "psychology": [
+        "Success is not a destination but a journey. Learning and growth in the process are the greatest success.",
+        "Success means something different to everyone. Define your own success and move toward it.",
+        "Failure is not the opposite of success; it's part of the path to success."
+      ],
+      "actions": [
+        "Identify your top 3 priorities for today and focus on them",
+        "Adopt one habit from a successful role model starting today",
+        "Create a vision board to visualize your goals",
+        "Invest 15 minutes daily in self-development"
+      ],
+      "meditation": [
+        "Vividly imagine achieving your goal and feel the joy in advance",
+        "Reflect on your journey and recognize how far you've come",
+        "Affirm with confidence: 'I deserve success'"
+      ],
+      "journal": [
+        "What does success mean to you?",
+        "What would your ideal self look like 5 years from now?",
+        "What is your greatest achievement so far in life?"
+      ]
+    },
+    "quote": {
+      "psychology": [
+        "The words of great people contain timeless wisdom that transcends eras. May this quote inspire your day.",
+        "A quote is like a mirror. It speaks differently depending on your life situation.",
+        "True wisdom doesn't end with knowing; it shines in the doing."
+      ],
+      "actions": [
+        "Write this quote down and read it throughout your day",
+        "Apply this quote's meaning to your current situation",
+        "Research similar quotes and reflect deeply on the theme",
+        "Share this quote with someone you care about"
+      ],
+      "meditation": [
+        "Slowly repeat this quote mindfully, savoring its meaning",
+        "Imagine the author's situation when they created these words",
+        "Consider how this wisdom can be applied to your life"
+      ],
+      "journal": [
+        "How does this quote speak to you right now?",
+        "What is one action you can take today to live this quote?",
+        "If you could create your life motto, what would it be?"
+      ]
+    }
   }
 }

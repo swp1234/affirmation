@@ -723,6 +723,13 @@ class AffirmationApp {
 // 앱 초기화
 const app = new AffirmationApp();
 
+// Hide app loader
+const loader = document.getElementById('app-loader');
+if (loader) {
+    loader.classList.add('hidden');
+    setTimeout(() => loader.remove(), 300);
+}
+
 // Service Worker 등록
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

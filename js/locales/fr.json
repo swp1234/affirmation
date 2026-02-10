@@ -1,15 +1,21 @@
 {
   "app": {
     "title": "Cartes d'Affirmation Quotidienne - Messages Positifs | DopaBrain",
-    "description": "Commencez votre journée avec des affirmations positives ! Messages d'amour-propre, de motivation et de gratitude."
+    "description": "Commencez votre journée avec des affirmations positives ! Messages d'amour-propre, de motivation et de gratitude.",
+    "loading": "Chargement..."
   },
   "header": {
-    "title": "✨ Affirmations"
+    "title": "Affirmations"
   },
   "premium": {
     "button": "Obtenir une Affirmation Profonde IA",
     "badge": "PREMIUM",
-    "title": "Affirmation Profonde IA"
+    "title": "Affirmation Profonde IA",
+    "todayAffirmation": "Affirmation d'Aujourd'hui",
+    "deepInterpretation": "Interprétation Profonde IA",
+    "practiceGuide": "Guide de Pratique",
+    "meditation": "Méditation",
+    "journalQuestion": "Question de Journal d'Aujourd'hui"
   },
   "actions": {
     "newCard": "Tirer une Nouvelle Carte",
@@ -50,5 +56,42 @@
   },
   "theme": {
     "toggle": "Basculer le mode sombre"
+  },
+  "share": {
+    "copiedSuccess": "Copié dans le presse-papiers!",
+    "notAvailable": "La fonction de partage n'est pas disponible."
+  },
+  "modal": {
+    "close": "Fermer"
+  },
+  "calendar": {
+    "year": "",
+    "visited": "Historique des Visites",
+    "months": {
+      "jan": "Jan",
+      "feb": "Fev",
+      "mar": "Mar",
+      "apr": "Avr",
+      "may": "Mai",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aou",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "days": {
+      "sun": "Dim",
+      "mon": "Lun",
+      "tue": "Mar",
+      "wed": "Mer",
+      "thu": "Jeu",
+      "fri": "Ven",
+      "sat": "Sam"
+    }
+  },
+  "recommendations": {
+    "title": "Essaie aussi"
   }
 }

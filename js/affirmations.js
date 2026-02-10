@@ -611,35 +611,29 @@ const affirmations = [
   }
 ];
 
-// 카테고리 정보
+// 카테고리 정보 (이름은 i18n으로 처리)
 const categories = {
   'self-love': {
-    name: '자존감',
     emoji: '💖',
     color: '#e91e63'
   },
   'motivation': {
-    name: '동기부여',
     emoji: '🔥',
     color: '#ff6b6b'
   },
   'gratitude': {
-    name: '감사',
     emoji: '🙏',
     color: '#feca57'
   },
   'relationships': {
-    name: '관계',
     emoji: '🤝',
     color: '#48dbfb'
   },
   'success': {
-    name: '성공',
     emoji: '⭐',
     color: '#1dd1a1'
   },
   'quote': {
-    name: '오늘의 명언',
     emoji: '💬',
     color: '#9b59b6'
   }

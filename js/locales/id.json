@@ -1,15 +1,21 @@
 {
   "app": {
     "title": "Kartu Afirmasi Harian - Pesan Positif | DopaBrain",
-    "description": "Mulai hari Anda dengan afirmasi positif! Pesan cinta diri, motivasi, dan rasa syukur."
+    "description": "Mulai hari Anda dengan afirmasi positif! Pesan cinta diri, motivasi, dan rasa syukur.",
+    "loading": "Memuat..."
   },
   "header": {
-    "title": "✨ Afirmasi"
+    "title": "Afirmasi"
   },
   "premium": {
     "button": "Dapatkan Afirmasi Mendalam AI",
     "badge": "PREMIUM",
-    "title": "Afirmasi Mendalam AI"
+    "title": "Afirmasi Mendalam AI",
+    "todayAffirmation": "Afirmasi Hari Ini",
+    "deepInterpretation": "Interpretasi Mendalam AI",
+    "practiceGuide": "Panduan Praktik",
+    "meditation": "Meditasi",
+    "journalQuestion": "Pertanyaan Jurnal Hari Ini"
   },
   "actions": {
     "newCard": "Ambil Kartu Baru",
@@ -50,5 +56,42 @@
   },
   "theme": {
     "toggle": "Aktifkan mode gelap"
+  },
+  "share": {
+    "copiedSuccess": "Disalin ke papan klip!",
+    "notAvailable": "Fitur berbagi tidak tersedia."
+  },
+  "modal": {
+    "close": "Tutup"
+  },
+  "calendar": {
+    "year": "",
+    "visited": "Catatan Kunjungan",
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "Mei",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Agu",
+      "sep": "Sep",
+      "oct": "Okt",
+      "nov": "Nov",
+      "dec": "Des"
+    },
+    "days": {
+      "sun": "Min",
+      "mon": "Sen",
+      "tue": "Sel",
+      "wed": "Rab",
+      "thu": "Kam",
+      "fri": "Jum",
+      "sat": "Sab"
+    }
+  },
+  "recommendations": {
+    "title": "Coba juga"
   }
 }

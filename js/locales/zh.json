@@ -1,15 +1,21 @@
 {
   "app": {
     "title": "每日正能量卡片 - 积极肯定语 | DopaBrain",
-    "description": "每天以积极肯定语开始新的一天！自爱、动力、感恩信息。"
+    "description": "每天以积极肯定语开始新的一天！自爱、动力、感恩信息。",
+    "loading": "加载中..."
   },
   "header": {
-    "title": "✨ 正能量"
+    "title": "正能量"
   },
   "premium": {
     "button": "获取AI深度肯定语",
     "badge": "高级",
-    "title": "AI深度肯定语"
+    "title": "AI深度肯定语",
+    "todayAffirmation": "今日肯定语",
+    "deepInterpretation": "AI深度解读",
+    "practiceGuide": "实践指南",
+    "meditation": "冥想",
+    "journalQuestion": "今日日志问题"
   },
   "actions": {
     "newCard": "抽取新卡片",
@@ -50,5 +56,42 @@
   },
   "theme": {
     "toggle": "切换暗色模式"
+  },
+  "share": {
+    "copiedSuccess": "已复制到剪贴板!",
+    "notAvailable": "分享功能不可用。"
+  },
+  "modal": {
+    "close": "关闭"
+  },
+  "calendar": {
+    "year": "年",
+    "visited": "访问记录",
+    "months": {
+      "jan": "1月",
+      "feb": "2月",
+      "mar": "3月",
+      "apr": "4月",
+      "may": "5月",
+      "jun": "6月",
+      "jul": "7月",
+      "aug": "8月",
+      "sep": "9月",
+      "oct": "10月",
+      "nov": "11月",
+      "dec": "12月"
+    },
+    "days": {
+      "sun": "日",
+      "mon": "一",
+      "tue": "二",
+      "wed": "三",
+      "thu": "四",
+      "fri": "五",
+      "sat": "六"
+    }
+  },
+  "recommendations": {
+    "title": "还可以试试这些"
   }
 }

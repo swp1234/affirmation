@@ -209,9 +209,13 @@ class AffirmationApp {
     cardText.textContent = displayText;
     cardText.style.whiteSpace = 'pre-line';
 
+    const categoryKey = this.currentCard.category === 'quote'
+      ? 'categories.quote'
+      : `categories.${this.currentCard.category}`;
+    const categoryName = i18n.t(categoryKey);
     const categoryInfo = this.currentCard.category === 'quote'
-      ? { emoji: '💬', name: '오늘의 명언' }
-      : categories[this.currentCard.category];
+      ? { emoji: '💬', name: categoryName }
+      : { emoji: categories[this.currentCard.category].emoji, name: categoryName };
     cardCategory.textContent = `${categoryInfo.emoji} ${categoryInfo.name}`;
 
     // 즐겨찾기 상태
@@ -258,9 +262,13 @@ class AffirmationApp {
 
     historyList.innerHTML = '';
     this.history.forEach((item, index) => {
+      const categoryKey = item.category === 'quote'
+        ? 'categories.quote'
+        : `categories.${item.category}`;
+      const categoryName = i18n.t(categoryKey);
       const categoryInfo = item.category === 'quote'
-        ? { emoji: '💬', name: '명언' }
-        : categories[item.category];
+        ? { emoji: '💬', name: categoryName }
+        : { emoji: categories[item.category].emoji, name: categoryName };
 
       const div = document.createElement('div');
       div.className = 'history-item slide-in';
@@ -328,7 +336,13 @@ class AffirmationApp {
 
     favoritesList.innerHTML = '';
     this.favorites.forEach((fav, index) => {
-      const categoryInfo = categories[fav.category] || { emoji: '💬', name: '명언' };
+      const categoryKey = fav.category === 'quote'
+        ? 'categories.quote'
+        : `categories.${fav.category}`;
+      const categoryName = i18n.t(categoryKey);
+      const categoryInfo = fav.category === 'quote'
+        ? { emoji: '💬', name: categoryName }
+        : { emoji: categories[fav.category].emoji, name: categoryName };
 
       const div = document.createElement('div');
       div.className = 'favorite-item slide-in';
@@ -399,10 +413,33 @@ class AffirmationApp {
       });
     }
 
-    const monthNames = ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];
-    const dayNames = ['일','월','화','수','목','금','토'];
+    // i18n으로 월과 요일 이름 가져오기
+    const monthNames = [
+      i18n.t('calendar.months.jan'),
+      i18n.t('calendar.months.feb'),
+      i18n.t('calendar.months.mar'),
+      i18n.t('calendar.months.apr'),
+      i18n.t('calendar.months.may'),
+      i18n.t('calendar.months.jun'),
+      i18n.t('calendar.months.jul'),
+      i18n.t('calendar.months.aug'),
+      i18n.t('calendar.months.sep'),
+      i18n.t('calendar.months.oct'),
+      i18n.t('calendar.months.nov'),
+      i18n.t('calendar.months.dec')
+    ];
+    const dayNames = [
+      i18n.t('calendar.days.sun'),
+      i18n.t('calendar.days.mon'),
+      i18n.t('calendar.days.tue'),
+      i18n.t('calendar.days.wed'),
+      i18n.t('calendar.days.thu'),
+      i18n.t('calendar.days.fri'),
+      i18n.t('calendar.days.sat')
+    ];
 
-    let html = `<div class="streak-cal-header">${year}년 ${monthNames[month]} 방문 기록</div>`;
+    const visitedLabel = i18n.t('calendar.visited');
+    let html = `<div class="streak-cal-header">${year}${i18n.t('calendar.year')} ${monthNames[month]} ${visitedLabel}</div>`;
     html += '<div class="streak-cal-days">';
     dayNames.forEach(d => { html += `<div class="streak-cal-day-name">${d}</div>`; });
 
@@ -456,9 +493,9 @@ class AffirmationApp {
   // 공유 폴백 (클립보드 복사)
   fallbackShare(text) {
     navigator.clipboard.writeText(text).then(() => {
-      alert('클립보드에 복사되었습니다!');
+      alert(i18n.t('share.copiedSuccess'));
     }).catch(() => {
-      alert('공유 기능을 사용할 수 없습니다.');
+      alert(i18n.t('share.notAvailable'));
     });
   }
 
@@ -501,7 +538,7 @@ class AffirmationApp {
         if (seconds <= 0) {
           clearInterval(timer);
           closeBtn.disabled = false;
-          closeBtn.textContent = '닫기';
+          closeBtn.textContent = i18n.t('modal.close');
         }
       }, 1000);
 
@@ -541,7 +578,7 @@ class AffirmationApp {
     const originalDiv = document.createElement('div');
     originalDiv.className = 'premium-original';
     const h3a = document.createElement('h3');
-    h3a.textContent = '오늘의 확언';
+    h3a.textContent = i18n.t('premium.todayAffirmation');
     const pa = document.createElement('p');
     pa.textContent = `"${card.text}"`;
     originalDiv.appendChild(h3a);
@@ -551,7 +588,7 @@ class AffirmationApp {
     const deepDiv = document.createElement('div');
     deepDiv.className = 'premium-deep';
     const h3b = document.createElement('h3');
-    h3b.textContent = 'AI 심층 해석';
+    h3b.textContent = i18n.t('premium.deepInterpretation');
     const pb = document.createElement('p');
     pb.textContent = deepAffirmation.interpretation;
     deepDiv.appendChild(h3b);
@@ -561,7 +598,7 @@ class AffirmationApp {
     const practiceDiv = document.createElement('div');
     practiceDiv.className = 'premium-practice';
     const h3c = document.createElement('h3');
-    h3c.textContent = '실천 가이드';
+    h3c.textContent = i18n.t('premium.practiceGuide');
     const ul = document.createElement('ul');
     deepAffirmation.practices.forEach(p => {
       const li = document.createElement('li');
@@ -575,7 +612,7 @@ class AffirmationApp {
     const meditationDiv = document.createElement('div');
     meditationDiv.className = 'premium-meditation';
     const h3d = document.createElement('h3');
-    h3d.textContent = '명상 문구';
+    h3d.textContent = i18n.t('premium.meditation');
     const pm = document.createElement('p');
     pm.className = 'meditation-text';
     pm.textContent = `"${deepAffirmation.meditation}"`;
@@ -586,7 +623,7 @@ class AffirmationApp {
     const journalDiv = document.createElement('div');
     journalDiv.className = 'premium-journal';
     const h3e = document.createElement('h3');
-    h3e.textContent = '오늘의 저널 질문';
+    h3e.textContent = i18n.t('premium.journalQuestion');
     const pj = document.createElement('p');
     pj.textContent = deepAffirmation.journal;
     journalDiv.appendChild(h3e);

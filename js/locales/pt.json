@@ -1,15 +1,21 @@
 {
   "app": {
     "title": "Cartões de Afirmações Diárias - Mensagens Positivas | DopaBrain",
-    "description": "Comece seu dia com afirmações positivas! Mensagens de amor próprio, motivação e gratidão."
+    "description": "Comece seu dia com afirmações positivas! Mensagens de amor próprio, motivação e gratidão.",
+    "loading": "Carregando..."
   },
   "header": {
-    "title": "✨ Afirmações"
+    "title": "Afirmações"
   },
   "premium": {
     "button": "Obter Afirmação Profunda com IA",
     "badge": "PREMIUM",
-    "title": "Afirmação Profunda com IA"
+    "title": "Afirmação Profunda com IA",
+    "todayAffirmation": "Afirmação de Hoje",
+    "deepInterpretation": "Interpretação Profunda de IA",
+    "practiceGuide": "Guia de Prática",
+    "meditation": "Meditação",
+    "journalQuestion": "Pergunta de Diário de Hoje"
   },
   "actions": {
     "newCard": "Puxar Novo Cartão",
@@ -50,5 +56,42 @@
   },
   "theme": {
     "toggle": "Alternar modo escuro"
+  },
+  "share": {
+    "copiedSuccess": "Copiado para a área de transferência!",
+    "notAvailable": "Recurso de compartilhamento não está disponível."
+  },
+  "modal": {
+    "close": "Fechar"
+  },
+  "calendar": {
+    "year": "",
+    "visited": "Registros de Visitas",
+    "months": {
+      "jan": "Jan",
+      "feb": "Fev",
+      "mar": "Mar",
+      "apr": "Abr",
+      "may": "Mai",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Ago",
+      "sep": "Set",
+      "oct": "Out",
+      "nov": "Nov",
+      "dec": "Dez"
+    },
+    "days": {
+      "sun": "Dom",
+      "mon": "Seg",
+      "tue": "Ter",
+      "wed": "Qua",
+      "thu": "Qui",
+      "fri": "Sex",
+      "sat": "Sab"
+    }
+  },
+  "recommendations": {
+    "title": "Experimente também"
   }
 }

@@ -1,15 +1,21 @@
 {
   "app": {
     "title": "Tägliche Affirmationskarten - Positive Botschaften | DopaBrain",
-    "description": "Starte deinen Tag mit positiven Affirmationen! Selbstliebe, Motivations- und Dankbarkeitsmeldungen."
+    "description": "Starte deinen Tag mit positiven Affirmationen! Selbstliebe, Motivations- und Dankbarkeitsmeldungen.",
+    "loading": "Wird geladen..."
   },
   "header": {
-    "title": "✨ Affirmationen"
+    "title": "Affirmationen"
   },
   "premium": {
     "button": "Hol dir Tiefe KI-Affirmation",
     "badge": "PREMIUM",
-    "title": "Tiefe KI-Affirmation"
+    "title": "Tiefe KI-Affirmation",
+    "todayAffirmation": "Heutige Affirmation",
+    "deepInterpretation": "Tiefe KI-Interpretation",
+    "practiceGuide": "Praktische Anleitung",
+    "meditation": "Meditation",
+    "journalQuestion": "Heutige Tagebuch-Frage"
   },
   "actions": {
     "newCard": "Neue Karte ziehen",
@@ -50,5 +56,42 @@
   },
   "theme": {
     "toggle": "Dunklen Modus umschalten"
+  },
+  "share": {
+    "copiedSuccess": "In die Zwischenablage kopiert!",
+    "notAvailable": "Teilungsfunktion ist nicht verfügbar."
+  },
+  "modal": {
+    "close": "Schließen"
+  },
+  "calendar": {
+    "year": "",
+    "visited": "Besuchsaufzeichnungen",
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mär",
+      "apr": "Apr",
+      "may": "Mai",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Okt",
+      "nov": "Nov",
+      "dec": "Dez"
+    },
+    "days": {
+      "sun": "So",
+      "mon": "Mo",
+      "tue": "Di",
+      "wed": "Mi",
+      "thu": "Do",
+      "fri": "Fr",
+      "sat": "Sa"
+    }
+  },
+  "recommendations": {
+    "title": "Probiere auch diese"
   }
 }

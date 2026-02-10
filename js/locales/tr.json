@@ -1,15 +1,21 @@
 {
   "app": {
     "title": "Günlük Onaylama Kartları - Olumlu İletiler | DopaBrain",
-    "description": "Gününü olumlu onaylamalarla başla! Öz-sevgi, motivasyon ve şükran mesajları."
+    "description": "Gününü olumlu onaylamalarla başla! Öz-sevgi, motivasyon ve şükran mesajları.",
+    "loading": "Yükleniyor..."
   },
   "header": {
-    "title": "✨ Onaylamalar"
+    "title": "Onaylamalar"
   },
   "premium": {
     "button": "YZ Derinlemesine Onaylama Sistemi",
     "badge": "PREMIUM",
-    "title": "YZ Derinlemesine Onaylama"
+    "title": "YZ Derinlemesine Onaylama",
+    "todayAffirmation": "Bugünün Onaylaması",
+    "deepInterpretation": "YZ Derinlemesine Yorumlama",
+    "practiceGuide": "Pratik Kılavuzu",
+    "meditation": "Meditasyon",
+    "journalQuestion": "Bugünün Günlük Sorusu"
   },
   "actions": {
     "newCard": "Yeni Kart Çek",
@@ -50,5 +56,42 @@
   },
   "theme": {
     "toggle": "Karanlık modu aç/kapat"
+  },
+  "share": {
+    "copiedSuccess": "Panoya kopyalandı!",
+    "notAvailable": "Paylaşma özelliği kullanılamıyor."
+  },
+  "modal": {
+    "close": "Kapat"
+  },
+  "calendar": {
+    "year": "",
+    "visited": "Ziyaret Kayıtları",
+    "months": {
+      "jan": "Oca",
+      "feb": "Şub",
+      "mar": "Mar",
+      "apr": "Nis",
+      "may": "May",
+      "jun": "Haz",
+      "jul": "Tem",
+      "aug": "Ağu",
+      "sep": "Eyl",
+      "oct": "Eki",
+      "nov": "Kas",
+      "dec": "Ara"
+    },
+    "days": {
+      "sun": "Paz",
+      "mon": "Pts",
+      "tue": "Sal",
+      "wed": "Çar",
+      "thu": "Per",
+      "fri": "Cum",
+      "sat": "Cmt"
+    }
+  },
+  "recommendations": {
+    "title": "Bunları da dene"
   }
 }

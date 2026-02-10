@@ -1,15 +1,21 @@
 {
   "app": {
-    "title": "Daily Affirmation Cards - Positive Messages | DopaBrain",
-    "description": "毎日のアファメーション。自己愛、モチベーション、感謝のメッセージをお届けします。"
+    "title": "毎日のアファメーション - ポジティブなメッセージ | DopaBrain",
+    "description": "毎日のアファメーション。自己愛、モチベーション、感謝のメッセージをお届けします。",
+    "loading": "読み込み中..."
   },
   "header": {
-    "title": "✨ アファメーション"
+    "title": "アファメーション"
   },
   "premium": {
     "button": "AI深い癒しのアファメーション",
     "badge": "プレミアム",
-    "title": "AI深い癒しのアファメーション"
+    "title": "AI深い癒しのアファメーション",
+    "todayAffirmation": "今日のアファメーション",
+    "deepInterpretation": "AI深い解釈",
+    "practiceGuide": "実践ガイド",
+    "meditation": "瞑想",
+    "journalQuestion": "今日のジャーナルの質問"
   },
   "actions": {
     "newCard": "新しいカードを引く",
@@ -50,5 +56,42 @@
   },
   "theme": {
     "toggle": "ダークモードを切り替える"
+  },
+  "share": {
+    "copiedSuccess": "クリップボードにコピーしました!",
+    "notAvailable": "共有機能は利用できません。"
+  },
+  "modal": {
+    "close": "閉じる"
+  },
+  "calendar": {
+    "year": "年",
+    "visited": "訪問記録",
+    "months": {
+      "jan": "1月",
+      "feb": "2月",
+      "mar": "3月",
+      "apr": "4月",
+      "may": "5月",
+      "jun": "6月",
+      "jul": "7月",
+      "aug": "8月",
+      "sep": "9月",
+      "oct": "10月",
+      "nov": "11月",
+      "dec": "12月"
+    },
+    "days": {
+      "sun": "日",
+      "mon": "月",
+      "tue": "火",
+      "wed": "水",
+      "thu": "木",
+      "fri": "金",
+      "sat": "土"
+    }
+  },
+  "recommendations": {
+    "title": "こちらも試してみてください"
   }
 }

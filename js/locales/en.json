@@ -1,15 +1,21 @@
 {
   "app": {
     "title": "Daily Affirmation Cards - Positive Messages | DopaBrain",
-    "description": "Start your day with positive affirmations! Self-love, motivation, gratitude messages."
+    "description": "Start your day with positive affirmations! Self-love, motivation, gratitude messages.",
+    "loading": "Loading..."
   },
   "header": {
-    "title": "✨ Affirmations"
+    "title": "Affirmations"
   },
   "premium": {
     "button": "Get AI Deep Affirmation",
     "badge": "PREMIUM",
-    "title": "AI Deep Affirmation"
+    "title": "AI Deep Affirmation",
+    "todayAffirmation": "Today's Affirmation",
+    "deepInterpretation": "AI Deep Interpretation",
+    "practiceGuide": "Practice Guide",
+    "meditation": "Meditation",
+    "journalQuestion": "Today's Journal Question"
   },
   "actions": {
     "newCard": "Draw New Card",
@@ -50,5 +56,42 @@
   },
   "theme": {
     "toggle": "Toggle dark mode"
+  },
+  "share": {
+    "copiedSuccess": "Copied to clipboard!",
+    "notAvailable": "Share feature is not available."
+  },
+  "modal": {
+    "close": "Close"
+  },
+  "calendar": {
+    "year": "",
+    "visited": "Visit Records",
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "days": {
+      "sun": "Sun",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat"
+    }
+  },
+  "recommendations": {
+    "title": "Try these too"
   }
 }

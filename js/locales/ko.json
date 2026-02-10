@@ -1,15 +1,21 @@
 {
   "app": {
     "title": "일일 긍정 확언 카드 - 매일 새로운 긍정 메시지 | DopaBrain",
-    "description": "매일 새로운 긍정 확언으로 하루를 시작하세요! 자존감, 동기부여, 감사 메시지."
+    "description": "매일 새로운 긍정 확언으로 하루를 시작하세요! 자존감, 동기부여, 감사 메시지.",
+    "loading": "로딩 중..."
   },
   "header": {
-    "title": "✨ 긍정 확언"
+    "title": "긍정 확언"
   },
   "premium": {
     "button": "AI 심층 확언 받기",
     "badge": "PREMIUM",
-    "title": "AI 심층 확언"
+    "title": "AI 심층 확언",
+    "todayAffirmation": "오늘의 확언",
+    "deepInterpretation": "AI 심층 해석",
+    "practiceGuide": "실천 가이드",
+    "meditation": "명상 문구",
+    "journalQuestion": "오늘의 저널 질문"
   },
   "actions": {
     "newCard": "새로운 카드 뽑기",
@@ -50,5 +56,42 @@
   },
   "theme": {
     "toggle": "다크모드 전환"
+  },
+  "share": {
+    "copiedSuccess": "클립보드에 복사되었습니다!",
+    "notAvailable": "공유 기능을 사용할 수 없습니다."
+  },
+  "modal": {
+    "close": "닫기"
+  },
+  "calendar": {
+    "year": "년",
+    "visited": "방문 기록",
+    "months": {
+      "jan": "1월",
+      "feb": "2월",
+      "mar": "3월",
+      "apr": "4월",
+      "may": "5월",
+      "jun": "6월",
+      "jul": "7월",
+      "aug": "8월",
+      "sep": "9월",
+      "oct": "10월",
+      "nov": "11월",
+      "dec": "12월"
+    },
+    "days": {
+      "sun": "일",
+      "mon": "월",
+      "tue": "화",
+      "wed": "수",
+      "thu": "목",
+      "fri": "금",
+      "sat": "토"
+    }
+  },
+  "recommendations": {
+    "title": "이것도 해보세요"
   }
 }

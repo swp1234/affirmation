@@ -3,41 +3,37 @@
 // ========================================
 
 (async function initI18n() {
-    await i18n.loadTranslations(i18n.getCurrentLanguage());
-    i18n.updateUI();
+    try {
+        await i18n.loadTranslations(i18n.getCurrentLanguage());
+        i18n.updateUI();
 
-    const langToggle = document.getElementById('lang-toggle');
-    const langMenu = document.getElementById('lang-menu');
-    const langOptions = document.querySelectorAll('.lang-option');
+        const langToggle = document.getElementById('lang-toggle');
+        const langMenu = document.getElementById('lang-menu');
+        const langOptions = document.querySelectorAll('.lang-option');
 
-    // 현재 언어 활성화
-    document.querySelector(`[data-lang="${i18n.getCurrentLanguage()}"]`)?.classList.add('active');
-
-    // 언어 메뉴 토글
-    langToggle?.addEventListener('click', () => langMenu.classList.toggle('hidden'));
-
-    // 외부 클릭 시 메뉴 닫기
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.language-selector')) {
-            langMenu?.classList.add('hidden');
-        }
-    });
-
-    // 언어 선택
-    langOptions.forEach(opt => {
-        opt.addEventListener('click', async () => {
-            await i18n.setLanguage(opt.getAttribute('data-lang'));
-            langOptions.forEach(o => o.classList.remove('active'));
-            opt.classList.add('active');
-            langMenu.classList.add('hidden');
-
-            // 앱 UI 업데이트 트리거
-            if (app && app.renderHistory && app.renderFavorites) {
-                app.renderHistory();
-                app.renderFavorites();
+        document.querySelector(`[data-lang="${i18n.getCurrentLanguage()}"]`)?.classList.add('active');
+        langToggle?.addEventListener('click', () => langMenu.classList.toggle('hidden'));
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.language-selector')) {
+                langMenu?.classList.add('hidden');
             }
         });
-    });
+
+        langOptions.forEach(opt => {
+            opt.addEventListener('click', async () => {
+                await i18n.setLanguage(opt.getAttribute('data-lang'));
+                langOptions.forEach(o => o.classList.remove('active'));
+                opt.classList.add('active');
+                langMenu.classList.add('hidden');
+                if (app && app.renderHistory && app.renderFavorites) {
+                    app.renderHistory();
+                    app.renderFavorites();
+                }
+            });
+        });
+    } catch (e) {
+        console.warn('i18n init failed:', e);
+    }
 })();
 
 // ========================================

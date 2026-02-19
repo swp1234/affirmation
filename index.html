@@ -113,7 +113,7 @@
         <span data-i18n="header.title">긍정 확언</span>
       </h1>
       <div style="display: flex; gap: 10px; align-items: center;">
-        <button class="theme-toggle" id="themeToggle" aria-label="다크모드 전환">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" data-i18n-aria-label="theme.toggle">
           <span class="theme-icon">🌙</span>
         </button>
         <div class="language-selector">
@@ -274,7 +274,7 @@
         navigator.share({ title: document.title, url }).catch(() => {});
       } else {
         navigator.clipboard.writeText(url).then(() => {
-          alert('링크가 복사되었습니다!');
+          alert(window.i18n && window.i18n.t ? window.i18n.t('share.copiedSuccess') : 'Link copied!');
         }).catch(() => { prompt('Copy:', url); });
       }
     }

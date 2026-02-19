@@ -90,8 +90,13 @@
     }
   }
   </script>
+  <style>
+    .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px 16px; text-decoration: none; z-index: 10000; border-radius: 0 0 4px 0; font-size: 14px; transition: top 0.2s; }
+    .skip-link:focus { top: 0; }
+  </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link" data-i18n="accessibility.skipMain">Skip to main content</a>
   <div class="app-loader" id="app-loader">
     <div class="loader-content">
       <div class="loader-emoji">💪</div>
@@ -138,7 +143,7 @@
   </div>
 
   <!-- 메인 컨텐츠 -->
-  <main class="main-container">
+  <main class="main-container" id="main-content">
     <!-- 오늘의 카드 섹션 -->
     <section class="daily-card-section">
       <div class="card-container">

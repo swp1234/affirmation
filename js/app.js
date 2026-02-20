@@ -59,6 +59,30 @@ class AffirmationApp {
     this.init();
   }
 
+  // Map category ID to i18n key name
+  _categoryI18nMap = {
+    'self-love': 'selfLove',
+    'motivation': 'motivation',
+    'gratitude': 'gratitude',
+    'relationships': 'relationships',
+    'success': 'success',
+    'quote': 'quote'
+  };
+
+  // Get i18n key for a category
+  getCategoryI18nKey(category) {
+    return `categories.${this._categoryI18nMap[category] || category}`;
+  }
+
+  // Get category display info (emoji + translated name)
+  getCategoryInfo(category) {
+    const categoryName = i18n.t(this.getCategoryI18nKey(category));
+    if (category === 'quote') {
+      return { emoji: '💬', name: categoryName };
+    }
+    return { emoji: (categories[category] && categories[category].emoji) || '✨', name: categoryName };
+  }
+
   init() {
     this.updateStreak();
     this.loadRandomCard();
@@ -205,13 +229,7 @@ class AffirmationApp {
     cardText.textContent = displayText;
     cardText.style.whiteSpace = 'pre-line';
 
-    const categoryKey = this.currentCard.category === 'quote'
-      ? 'categories.quote'
-      : `categories.${this.currentCard.category}`;
-    const categoryName = i18n.t(categoryKey);
-    const categoryInfo = this.currentCard.category === 'quote'
-      ? { emoji: '💬', name: categoryName }
-      : { emoji: categories[this.currentCard.category].emoji, name: categoryName };
+    const categoryInfo = this.getCategoryInfo(this.currentCard.category);
     cardCategory.textContent = `${categoryInfo.emoji} ${categoryInfo.name}`;
 
     // 즐겨찾기 상태
@@ -258,13 +276,7 @@ class AffirmationApp {
 
     historyList.innerHTML = '';
     this.history.forEach((item, index) => {
-      const categoryKey = item.category === 'quote'
-        ? 'categories.quote'
-        : `categories.${item.category}`;
-      const categoryName = i18n.t(categoryKey);
-      const categoryInfo = item.category === 'quote'
-        ? { emoji: '💬', name: categoryName }
-        : { emoji: categories[item.category].emoji, name: categoryName };
+      const categoryInfo = this.getCategoryInfo(item.category);
 
       const div = document.createElement('div');
       div.className = 'history-item slide-in';
@@ -332,13 +344,7 @@ class AffirmationApp {
 
     favoritesList.innerHTML = '';
     this.favorites.forEach((fav, index) => {
-      const categoryKey = fav.category === 'quote'
-        ? 'categories.quote'
-        : `categories.${fav.category}`;
-      const categoryName = i18n.t(categoryKey);
-      const categoryInfo = fav.category === 'quote'
-        ? { emoji: '💬', name: categoryName }
-        : { emoji: categories[fav.category].emoji, name: categoryName };
+      const categoryInfo = this.getCategoryInfo(fav.category);
 
       const div = document.createElement('div');
       div.className = 'favorite-item slide-in';
@@ -565,13 +571,7 @@ class AffirmationApp {
     const premiumBody = document.getElementById('premiumBody');
 
     const card = this.currentCard;
-    const categoryKey = card.category === 'quote'
-      ? 'categories.quote'
-      : `categories.${card.category}`;
-    const categoryName = i18n.t(categoryKey);
-    const categoryInfo = card.category === 'quote'
-      ? { emoji: '💬', name: categoryName }
-      : { emoji: categories[card.category].emoji, name: categoryName };
+    const categoryInfo = this.getCategoryInfo(card.category);
 
     // AI 심층 확언 생성
     const deepAffirmation = this.generateDeepAffirmation(card);

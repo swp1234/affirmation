@@ -91,7 +91,72 @@
       "sat": "Sab"
     }
   },
+  "accessibility": {
+    "skipMain": "Langsung ke konten utama"
+  },
   "recommendations": {
     "title": "Coba juga"
+  },
+  "deepAffirmation": {
+    "selfLove": {
+      "psychology": [
+        "Cinta diri adalah fondasi semua pertumbuhan. Afirmasi ini mengingatkan bahwa Anda cukup tanpa validasi eksternal.",
+        "Harga diri tidak dibangun dalam semalam. Ulangi afirmasi ini setiap hari untuk mengubah suara batin menjadi positif.",
+        "Mencintai diri sendiri bukan egois. Ketika Anda mengisi gelas sendiri dulu, Anda punya lebih banyak untuk diberikan."
+      ],
+      "actions": ["Luangkan 3 menit di depan cermin berbicara positif pada diri sendiri", "Tulis 3 hal yang Anda syukuri tentang diri sendiri hari ini", "Investasikan 30 menit untuk aktivitas yang Anda cintai", "Saat dialog internal negatif muncul, ganti dengan afirmasi ini"],
+      "meditation": ["Tutup mata dan bernapas perlahan, ulangi 'Saya cukup' 5 kali", "Letakkan tangan di dada, rasakan detak jantung, dan hargai keberadaan Anda", "Bayangkan cahaya hangat menyelimuti seluruh tubuh dan rasakan kedamaian"],
+      "journal": ["Apa hal terbaik yang Anda lakukan untuk diri sendiri hari ini?", "Apa kualitas unik Anda yang membuat paling bahagia?", "Bagaimana Anda bisa lebih baik pada diri sendiri?"]
+    },
+    "motivation": {
+      "psychology": [
+        "Motivasi bukan perasaan tapi kebiasaan. Afirmasi ini mengingatkan bahwa tindakan kecil harian menciptakan perubahan besar.",
+        "Kesuksesan bukan satu lompatan tapi langkah konsisten. Usaha hari ini menjadi hasil hari esok.",
+        "Ketakutan adalah sinyal pertumbuhan. Jangan hindari tantangan; temukan kekuatan di dalamnya."
+      ],
+      "actions": ["Tetapkan satu tujuan penting hari ini dan berkomitmen menyelesaikannya", "Pasang timer 5 menit dan mulai tugas yang Anda tunda", "Tuliskan momen sukses untuk meningkatkan kepercayaan diri", "Renungkan apa yang Anda capai hari ini dan rasakan pencapaiannya"],
+      "meditation": ["Bayangkan diri masa depan yang mencapai tujuan dengan jelas", "Ingat tantangan masa lalu yang Anda atasi dan ambil kekuatan darinya", "Ulangi 'Saya bisa' dengan napas dalam yang sadar"],
+      "journal": ["Apa tujuan Anda tahun ini dan mengapa penting bagi Anda?", "Apa pencapaian paling membanggakan minggu lalu?", "Kata-kata semangat apa yang ingin Anda berikan untuk diri esok?"]
+    },
+    "gratitude": {
+      "psychology": [
+        "Syukur adalah otot hati. Semakin sering Anda melatihnya, semakin banyak kebahagiaan yang Anda temukan.",
+        "Pikiran bersyukur memperkaya saat ini dan meningkatkan harapan positif untuk masa depan.",
+        "Yang menghargai hal kecil juga bisa mengenali kebahagiaan besar."
+      ],
+      "actions": ["Sebelum tidur, tulis 3 hal yang Anda syukuri", "Kirim pesan terima kasih ke seseorang yang Anda temui hari ini", "Berhenti sejenak sebelum makan dan bersyukurlah atas makanan Anda", "Berjalan-jalan dan temukan keindahan di sekitar satu per satu"],
+      "meditation": ["Fokus pada napas dan syukuri setiap tarikan napas", "Bayangkan wajah orang tercinta dan kirimkan energi hangat", "Temukan makna dalam hal-hal yang biasa dianggap biasa"],
+      "journal": ["Kapan momen terakhir Anda benar-benar merasa bersyukur?", "Apa yang dulu dianggap biasa tapi sekarang baru Anda syukuri?", "Jika mulai jurnal syukur hari ini, apa yang Anda tulis di halaman pertama?"]
+    },
+    "relationships": {
+      "psychology": [
+        "Hubungan baik dimulai dari komunikasi dan pemahaman. Afirmasi ini mengingatkan bahwa koneksi memperkaya hidup.",
+        "Menetapkan batasan sehat juga merupakan tindakan cinta.",
+        "Semua hubungan dimulai dari hubungan dengan diri sendiri. Kesehatan batin menciptakan hubungan luar yang sehat."
+      ],
+      "actions": ["Bagikan kata tulus kepada seseorang yang penting bagi Anda hari ini", "Saat mendengarkan, berikan perhatian penuh", "Dalam konflik, ungkapkan perasaan dengan pernyataan 'saya'", "Hubungi teman lama yang sudah lama tidak berkomunikasi"],
+      "meditation": ["Bayangkan mengirimkan cahaya dan kedamaian ke orang yang Anda cintai", "Jika ada hubungan sulit, akui bahwa orang itu juga membawa rasa sakit", "Rasakan syukur atas koneksi bermakna dalam hidup Anda"],
+      "journal": ["Siapa hubungan terpenting dalam hidup Anda dan mengapa?", "Apa kebaikan yang dilakukan seseorang untuk Anda baru-baru ini?", "Apa satu hal yang bisa Anda lakukan untuk memelihara hubungan?"]
+    },
+    "success": {
+      "psychology": [
+        "Sukses bukan tujuan tapi perjalanan. Belajar dan tumbuh dalam prosesnya adalah kesuksesan terbesar.",
+        "Sukses punya arti berbeda bagi setiap orang. Definisikan sukses Anda sendiri dan bergerak ke arahnya.",
+        "Kegagalan bukan kebalikan dari sukses; itu bagian dari jalan menuju sukses."
+      ],
+      "actions": ["Identifikasi 3 prioritas utama hari ini dan fokus padanya", "Adopsi satu kebiasaan dari panutan sukses mulai hari ini", "Buat papan visi untuk memvisualisasikan tujuan", "Investasikan 15 menit sehari untuk pengembangan diri"],
+      "meditation": ["Bayangkan dengan jelas mencapai tujuan dan rasakan kegembiraan lebih awal", "Renungkan perjalanan Anda dan kenali seberapa jauh Anda telah melangkah", "Tegaskan dengan percaya diri: 'Saya layak sukses'"],
+      "journal": ["Apa arti sukses bagi Anda?", "Seperti apa diri ideal Anda 5 tahun dari sekarang?", "Apa pencapaian terbesar Anda sejauh ini?"]
+    },
+    "quote": {
+      "psychology": [
+        "Kata-kata orang besar mengandung kebijaksanaan abadi. Semoga kutipan ini menginspirasi hari Anda.",
+        "Kutipan seperti cermin. Berbicara berbeda tergantung situasi hidup Anda.",
+        "Kebijaksanaan sejati tidak berakhir dengan mengetahui; ia bersinar dalam tindakan."
+      ],
+      "actions": ["Tulis kutipan ini dan baca sepanjang hari", "Terapkan makna kutipan ini pada situasi Anda saat ini", "Teliti kutipan serupa dan renungkan temanya secara mendalam", "Bagikan kutipan ini dengan seseorang yang Anda sayangi"],
+      "meditation": ["Ulangi kutipan ini perlahan dalam pikiran, nikmati maknanya", "Bayangkan situasi penulis saat menciptakan kata-kata ini", "Pertimbangkan bagaimana kebijaksanaan ini bisa diterapkan dalam hidup Anda"],
+      "journal": ["Bagaimana kutipan ini berbicara kepada Anda saat ini?", "Tindakan apa yang bisa Anda ambil hari ini untuk menjalani kutipan ini?", "Jika Anda bisa membuat moto hidup, apa itu?"]
+    }
   }
 }

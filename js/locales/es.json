@@ -91,7 +91,72 @@
       "sat": "Sab"
     }
   },
+  "accessibility": {
+    "skipMain": "Saltar al contenido principal"
+  },
   "recommendations": {
     "title": "Prueba estos también"
+  },
+  "deepAffirmation": {
+    "selfLove": {
+      "psychology": [
+        "El amor propio es la base de todo crecimiento. Esta afirmación te recuerda que eres suficiente sin validación externa.",
+        "La autoestima no se construye de la noche a la mañana. Repite esta afirmación diariamente para transformar tu voz interior en una positiva.",
+        "Amarte a ti mismo no es egoísta. Cuando llenas tu propia copa primero, tienes más para dar a los demás."
+      ],
+      "actions": ["Pasa 3 minutos frente al espejo diciéndote palabras positivas", "Escribe 3 cosas por las que estés agradecido sobre ti mismo hoy", "Invierte 30 minutos en una actividad que ames para cuidarte", "Cuando surja un diálogo interno negativo, reemplázalo con esta afirmación"],
+      "meditation": ["Cierra los ojos y respira lentamente, repitiendo 'Soy suficiente' 5 veces", "Coloca tu mano sobre tu corazón, siente tu latido y aprecia tu existencia", "Imagina una luz cálida rodeando todo tu cuerpo y siente la paz que trae"],
+      "journal": ["¿Cuál es la mejor cosa que hiciste por ti mismo hoy?", "¿Cuál es tu cualidad única que te hace más feliz?", "¿Cómo podrías ser más amable contigo mismo?"]
+    },
+    "motivation": {
+      "psychology": [
+        "La motivación no es un sentimiento sino un hábito. Esta afirmación te recuerda que las pequeñas acciones diarias crean grandes cambios.",
+        "El éxito no es un solo salto sino pasos consistentes. Tu esfuerzo de hoy se convierte en los resultados de mañana.",
+        "El miedo es una señal de crecimiento. No evites los desafíos; encuentra fuerza dentro de ellos."
+      ],
+      "actions": ["Establece un objetivo importante para hoy y comprométete a completarlo", "Pon un temporizador de 5 minutos y comienza esa tarea que has estado posponiendo", "Escribe momentos de éxito para aumentar tu confianza", "Reflexiona sobre lo que lograste hoy y siente la satisfacción"],
+      "meditation": ["Imagina vívidamente tu futuro yo logrando tus metas y siente esa emoción", "Recuerda un desafío pasado que superaste y extrae fuerza de él", "Repite 'Puedo hacerlo' con respiración profunda e intencional"],
+      "journal": ["¿Cuál es tu meta para este año y por qué es importante para ti?", "¿Cuál fue tu logro más orgulloso la semana pasada?", "¿Qué palabras de aliento le darías al tú de mañana?"]
+    },
+    "gratitude": {
+      "psychology": [
+        "La gratitud es un músculo del corazón. Cuanto más la practicas diariamente, más felicidad descubres.",
+        "Una mente agradecida enriquece el presente y eleva las expectativas positivas para el futuro.",
+        "Quien aprecia las cosas pequeñas también puede reconocer la gran felicidad."
+      ],
+      "actions": ["Antes de dormir, escribe 3 cosas por las que estés agradecido", "Envía un mensaje de agradecimiento a alguien que conociste hoy", "Pausa antes de comer y tómate un momento para agradecer tu comida", "Da un paseo y descubre la belleza a tu alrededor una cosa a la vez"],
+      "meditation": ["Concéntrate en tu respiración y agradece cada respiro que recibes", "Visualiza los rostros de tus seres queridos y envíales energía cálida", "Encuentra significado en las cosas que normalmente das por sentado"],
+      "journal": ["¿Cuándo fue el momento más reciente en que te sentiste verdaderamente agradecido?", "¿Qué dabas por sentado y ahora aprecias nuevamente?", "Si empezaras un diario de gratitud hoy, ¿qué escribirías en la primera página?"]
+    },
+    "relationships": {
+      "psychology": [
+        "Las buenas relaciones comienzan con comunicación y comprensión. Esta afirmación te recuerda que la conexión enriquece la vida.",
+        "Establecer límites saludables también es un acto de amor. Equilibra protegerte mientras respetas a los demás.",
+        "Todas las relaciones comienzan con tu relación contigo mismo. La salud interna crea relaciones externas saludables."
+      ],
+      "actions": ["Comparte una palabra sincera con alguien importante para ti hoy", "Cuando escuches a alguien, dale toda tu atención", "En un conflicto, expresa tus sentimientos usando declaraciones 'yo'", "Contacta a un viejo amigo con quien no has hablado en tiempo"],
+      "meditation": ["Imagina enviando luz y paz a las personas que amas", "Si hay una relación difícil, reconoce que esa persona también tiene dolor", "Siente gratitud por las conexiones significativas en tu vida"],
+      "journal": ["¿Cuál es la relación más importante en tu vida y por qué?", "¿Cuál es un gesto amable que alguien hizo por ti recientemente?", "¿Qué es una cosa que puedes hacer para nutrir tus relaciones?"]
+    },
+    "success": {
+      "psychology": [
+        "El éxito no es un destino sino un viaje. El aprendizaje y crecimiento en el proceso son el mayor éxito.",
+        "El éxito significa algo diferente para cada persona. Define tu propio éxito y avanza hacia él.",
+        "El fracaso no es lo opuesto al éxito; es parte del camino hacia el éxito."
+      ],
+      "actions": ["Identifica tus 3 prioridades principales para hoy y enfócate en ellas", "Adopta un hábito de un modelo exitoso comenzando hoy", "Crea un tablero de visión para visualizar tus metas", "Invierte 15 minutos diarios en desarrollo personal"],
+      "meditation": ["Imagina vívidamente lograr tu meta y siente la alegría por adelantado", "Reflexiona sobre tu camino y reconoce lo lejos que has llegado", "Afirma con confianza: 'Merezco el éxito'"],
+      "journal": ["¿Qué significa el éxito para ti?", "¿Cómo sería tu yo ideal dentro de 5 años?", "¿Cuál es tu mayor logro hasta ahora en la vida?"]
+    },
+    "quote": {
+      "psychology": [
+        "Las palabras de grandes personas contienen sabiduría atemporal. Que esta cita inspire tu día.",
+        "Una cita es como un espejo. Habla diferente según tu situación de vida.",
+        "La verdadera sabiduría no termina con saber; brilla en la acción."
+      ],
+      "actions": ["Escribe esta cita y léela durante todo el día", "Aplica el significado de esta cita a tu situación actual", "Investiga citas similares y reflexiona profundamente sobre el tema", "Comparte esta cita con alguien que te importa"],
+      "meditation": ["Repite lentamente esta cita con atención plena, saboreando su significado", "Imagina la situación del autor cuando creó estas palabras", "Considera cómo esta sabiduría puede aplicarse a tu vida"],
+      "journal": ["¿Cómo te habla esta cita en este momento?", "¿Qué acción puedes tomar hoy para vivir esta cita?", "Si pudieras crear tu lema de vida, ¿cuál sería?"]
+    }
   }
 }

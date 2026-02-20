@@ -251,6 +251,30 @@
       <!-- 스트릭 캘린더 -->
       <div class="streak-calendar" id="streakCalendar"></div>
     </section>
+  </main>
+
+  <!-- Interstitial Ad Overlay -->
+  <div class="interstitial-overlay hidden" id="interstitialAd">
+    <div class="interstitial-content">
+      <div class="interstitial-label" data-i18n="ads.banner">광고 영역</div>
+      <div class="ad-placeholder-large">Ad</div>
+      <button class="close-ad-btn" id="closeAdBtn" disabled>
+        <span id="adCountdown">5</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Premium Modal -->
+  <div class="premium-modal hidden" id="premiumModal" role="dialog" aria-modal="true">
+    <div class="premium-modal-content">
+      <button class="premium-close" id="closePremiumBtn" aria-label="Close">&times;</button>
+      <div class="premium-header">
+        <span class="premium-modal-icon">✨</span>
+        <h2 data-i18n="premium.title">AI 심층 확언</h2>
+      </div>
+      <div class="premium-body" id="premiumBody"></div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/i18n.js"></script>

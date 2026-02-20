@@ -91,6 +91,9 @@
       "sat": "Sat"
     }
   },
+  "accessibility": {
+    "skipMain": "Skip to main content"
+  },
   "recommendations": {
     "title": "Try these too"
   },

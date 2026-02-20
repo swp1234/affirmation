@@ -91,7 +91,72 @@
       "sat": "Sam"
     }
   },
+  "accessibility": {
+    "skipMain": "Aller au contenu principal"
+  },
   "recommendations": {
     "title": "Essaie aussi"
+  },
+  "deepAffirmation": {
+    "selfLove": {
+      "psychology": [
+        "L'amour de soi est le fondement de toute croissance. Cette affirmation vous rappelle que vous suffisez sans validation externe.",
+        "L'estime de soi ne se construit pas du jour au lendemain. Répétez cette affirmation quotidiennement pour transformer votre voix intérieure en positif.",
+        "S'aimer soi-même n'est pas égoïste. Quand vous remplissez d'abord votre propre tasse, vous avez plus à donner aux autres."
+      ],
+      "actions": ["Passez 3 minutes devant le miroir en vous disant des mots positifs", "Écrivez 3 choses pour lesquelles vous êtes reconnaissant envers vous-même aujourd'hui", "Investissez 30 minutes dans une activité que vous aimez", "Quand un dialogue intérieur négatif surgit, remplacez-le par cette affirmation"],
+      "meditation": ["Fermez les yeux et respirez lentement, répétez 'Je suis suffisant(e)' 5 fois", "Placez votre main sur votre coeur, sentez votre battement et appréciez votre existence", "Imaginez une lumière chaude entourant tout votre corps et ressentez la paix"],
+      "journal": ["Quelle est la meilleure chose que vous avez faite pour vous-même aujourd'hui ?", "Quelle est votre qualité unique qui vous rend le plus heureux ?", "Comment pourriez-vous être plus gentil envers vous-même ?"]
+    },
+    "motivation": {
+      "psychology": [
+        "La motivation n'est pas un sentiment mais une habitude. Cette affirmation rappelle que les petites actions quotidiennes créent de grands changements.",
+        "Le succès n'est pas un seul bond mais des pas constants. Votre effort d'aujourd'hui devient les résultats de demain.",
+        "La peur est un signal de croissance. N'évitez pas les défis ; trouvez la force en eux."
+      ],
+      "actions": ["Fixez un objectif important pour aujourd'hui et engagez-vous à le réaliser", "Mettez un minuteur de 5 minutes et commencez cette tâche que vous repoussez", "Notez des moments de succès pour renforcer votre confiance", "Réfléchissez à ce que vous avez accompli aujourd'hui"],
+      "meditation": ["Imaginez vivement votre futur vous atteignant vos objectifs", "Rappelez-vous un défi passé que vous avez surmonté et puisez-y de la force", "Répétez 'Je peux le faire' avec une respiration profonde et intentionnelle"],
+      "journal": ["Quel est votre objectif pour cette année et pourquoi est-il important ?", "Quelle était votre réalisation la plus fière la semaine dernière ?", "Quels mots d'encouragement donneriez-vous au vous de demain ?"]
+    },
+    "gratitude": {
+      "psychology": [
+        "La gratitude est un muscle du coeur. Plus vous la pratiquez quotidiennement, plus vous découvrez de bonheur.",
+        "Un esprit reconnaissant enrichit le présent et élève les attentes positives pour l'avenir.",
+        "Celui qui apprécie les petites choses peut aussi reconnaître le grand bonheur."
+      ],
+      "actions": ["Avant de dormir, écrivez 3 choses pour lesquelles vous êtes reconnaissant", "Envoyez un message de remerciement à quelqu'un que vous avez rencontré aujourd'hui", "Faites une pause avant de manger et prenez un moment pour remercier votre nourriture", "Promenez-vous et découvrez la beauté autour de vous"],
+      "meditation": ["Concentrez-vous sur votre respiration et appréciez chaque souffle", "Visualisez les visages de vos proches et envoyez-leur de l'énergie chaleureuse", "Trouvez du sens dans les choses que vous considérez habituellement comme acquises"],
+      "journal": ["Quand était le moment le plus récent où vous vous êtes senti vraiment reconnaissant ?", "Qu'avez-vous tenu pour acquis et que vous appréciez maintenant ?", "Si vous commenciez un journal de gratitude aujourd'hui, qu'écririez-vous sur la première page ?"]
+    },
+    "relationships": {
+      "psychology": [
+        "Les bonnes relations commencent par la communication et la compréhension. Cette affirmation rappelle que la connexion enrichit la vie.",
+        "Établir des limites saines est aussi un acte d'amour.",
+        "Toutes les relations commencent par votre relation avec vous-même. La santé intérieure crée des relations extérieures saines."
+      ],
+      "actions": ["Partagez un mot sincère avec quelqu'un d'important pour vous aujourd'hui", "Quand vous écoutez quelqu'un, accordez-lui toute votre attention", "Dans un conflit, exprimez vos sentiments avec des déclarations 'je'", "Contactez un vieil ami que vous n'avez pas vu depuis longtemps"],
+      "meditation": ["Imaginez envoyer de la lumière et de la paix aux personnes que vous aimez", "S'il y a une relation difficile, reconnaissez que cette personne porte aussi de la douleur", "Ressentez de la gratitude pour les connexions significatives dans votre vie"],
+      "journal": ["Quelle est la relation la plus importante dans votre vie et pourquoi ?", "Quel geste gentil quelqu'un a-t-il fait pour vous récemment ?", "Que pouvez-vous faire pour nourrir vos relations ?"]
+    },
+    "success": {
+      "psychology": [
+        "Le succès n'est pas une destination mais un voyage. L'apprentissage et la croissance dans le processus sont le plus grand succès.",
+        "Le succès signifie quelque chose de différent pour chacun. Définissez votre propre succès et avancez vers lui.",
+        "L'échec n'est pas l'opposé du succès ; c'est une partie du chemin vers le succès."
+      ],
+      "actions": ["Identifiez vos 3 priorités principales pour aujourd'hui et concentrez-vous dessus", "Adoptez une habitude d'un modèle de réussite dès aujourd'hui", "Créez un tableau de vision pour visualiser vos objectifs", "Investissez 15 minutes par jour dans le développement personnel"],
+      "meditation": ["Imaginez vivement atteindre votre objectif et ressentez la joie à l'avance", "Réfléchissez à votre parcours et reconnaissez le chemin parcouru", "Affirmez avec confiance : 'Je mérite le succès'"],
+      "journal": ["Que signifie le succès pour vous ?", "À quoi ressemblerait votre moi idéal dans 5 ans ?", "Quelle est votre plus grande réalisation dans la vie jusqu'à présent ?"]
+    },
+    "quote": {
+      "psychology": [
+        "Les paroles des grands contiennent une sagesse intemporelle. Que cette citation inspire votre journée.",
+        "Une citation est comme un miroir. Elle parle différemment selon votre situation de vie.",
+        "La vraie sagesse ne s'arrête pas au savoir ; elle brille dans l'action."
+      ],
+      "actions": ["Écrivez cette citation et relisez-la tout au long de la journée", "Appliquez le sens de cette citation à votre situation actuelle", "Recherchez des citations similaires et réfléchissez profondément au thème", "Partagez cette citation avec quelqu'un qui vous est cher"],
+      "meditation": ["Répétez lentement cette citation en pleine conscience, savourant son sens", "Imaginez la situation de l'auteur quand il a créé ces mots", "Considérez comment cette sagesse peut s'appliquer à votre vie"],
+      "journal": ["Comment cette citation vous parle-t-elle en ce moment ?", "Quelle action pouvez-vous entreprendre aujourd'hui pour vivre cette citation ?", "Si vous pouviez créer votre devise de vie, quelle serait-elle ?"]
+    }
   }
 }

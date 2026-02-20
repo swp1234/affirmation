@@ -91,7 +91,72 @@
       "sat": "Cmt"
     }
   },
+  "accessibility": {
+    "skipMain": "Ana içeriğe geç"
+  },
   "recommendations": {
     "title": "Bunları da dene"
+  },
+  "deepAffirmation": {
+    "selfLove": {
+      "psychology": [
+        "Kendini sevmek tüm gelişimin temelidir. Bu onaylama, dış onay olmadan da yeterli olduğunuzu hatırlatır.",
+        "Özsaygı bir gecede inşa edilmez. Bu onaylamayı her gün tekrarlayarak iç sesinizi olumluya dönüştürün.",
+        "Kendinizi sevmek bencillik değildir. Önce kendi bardağınızı doldurduğunuzda, başkalarına verecek daha çok şeyiniz olur."
+      ],
+      "actions": ["Aynanın önünde 3 dakika kendinize olumlu sözler söyleyin", "Bugün kendiniz hakkında minnettar olduğunuz 3 şeyi yazın", "Sevdiğiniz bir aktiviteye 30 dakika ayırın", "Olumsuz iç konuşma geldiğinde bu onaylamayla değiştirin"],
+      "meditation": ["Gözlerinizi kapatın ve yavaşça nefes alın, 'Ben yeterliyim' ifadesini 5 kez tekrarlayın", "Elinizi kalbinize koyun, kalp atışınızı hissedin ve varlığınıza şükredin", "Sıcak bir ışığın tüm vücudunuzu sardığını hayal edin"],
+      "journal": ["Bugün kendiniz için yaptığınız en iyi şey neydi?", "Sizi en mutlu eden benzersiz özelliğiniz nedir?", "Kendinize nasıl daha nazik olabilirsiniz?"]
+    },
+    "motivation": {
+      "psychology": [
+        "Motivasyon bir duygu değil bir alışkanlıktır. Bu onaylama, küçük günlük eylemlerin büyük değişimler yarattığını hatırlatır.",
+        "Başarı tek bir sıçrama değil, tutarlı adımlardır. Bugünkü çabanız yarının sonuçlarına dönüşür.",
+        "Korku büyümenin sinyalidir. Zorluklardan kaçmayın; içlerinde güç bulun."
+      ],
+      "actions": ["Bugün için önemli bir hedef belirleyin ve tamamlamaya karar verin", "5 dakikalık zamanlayıcı kurun ve ertelediğiniz işe başlayın", "Başarı anlarını yazarak özgüveninizi artırın", "Bugün neyi başardığınızı düşünün ve başarı hissi yaşayın"],
+      "meditation": ["Hedeflerinize ulaşan gelecekteki kendinizi canlı bir şekilde hayal edin", "Geçmişte aştığınız bir zorluğu hatırlayın ve güç alın", "'Yapabilirim'i derin nefeslerle tekrarlayın"],
+      "journal": ["Bu yılki hedefiniz nedir ve neden sizin için önemli?", "Geçen haftaki en gurur verici başarınız neydi?", "Yarınki kendinize ne söylemek istersiniz?"]
+    },
+    "gratitude": {
+      "psychology": [
+        "Şükran kalbin kasıdır. Her gün ne kadar çok pratik yaparsanız, o kadar çok mutluluk keşfedersiniz.",
+        "Şükreden bir zihin şu anı zenginleştirir ve gelecek için olumlu beklentileri artırır.",
+        "Küçük şeylere şükredenler büyük mutluluğu da tanıyabilir."
+      ],
+      "actions": ["Uyumadan önce minnettar olduğunuz 3 şeyi yazın", "Bugün tanıştığınız birine teşekkür mesajı gönderin", "Yemek yemeden önce durun ve yemeğinize şükredin", "Yürüyüşe çıkın ve çevrenizdeki güzellikleri tek tek keşfedin"],
+      "meditation": ["Nefesinize odaklanın ve aldığınız her nefes için şükredin", "Sevdiklerinizin yüzlerini hayal edin ve onlara sıcak enerji gönderin", "Genellikle doğal kabul ettiğiniz şeylerde anlam bulun"],
+      "journal": ["En son ne zaman gerçekten minnettar hissettiniz?", "Doğal kabul edip de yeniden takdir ettiğiniz şey nedir?", "Bugün şükran günlüğü başlasanız ilk sayfaya ne yazarsınız?"]
+    },
+    "relationships": {
+      "psychology": [
+        "İyi ilişkiler iletişim ve anlayışla başlar. Bu onaylama, bağlantının hayatı zenginleştirdiğini hatırlatır.",
+        "Sağlıklı sınırlar koymak da sevginin bir parçasıdır.",
+        "Tüm ilişkiler kendinizle olan ilişkinizle başlar. İç sağlık, sağlıklı dış ilişkiler yaratır."
+      ],
+      "actions": ["Bugün sizin için önemli birine içten bir söz söyleyin", "Birini dinlerken tam dikkatinizi verin", "Çatışmada 'ben' ifadeleriyle duygularınızı anlatın", "Uzun süredir konuşmadığınız eski bir arkadaşa ulaşın"],
+      "meditation": ["Sevdiklerinize ışık ve huzur gönderdiğinizi hayal edin", "Zor bir ilişki varsa o kişinin de acı taşıdığını kabul edin", "Hayatınızdaki anlamlı bağlar için şükran duyun"],
+      "journal": ["Hayatınızdaki en önemli ilişki kim ve neden?", "Son zamanlarda birinin size yaptığı nezaket neydi?", "İlişkilerinizi beslemek için yapabileceğiniz bir şey nedir?"]
+    },
+    "success": {
+      "psychology": [
+        "Başarı bir varış noktası değil bir yolculuktur. Süreçteki öğrenme ve büyüme en büyük başarıdır.",
+        "Başarı herkes için farklı anlam taşır. Kendi başarınızı tanımlayın ve ona doğru ilerleyin.",
+        "Başarısızlık başarının karşıtı değil; başarıya giden yolun parçasıdır."
+      ],
+      "actions": ["Bugünün ilk 3 önceliğini belirleyin ve odaklanın", "Bugünden itibaren başarılı bir rol modelin alışkanlığını benimseyin", "Hedeflerinizi görselleştirmek için vizyon panosu oluşturun", "Her gün 15 dakikayı kişisel gelişime ayırın"],
+      "meditation": ["Hedefinize ulaştığınızı canlı hayal edin ve sevinci önceden hissedin", "Yolculuğunuza bakın ve ne kadar ilerlediğinizi fark edin", "Güvenle tekrarlayın: 'Başarıyı hak ediyorum'"],
+      "journal": ["Başarı sizin için ne anlama geliyor?", "5 yıl sonra ideal kendiniz nasıl görünür?", "Hayatınızdaki en büyük başarınız nedir?"]
+    },
+    "quote": {
+      "psychology": [
+        "Büyük insanların sözleri zamansız bilgelik içerir. Bu alıntı gününüze ilham versin.",
+        "Bir alıntı ayna gibidir. Hayat durumunuza göre farklı konuşur.",
+        "Gerçek bilgelik bilmekle bitmez; yapmakta parlar."
+      ],
+      "actions": ["Bu alıntıyı yazın ve gün boyunca okuyun", "Bu alıntının anlamını mevcut durumunuza uygulayın", "Benzer alıntıları araştırın ve tema üzerine derinlemesine düşünün", "Bu alıntıyı önemsediğiniz biriyle paylaşın"],
+      "meditation": ["Bu alıntıyı zihinsel olarak yavaşça tekrarlayın ve anlamının tadını çıkarın", "Yazarın bu sözleri söylediği anı hayal edin", "Bu bilgeliğin hayatınıza nasıl uygulanabileceğini düşünün"],
+      "journal": ["Bu alıntı şu anda size nasıl hitap ediyor?", "Bu alıntıyı yaşamak için bugün ne yapabilirsiniz?", "Kendi hayat mottonuzu oluşturabilseydiniz ne olurdu?"]
+    }
   }
 }

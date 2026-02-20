@@ -91,6 +91,9 @@
       "sat": "토"
     }
   },
+  "accessibility": {
+    "skipMain": "본문으로 건너뛰기"
+  },
   "recommendations": {
     "title": "이것도 해보세요"
   },

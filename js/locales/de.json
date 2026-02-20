@@ -91,7 +91,72 @@
       "sat": "Sa"
     }
   },
+  "accessibility": {
+    "skipMain": "Zum Hauptinhalt springen"
+  },
   "recommendations": {
     "title": "Probiere auch diese"
+  },
+  "deepAffirmation": {
+    "selfLove": {
+      "psychology": [
+        "Selbstliebe ist die Grundlage allen Wachstums. Diese Affirmation erinnert dich daran, dass du ohne externe Bestätigung genug bist.",
+        "Selbstwertgefühl wird nicht über Nacht aufgebaut. Wiederhole diese Affirmation täglich, um deine innere Stimme positiv zu verändern.",
+        "Sich selbst zu lieben ist nicht egoistisch. Wenn du zuerst deinen eigenen Becher füllst, hast du mehr, um anderen zu geben."
+      ],
+      "actions": ["Verbringe 3 Minuten vor dem Spiegel und sprich positive Worte zu dir", "Schreibe 3 Dinge auf, für die du dir heute dankbar bist", "Investiere 30 Minuten in eine Aktivität, die du liebst", "Wenn negative Selbstgespräche aufkommen, ersetze sie durch diese Affirmation"],
+      "meditation": ["Schließe die Augen und atme langsam, wiederhole 'Ich bin genug' 5 Mal", "Lege deine Hand auf dein Herz, spüre den Herzschlag und schätze deine Existenz", "Stelle dir warmes Licht vor, das deinen ganzen Körper umhüllt"],
+      "journal": ["Was ist das Beste, das du heute für dich getan hast?", "Was ist deine einzigartige Eigenschaft, die dich am glücklichsten macht?", "Wie könntest du freundlicher zu dir selbst sein?"]
+    },
+    "motivation": {
+      "psychology": [
+        "Motivation ist kein Gefühl, sondern eine Gewohnheit. Diese Affirmation erinnert dich daran, dass kleine tägliche Handlungen große Veränderungen bewirken.",
+        "Erfolg ist kein einzelner Sprung, sondern beständige Schritte. Deine heutige Anstrengung wird zu morgens Ergebnissen.",
+        "Angst ist ein Signal des Wachstums. Vermeide Herausforderungen nicht; finde Stärke in ihnen."
+      ],
+      "actions": ["Setze dir ein wichtiges Ziel für heute und verpflichte dich, es zu erreichen", "Stelle einen 5-Minuten-Timer und beginne die Aufgabe, die du aufgeschoben hast", "Schreibe Erfolgsmomente auf, um dein Selbstvertrauen zu stärken", "Reflektiere, was du heute erreicht hast"],
+      "meditation": ["Stelle dir lebhaft dein zukünftiges Ich vor, das deine Ziele erreicht", "Erinnere dich an eine vergangene Herausforderung, die du gemeistert hast", "Wiederhole 'Ich kann es schaffen' mit tiefer, bewusster Atmung"],
+      "journal": ["Was ist dein Ziel für dieses Jahr und warum ist es dir wichtig?", "Was war dein stolzester Erfolg letzte Woche?", "Welche ermutigenden Worte würdest du dem morgigen Du geben?"]
+    },
+    "gratitude": {
+      "psychology": [
+        "Dankbarkeit ist ein Muskel des Herzens. Je mehr du sie täglich übst, desto mehr Glück entdeckst du.",
+        "Ein dankbarer Geist bereichert die Gegenwart und erhöht positive Erwartungen für die Zukunft.",
+        "Wer kleine Dinge schätzt, kann auch großes Glück erkennen."
+      ],
+      "actions": ["Schreibe vor dem Schlafen 3 Dinge auf, für die du dankbar bist", "Sende eine Dankesnachricht an jemanden, den du heute getroffen hast", "Halte vor dem Essen inne und sei dankbar für dein Essen", "Geh spazieren und entdecke die Schönheit um dich herum"],
+      "meditation": ["Konzentriere dich auf deinen Atem und sei dankbar für jeden Atemzug", "Stelle dir die Gesichter deiner Lieben vor und sende ihnen warme Energie", "Finde Bedeutung in den Dingen, die du normalerweise für selbstverständlich hältst"],
+      "journal": ["Wann war der letzte Moment, in dem du dich wirklich dankbar gefühlt hast?", "Was hast du als selbstverständlich angesehen, wofür du jetzt neu dankbar bist?", "Wenn du heute ein Dankbarkeitstagebuch beginnen würdest, was würdest du auf die erste Seite schreiben?"]
+    },
+    "relationships": {
+      "psychology": [
+        "Gute Beziehungen beginnen mit Kommunikation und Verständnis. Diese Affirmation erinnert dich daran, dass Verbindung das Leben bereichert.",
+        "Gesunde Grenzen zu setzen ist auch ein Akt der Liebe.",
+        "Alle Beziehungen beginnen mit deiner Beziehung zu dir selbst. Innere Gesundheit schafft gesunde äußere Beziehungen."
+      ],
+      "actions": ["Teile heute ein herzliches Wort mit jemandem, der dir wichtig ist", "Wenn du jemandem zuhörst, schenke ihm deine volle Aufmerksamkeit", "Drücke in Konflikten deine Gefühle mit 'Ich'-Aussagen aus", "Kontaktiere einen alten Freund, mit dem du lange nicht gesprochen hast"],
+      "meditation": ["Stelle dir vor, Licht und Frieden an die Menschen zu senden, die du liebst", "Wenn es eine schwierige Beziehung gibt, erkenne an, dass diese Person auch Schmerz trägt", "Fühle Dankbarkeit für die bedeutungsvollen Verbindungen in deinem Leben"],
+      "journal": ["Wer ist die wichtigste Beziehung in deinem Leben und warum?", "Was war eine freundliche Geste, die jemand kürzlich für dich getan hat?", "Was ist eine Sache, die du tun kannst, um deine Beziehungen zu pflegen?"]
+    },
+    "success": {
+      "psychology": [
+        "Erfolg ist kein Ziel, sondern eine Reise. Lernen und Wachsen im Prozess sind der größte Erfolg.",
+        "Erfolg bedeutet für jeden etwas anderes. Definiere deinen eigenen Erfolg und bewege dich darauf zu.",
+        "Scheitern ist nicht das Gegenteil von Erfolg; es ist Teil des Weges zum Erfolg."
+      ],
+      "actions": ["Identifiziere deine Top 3 Prioritäten für heute und konzentriere dich darauf", "Übernimm ab heute eine Gewohnheit eines erfolgreichen Vorbilds", "Erstelle ein Visionboard, um deine Ziele zu visualisieren", "Investiere täglich 15 Minuten in Selbstentwicklung"],
+      "meditation": ["Stelle dir lebhaft vor, dein Ziel zu erreichen und fühle die Freude im Voraus", "Reflektiere deine Reise und erkenne, wie weit du gekommen bist", "Bekräftige mit Zuversicht: 'Ich verdiene Erfolg'"],
+      "journal": ["Was bedeutet Erfolg für dich?", "Wie würde dein ideales Ich in 5 Jahren aussehen?", "Was ist dein größter Erfolg bisher im Leben?"]
+    },
+    "quote": {
+      "psychology": [
+        "Die Worte großer Menschen enthalten zeitlose Weisheit. Möge dieses Zitat deinen Tag inspirieren.",
+        "Ein Zitat ist wie ein Spiegel. Es spricht je nach Lebenssituation unterschiedlich zu dir.",
+        "Wahre Weisheit endet nicht beim Wissen; sie leuchtet im Tun."
+      ],
+      "actions": ["Schreibe dieses Zitat auf und lies es den ganzen Tag", "Wende die Bedeutung dieses Zitats auf deine aktuelle Situation an", "Recherchiere ähnliche Zitate und reflektiere tief über das Thema", "Teile dieses Zitat mit jemandem, der dir am Herzen liegt"],
+      "meditation": ["Wiederhole dieses Zitat langsam und achtsam und genieße seine Bedeutung", "Stelle dir die Situation des Autors vor, als er diese Worte schuf", "Überlege, wie diese Weisheit auf dein Leben angewandt werden kann"],
+      "journal": ["Wie spricht dieses Zitat gerade zu dir?", "Welche Handlung kannst du heute unternehmen, um dieses Zitat zu leben?", "Wenn du dein Lebensmotto erstellen könntest, was wäre es?"]
+    }
   }
 }

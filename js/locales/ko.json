@@ -236,5 +236,12 @@
         "나만의 인생 명언을 만든다면 어떤 말을 남기고 싶나요?"
       ]
     }
+  },
+  "related": {
+    "title": "더 많은 콘텐츠",
+    "whiteNoise": "화이트 노이즈",
+    "detoxTimer": "디톡스 타이머",
+    "stressCheck": "스트레스 체크",
+    "dailyTarot": "오늘의 타로"
   }
 }

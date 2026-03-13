@@ -236,5 +236,12 @@
         "If you could create your life motto, what would it be?"
       ]
     }
+  },
+  "related": {
+    "title": "More to Explore",
+    "whiteNoise": "White Noise",
+    "detoxTimer": "Detox Timer",
+    "stressCheck": "Stress Check",
+    "dailyTarot": "Daily Tarot"
   }
 }

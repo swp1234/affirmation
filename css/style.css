@@ -574,7 +574,7 @@ body {
 
 .streak-cal-days {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(7, minmax(0, 1fr));
     gap: 3px;
     text-align: center;
 }
@@ -584,6 +584,10 @@ body {
     color: var(--text-secondary);
     padding: 2px 0;
     font-weight: 600;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .streak-cal-cell {
@@ -684,8 +688,11 @@ body {
   }
 
   .favorite-btn {
-    width: 44px;
-    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    width: 46px;
+    height: 46px;
+    box-sizing: border-box;
     font-size: 1.4rem;
   }
 }

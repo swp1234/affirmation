@@ -276,17 +276,6 @@
     </section>
   </main>
 
-  <!-- Interstitial Ad Overlay -->
-  <div class="interstitial-overlay hidden" id="interstitialAd">
-    <div class="interstitial-content">
-      <div class="interstitial-label" data-i18n="ads.banner">광고 영역</div>
-      <div class="ad-placeholder-large">Ad</div>
-      <button class="close-ad-btn" id="closeAdBtn" disabled>
-        <span id="adCountdown">5</span>
-      </button>
-    </div>
-  </div>
-
   <!-- Premium Modal -->
   <div class="premium-modal hidden" id="premiumModal" role="dialog" aria-modal="true">
     <div class="premium-modal-content">
@@ -331,11 +320,11 @@
   </script>
   <div style="max-width:420px;margin:20px auto;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);">
     <h3 data-i18n="related.title" style="font-size:16px;color:#a0a0b8;margin-bottom:12px;text-align:center;">More to Explore</h3>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-      <a href="/white-noise/" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">🎵</span><span data-i18n="related.whiteNoise" style="font-size:12px;font-weight:600;color:#a0a0b8;">White Noise</span></a>
-      <a href="/detox-timer/" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">🧘</span><span data-i18n="related.detoxTimer" style="font-size:12px;font-weight:600;color:#a0a0b8;">Detox Timer</span></a>
-      <a href="/stress-check/" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">💆</span><span data-i18n="related.stressCheck" style="font-size:12px;font-weight:600;color:#a0a0b8;">Stress Check</span></a>
-      <a href="/hsp-test/" class="related-card" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;"><span style="font-size:28px;">&#127800;</span><span data-i18n="related.hspTest" style="font-size:12px;font-weight:600;color:#a0a0b8;">HSP Test</span></a>
+    <div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:10px;">
+      <a href="/stress-check/?lang=ko&amp;start=1&amp;source=affirmation_footer" data-base-href="/stress-check/" class="related-card" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;min-height:44px;min-width:44px;box-sizing:border-box;"><span style="font-size:28px;">⚡</span><span data-i18n="related.stressCheck" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Stress Check</span></a>
+      <a href="/hsp-test/?lang=ko&amp;start=1&amp;source=affirmation_footer" data-base-href="/hsp-test/" class="related-card" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;min-height:44px;min-width:44px;box-sizing:border-box;"><span style="font-size:28px;">🌿</span><span data-i18n="related.hspTest" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">HSP Test</span></a>
+      <a href="/future-self/?lang=ko&amp;start=1&amp;source=affirmation_footer" data-base-href="/future-self/" class="related-card" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;min-height:44px;min-width:44px;box-sizing:border-box;"><span style="font-size:28px;">⏳</span><span data-i18n="related.futureSelf" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Future Self</span></a>
+      <a href="/detox-timer/?lang=ko&amp;start=1&amp;source=affirmation_footer" data-base-href="/detox-timer/" class="related-card" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;min-height:44px;min-width:44px;box-sizing:border-box;"><span style="font-size:28px;">🧘</span><span data-i18n="related.detoxTimer" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Detox Timer</span></a>
     </div>
   </div>
   <script src="/portal/js/cross-promo.js" defer></script>

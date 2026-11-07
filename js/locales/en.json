@@ -243,5 +243,36 @@
     "detoxTimer": "Detox Timer",
     "stressCheck": "Stress Check",
     "dailyTarot": "Daily Tarot"
+  },
+  "about": {
+    "toggle": "About Daily Affirmations & Self-Affirmation Theory",
+    "heading1": "Self-Affirmation Theory & Neuroplasticity",
+    "text1": "Claude Steele's seminal Self-Affirmation Theory demonstrates that reflecting on positive core values reinforces psychological self-integrity. Neuroimaging studies confirm that self-affirmation activates reward-processing centers in the brain (ventral striatum and medial prefrontal cortex), reducing cortisol release and buffering against rumination and negative cognitive biases.",
+    "boundary": "Mindfulness Boundary: Affirmation cards are an educational tool for mindset cultivation and cognitive reframing. They are not a clinical substitute for psychotherapy or psychiatric treatment for mood disorders.",
+    "heading2": "Six Thematic Growth Dimensions",
+    "pSelfLove": "Self-Love & Acceptance:",
+    "dSelfLove": "Replaces harsh internal criticism with self-compassion and unconditional self-worth.",
+    "pMotivation": "Motivation & Self-Efficacy:",
+    "dMotivation": "Strengthens personal agency and task perseverance according to Bandura's self-efficacy model.",
+    "pGratitude": "Gratitude Practice:",
+    "dGratitude": "Shifts attention to abundance, fostering neural pathways linked to optimism and life satisfaction.",
+    "pRelationships": "Healthy Boundaries & Empathy:",
+    "dRelationships": "Promotes authentic interpersonal connection while preserving clear personal boundaries.",
+    "pSuccess": "Growth Mindset & Success:",
+    "dSuccess": "Re-frames challenges as iterations, enhancing resilience against setbacks and fear of failure.",
+    "pQuotes": "Timeless Wisdom & Quotes:",
+    "dQuotes": "Provides philosophical anchors and perspective from world-renowned thinkers and leaders.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "What is the scientific theory behind daily positive affirmations?",
+    "faq1A": "Daily affirmations are supported by Claude Steele's Self-Affirmation Theory and neuroscience research showing that reflecting on core personal values activates the ventral striatum and medial prefrontal cortex, buffering against cortisol spikes and cognitive stress.",
+    "faq2Q": "How often should I practice affirmations for measurable psychological benefits?",
+    "faq2A": "Consistent daily exposure (1 to 3 minutes each morning or during stressful transitions) provides optimal reinforcement for neuroplasticity and emotional reframing.",
+    "faq3Q": "Are my favorite cards, streaks, or daily readings uploaded to external servers?",
+    "faq3A": "Never. All read counts, streak calendars, and saved favorite cards are stored 100% locally on your device via localStorage. No personal tracking or cloud transmission occurs.",
+    "reviewDate": "Editorial Review: November 2026",
+    "reviewTeam": "DopaBrain Positive Psychology Series"
+  },
+  "nav": {
+    "back": "DopaBrain Home"
   }
 }

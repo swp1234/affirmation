@@ -243,5 +243,36 @@
     "detoxTimer": "Minuteur Détox",
     "stressCheck": "Test de Stress",
     "dailyTarot": "Tarot du Jour"
+  },
+  "about": {
+    "toggle": "À propos des Affirmations Positives & Théorie de l'Auto-affirmation",
+    "heading1": "Théorie de l'Auto-affirmation & Neuroplasticité",
+    "text1": "La théorie de l'auto-affirmation de Claude Steele montre que le rappel de valeurs personnelles fondamentales protège l'intégrité du soi. L'imagerie cérébrale confirme que les affirmations stimulent le striatum ventral et le cortex préfrontal médian, atténuant le cortisol et le stress.",
+    "boundary": "Limite de bien-être : Ces cartes constituent une pratique de développement personnel et de recadrage mental. Elles ne remplacent pas une psychothérapie médicale.",
+    "heading2": "Six Domaines d'Épanouissement",
+    "pSelfLove": "Amour de Soi et Acceptation :",
+    "dSelfLove": "Substitue à l'autocritique une bienveillance inconditionnelle envers soi-même.",
+    "pMotivation": "Motivation et Sentiment d'Efficacité :",
+    "dMotivation": "Nourrit l'engagement dans l'action selon les principes d'Albert Bandura.",
+    "pGratitude": "Pratique de la Gratitude :",
+    "dGratitude": "Oriente l'esprit vers l'abondance et active les circuits du bien-être durable.",
+    "pRelationships": "Relations et Limites Saines :",
+    "dRelationships": "Favorise l'authenticité relationnelle tout en préservant son espace individuel.",
+    "pSuccess": "État d'Esprit de Croissance :",
+    "dSuccess": "Transforme les épreuves en opportunités d'apprentissage et affermit la résilience.",
+    "pQuotes": "Citations Inspirantes :",
+    "dQuotes": "Offre des repères philosophiques intemporels transmis par de grands penseurs.",
+    "faqTitle": "Foire Aux Questions (FAQ)",
+    "faq1Q": "Quel est le socle scientifique des affirmations positives ?",
+    "faq1A": "La théorie de Steele et la neurobiologie démontrent que l'affirmation de soi renforce le cortex préfrontal face aux menaces cognitives.",
+    "faq2Q": "À quel rythme pratiquer pour observer des bienfaits ?",
+    "faq2A": "Une pratique quotidienne de 1 à 3 minutes chaque matin suffit pour réorienter durablement les circuits neuronaux.",
+    "faq3Q": "Mes statistiques ou cartes favorites sont-elles stockées à distance ?",
+    "faq3A": "Jamais. Vos favoris et calendriers de régularité sont conservés exclusivement en local dans votre navigateur.",
+    "reviewDate": "Revue Éditoriale : Novembre 2026",
+    "reviewTeam": "DopaBrain Psychologie Positive"
+  },
+  "nav": {
+    "back": "Accueil DopaBrain"
   }
 }

@@ -243,5 +243,36 @@
     "detoxTimer": "Detox Digital",
     "stressCheck": "Teste de Estresse",
     "dailyTarot": "Tarot Diário"
+  },
+  "about": {
+    "toggle": "Sobre Afirmações Diárias e Teoria da Autoafirmação",
+    "heading1": "Teoria da Autoafirmação e Neuroplasticidade",
+    "text1": "A teoria da autoafirmação de Claude Steele evidencia que refletir sobre valores centrais preserva a integridade psicológica. Estudos de neuroimagem mostram que as afirmações ativam os circuitos de recompensa cerebral, reduzindo o cortisol e a ruminação negativa.",
+    "boundary": "Aviso de Bem-Estar: Os cartões de afirmação visam o fortalecimento de atitudes mentais saudáveis. Não substituem o acompanhamento psicoterapêutico clínico.",
+    "heading2": "Seis Eixos de Crescimento Positivo",
+    "pSelfLove": "Amor-Próprio e Autoaceitação:",
+    "dSelfLove": "Transforma a autocrítica severa em autocompaixão e valorização genuína.",
+    "pMotivation": "Motivação e Autoeficácia:",
+    "dMotivation": "Impulsiona a determinação e a perseverança fundamentadas no modelo de Bandura.",
+    "pGratitude": "Cultivo da Gratidão:",
+    "dGratitude": "Focaliza a abundância presente, estimulando conexões neurais de contentamento.",
+    "pRelationships": "Relações e Limites Saudáveis:",
+    "dRelationships": "Nutre vínculos afetivos verdadeiros sem abrir mão da individualidade.",
+    "pSuccess": "Mentalidade de Crescimento:",
+    "dSuccess": "Ressignifica tropeços como degraus de aprendizado, fortalecendo a resiliência.",
+    "pQuotes": "Citações e Sabedoria Universal:",
+    "dQuotes": "Oferece reflexões inspiradoras legadas por pensadores históricos.",
+    "faqTitle": "Perguntas Frequentes (FAQ)",
+    "faq1Q": "Qual é a base científica das afirmações positivas?",
+    "faq1A": "Apoiadas na teoria de Steele, pesquisas mostram que afirmar valores protege o cérebro contra os desgastes do estresse.",
+    "faq2Q": "Com que frequência devo praticar?",
+    "faq2A": "De 1 a 3 minutos diários ao acordar proporcionam o estímulo ideal para a plasticidade cerebral positiva.",
+    "faq3Q": "Meus dados de leitura ou favoritos vão para servidores externos?",
+    "faq3A": "De forma alguma. Todos os registros ficam 100% salvos no localStorage do seu próprio navegador.",
+    "reviewDate": "Revisão Editorial: Novembro de 2026",
+    "reviewTeam": "DopaBrain Psicologia Positiva"
+  },
+  "nav": {
+    "back": "Início DopaBrain"
   }
 }

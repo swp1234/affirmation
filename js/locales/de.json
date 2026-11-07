@@ -243,5 +243,36 @@
     "detoxTimer": "Detox-Timer",
     "stressCheck": "Stresstest",
     "dailyTarot": "Tagestarot"
+  },
+  "about": {
+    "toggle": "Über Tägliche Affirmationen & Selbstbestätigungstheorie",
+    "heading1": "Selbstbestätigungstheorie & Neuronale Plastizität",
+    "text1": "Claude Steeles Selbstbestätigungstheorie belegt, dass die Besinnung auf persönliche Kernwerte die seelische Widerstandskraft stärkt. Neurowissenschaftliche Studien zeigen, dass positive Affirmationen das Belohnungssystem im Gehirn aktivieren und die Ausschüttung von Stresshormonen verringern.",
+    "boundary": "Achtsamkeitshinweis: Affirmationskarten unterstützen eine gesunde mentale Routine. Sie ersetzen keine Psychotherapie bei klinischen Depressionen oder Angststörungen.",
+    "heading2": "Sechs Dimensionen Positiven Wachstums",
+    "pSelfLove": "Selbstliebe und Akzeptanz:",
+    "dSelfLove": "Ersetzt harte Selbstkritik durch mitfühlendes Selbstwertgefühl und bedingungslose Annahme.",
+    "pMotivation": "Motivation und Selbstwirksamkeit:",
+    "dMotivation": "Stärkt die Tatkraft und das Vertrauen in eigene Fähigkeiten nach Albert Bandura.",
+    "pGratitude": "Gelebte Dankbarkeit:",
+    "dGratitude": "Lenkt den Fokus auf Fülle und aktiviert neuronale Schaltkreise für Zuversicht.",
+    "pRelationships": "Beziehungen und Grenzen:",
+    "dRelationships": "Fördert authentische zwischenmenschliche Nähe bei gleichzeitig gesunder Abgrenzung.",
+    "pSuccess": "Wachstumsorientierung (Growth Mindset):",
+    "dSuccess": "Begreift Rückschläge als Lernschritte und stärkt die psychische Resilienz.",
+    "pQuotes": "Zeitlose Zitate und Philosophie:",
+    "dQuotes": "Bietet philosophische Impulse bedeutender Denker für den Alltag.",
+    "faqTitle": "Häufig gestellte Fragen (FAQ)",
+    "faq1Q": "Gibt es wissenschaftliche Belege für Affirmationen?",
+    "faq1A": "Ja, Studien zur Selbstbestätigungstheorie belegen, dass Wertbesinnung den präfrontalen Kortex stärkt und Stresseffekte abfedert.",
+    "faq2Q": "Wie oft sollte man Affirmationen anwenden?",
+    "faq2A": "1 bis 3 Minuten täglich reichen aus, um durch Neuroplastizität langfristig positive Denkmuster zu etablieren.",
+    "faq3Q": "Werden meine Favoriten oder Streaks auf Servern gespeichert?",
+    "faq3A": "Nein. Sämtliche Daten verbleiben zu 100 % lokal im Speicher (localStorage) deines Browsers.",
+    "reviewDate": "Redaktionelle Prüfung: November 2026",
+    "reviewTeam": "DopaBrain Positive Psychologie"
+  },
+  "nav": {
+    "back": "DopaBrain Startseite"
   }
 }

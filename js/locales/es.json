@@ -243,5 +243,36 @@
     "detoxTimer": "Desintoxicación Digital",
     "stressCheck": "Test de Estrés",
     "dailyTarot": "Tarot Diario"
+  },
+  "about": {
+    "toggle": "Sobre las Afirmaciones Diarias y la Teoría de Autoafirmación",
+    "heading1": "Teoría de la Autoafirmación y Neuroplasticidad",
+    "text1": "La teoría de la autoafirmación de Claude Steele demuestra que recordar valores fundamentales protege la integridad psicológica. Los estudios neurocientíficos confirman que las afirmaciones activan el estriado ventral y la corteza prefrontal, reduciendo el cortisol y contrarrestando el sesgo de negatividad.",
+    "boundary": "Aviso de Bienestar: Las tarjetas de afirmación son un recurso educativo para el autocuidado y la reestructuración cognitiva. No sustituyen la psicoterapia clínica.",
+    "heading2": "Seis Dimensiones de Crecimiento",
+    "pSelfLove": "Amor Propio y Aceptación:",
+    "dSelfLove": "Sustituye la autocrítica destructiva por compasión hacia uno mismo y autoestima incondicional.",
+    "pMotivation": "Motivación y Autoeficacia:",
+    "dMotivation": "Fortalece la perseverancia y la convicción personal inspirada en el modelo de Bandura.",
+    "pGratitude": "Práctica de la Gratitud:",
+    "dGratitude": "Dirige la atención hacia la abundancia, estimulando vías neuronales de bienestar y satisfacción.",
+    "pRelationships": "Límites Sanos y Empatía:",
+    "dRelationships": "Promueve relaciones cordiales y respetuosas preservando una clara autonomía individual.",
+    "pSuccess": "Mentalidad de Crecimiento:",
+    "dSuccess": "Reinterpreta las dificultades como oportunidades de aprendizaje y robustece la resiliencia.",
+    "pQuotes": "Sabiduría Universal y Citas:",
+    "dQuotes": "Proporciona anclajes reflexivos a través de frases memorables de grandes pensadores.",
+    "faqTitle": "Preguntas Frecuentes (FAQ)",
+    "faq1Q": "¿Qué sustento científico tienen las afirmaciones positivas?",
+    "faq1A": "Se basan en la teoría de Steele y la neurociencia cognitiva, demostrando que reafirman la corteza prefrontal ante el estrés.",
+    "faq2Q": "¿Con qué frecuencia se recomienda practicar?",
+    "faq2A": "Dedicar entre 1 y 3 minutos cada mañana favorece la neuroplasticidad y consolida un diálogo interno positivo.",
+    "faq3Q": "¿Se almacenan mis rachas o favoritos en servidores externos?",
+    "faq3A": "Nunca. Todo el historial y los favoritos se guardan al 100% de manera local en el localStorage de su dispositivo.",
+    "reviewDate": "Revisión Editorial: Noviembre 2026",
+    "reviewTeam": "DopaBrain Psicología Positiva"
+  },
+  "nav": {
+    "back": "Inicio de DopaBrain"
   }
 }

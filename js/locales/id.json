@@ -243,5 +243,36 @@
     "detoxTimer": "Timer Detoks",
     "stressCheck": "Cek Stres",
     "dailyTarot": "Tarot Harian"
+  },
+  "about": {
+    "toggle": "Tentang Afirmasi Harian & Teori Penegasan Diri",
+    "heading1": "Teori Penegasan Diri & Neuroplastisitas Otak",
+    "text1": "Teori Self-Affirmation dari Claude Steele menunjukkan bahwa menegaskan nilai-nilai luhur melindungi integritas psikologis. Studi pencitraan saraf membuktikan afirmasi positif mengaktifkan sistem penghargaan otak, meredakan lonjakan hormon stres kortisol.",
+    "boundary": "Batasan Kebugaran: Kartu afirmasi adalah media edukatif untuk membiasakan pola pikir optimis, bukan pengganti penanganan medis untuk gangguan suasana hati.",
+    "heading2": "Enam Dimensi Pertumbuhan Diri",
+    "pSelfLove": "Cinta Diri & Penerimaan:",
+    "dSelfLove": "Mengganti kritik batin yang keras dengan welas asih dan penghargaan diri tulus.",
+    "pMotivation": "Motivasi & Efikasi Diri:",
+    "dMotivation": "Membangun ketekunan dan keyakinan bertindak sesuai teori efikasi diri Albert Bandura.",
+    "pGratitude": "Praktik Rasa Syukur:",
+    "dGratitude": "Mengarahkan perhatian pada keberlimpahan hidup, menstimulasi hormon kebahagiaan.",
+    "pRelationships": "Hubungan & Batasan Sehat:",
+    "dRelationships": "Menjalin komunikasi penuh empati sambil tetap menjaga batasan pribadi yang sehat.",
+    "pSuccess": "Pola Pikir Berkembang (Growth Mindset):",
+    "dSuccess": "Melihat kegagalan sebagai ruang belajar dan meningkatkan ketangguhan mental.",
+    "pQuotes": "Kutipan Kebijaksanaan Abadi:",
+    "dQuotes": "Menghadirkan pemikiran mendalam para tokoh dunia sebagai jangkar inspirasi harian.",
+    "faqTitle": "Pertanyaan yang Sering Diajukan (FAQ)",
+    "faq1Q": "Bagaimana penjelasan ilmiah di balik afirmasi positif?",
+    "faq1A": "Berdasarkan teori Claude Steele, mengingat nilai positif mengaktifkan korteks prefrontal untuk meredam stres kognitif.",
+    "faq2Q": "Berapa lama afirmasi sebaiknya dilakukan setiap hari?",
+    "faq2A": "Cukup 1-3 menit setiap pagi untuk mengondisikan pikiran bawah sadar melalui neuroplastisitas.",
+    "faq3Q": "Apakah riwayat atau kartu favorit saya dikirim ke server luar?",
+    "faq3A": "Tidak pernah. Semua data tersimpan aman secara lokal di peramban perangkat Anda via localStorage.",
+    "reviewDate": "Tinjauan Editorial: November 2026",
+    "reviewTeam": "Seri Psikologi Positif DopaBrain"
+  },
+  "nav": {
+    "back": "Beranda DopaBrain"
   }
 }

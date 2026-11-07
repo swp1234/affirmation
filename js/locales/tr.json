@@ -243,5 +243,36 @@
     "detoxTimer": "Detoks Zamanlayıcı",
     "stressCheck": "Stres Testi",
     "dailyTarot": "Günlük Tarot"
+  },
+  "about": {
+    "toggle": "Günlük Olumlamalar ve Kendini Olumlama Kuramı Hakkında",
+    "heading1": "Kendini Olumlama Kuramı ve Nöroplastisite",
+    "text1": "Claude Steele'in Kendini Olumlama Kuramı (Self-Affirmation Theory), temel kişisel değerleri hatırlamanın benlik bütünlüğünü koruduğunu gösterir. Nörogörüntüleme çalışmaları, olumlamaların beynin ödül merkezlerini harekete geçirerek kortizol seviyesini düşürdüğünü kanıtlamaktadır.",
+    "boundary": "Farkındalık Sınırı: Bu kartlar zihinsel alışkanlıkları güçlendirmeye yöneliktir; klinik depresyon veya anksiyete tedavisinin yerini alamaz.",
+    "heading2": "Altı Pozitif Gelişim Alanı",
+    "pSelfLove": "Öz Sevgi ve Kabullenme:",
+    "dSelfLove": "Yıkıcı iç eleştiriyi şefkatli bir özsaygı ve koşulsuz kabullenmeyle değiştirir.",
+    "pMotivation": "Motivasyon ve Öz Yeterlilik:",
+    "dMotivation": "Bandura'nın öz yeterlilik yaklaşımına uygun olarak eyleme geçme iradesini pekiştirir.",
+    "pGratitude": "Şükran ve Minnettarlık:",
+    "dGratitude": "Dikkati yoksunluktan bolluğa çevirerek memnuniyet sağlayan nöral yolları uyarır.",
+    "pRelationships": "Sağlıklı Sınırlar ve İlişkiler:",
+    "dRelationships": "Bireysel sınırları korurken başkalarıyla samimi bağlar kurmayı destekler.",
+    "pSuccess": "Gelişim Zihniyeti (Growth Mindset):",
+    "dSuccess": "Zorlukları birer öğrenme fırsatı olarak görerek duygusal dayanıklılığı artırır.",
+    "pQuotes": "Zamansız Özlü Sözler:",
+    "dQuotes": "Büyük düşünürlerin felsefi birikimiyle günlük hayata ilham katar.",
+    "faqTitle": "Sıkça Sorulan Sorular (SSS)",
+    "faq1Q": "Olumlamaların arkasındaki bilimsel temel nedir?",
+    "faq1A": "Steele'in kuramı ve beyin araştırmaları, değer odaklı düşünmenin prefrontal korteksi stres karşısında koruduğunu gösterir.",
+    "faq2Q": "En iyi etki için ne sıklıkla uygulanmalıdır?",
+    "faq2A": "Her sabah 1-3 dakika boyunca bir olumlamaya odaklanmak beynin olumlu düşünme ağlarını yeniden yapılandırır.",
+    "faq3Q": "Favori kartlarım veya serilerim sunucularda saklanıyor mu?",
+    "faq3A": "Asla. Tüm veriler yalnızca cihazınızın tarayıcısında (%100 yerel) tutulur.",
+    "reviewDate": "Editöryal İnceleme: Kasım 2026",
+    "reviewTeam": "DopaBrain Pozitif Psikoloji Serisi"
+  },
+  "nav": {
+    "back": "DopaBrain Ana Sayfa"
   }
 }

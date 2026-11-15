@@ -8,18 +8,21 @@
     "title": "Afirmações"
   },
   "premium": {
-    "button": "Obter Afirmação Profunda com IA",
-    "badge": "PREMIUM",
-    "title": "Afirmação Profunda com IA",
+    "button": "Guia de Reflexão Profunda",
+    "badge": "GUIA",
+    "title": "Guia de Reflexão Profunda",
     "todayAffirmation": "Afirmação de Hoje",
-    "deepInterpretation": "Interpretação Profunda de IA",
+    "deepInterpretation": "Perspectiva Psicológica",
     "practiceGuide": "Guia de Prática",
     "meditation": "Meditação",
     "journalQuestion": "Pergunta de Diário de Hoje"
   },
   "actions": {
     "newCard": "Puxar Novo Cartão",
-    "share": "Compartilhar"
+    "share": "Compartilhar",
+    "saveCard": "Salvar Cartão",
+    "saved": "Cartão Salvo!",
+    "saveFailed": "Não foi possível salvar."
   },
   "categories": {
     "title": "Categorias",
@@ -274,5 +277,15 @@
   },
   "nav": {
     "back": "Início DopaBrain"
+  },
+  "curated": {
+    "title": "Livros de Autocompaixão e Hábitos",
+    "disclosure": "Links de afiliado",
+    "subtitle": "Combine sua afirmação diária com práticas reais de confiança e consistência.",
+    "cta": "Ver Livro ->",
+    "neffTitle": "Autocompaixão — Kristin Neff",
+    "neffDesc": "Práticas baseadas em pesquisas para acolher suas falhas e fortalecer seu valor.",
+    "clearTitle": "Hábitos Atômicos — James Clear",
+    "clearDesc": "Como pequenos rituais diários constroem uma mentalidade positiva duradoura."
   }
 }

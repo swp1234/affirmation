@@ -1,17 +1,41 @@
 
-function preserveLanguageLinks() {
+function getActiveLang() {
     var urlLang = new URLSearchParams(window.location.search).get('lang');
-    var currentLang = urlLang || (typeof i18n !== 'undefined' && typeof i18n.getCurrentLanguage === 'function' ? i18n.getCurrentLanguage() : null) || 'ko';
+    return (typeof i18n !== 'undefined' && typeof i18n.getCurrentLanguage === 'function' ? i18n.getCurrentLanguage() : null) || urlLang || 'en';
+}
+
+function getShareUrl() {
+    return 'https://dopabrain.com/affirmation/?lang=' + encodeURIComponent(getActiveLang()) + '&utm_source=share';
+}
+
+function showAffToast(msg) {
+    let toast = document.getElementById('aff-toast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'aff-toast';
+        toast.className = 'aff-toast';
+        document.body.appendChild(toast);
+    }
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => toast.classList.remove('show'), 2200);
+}
+
+function preserveLanguageLinks() {
+    var currentLang = getActiveLang();
     var links = document.querySelectorAll('a[href^="/"], .related-card');
     var base = (window.location.origin && window.location.origin !== 'null') ? window.location.origin : 'https://dopabrain.com';
     links.forEach(function(link) {
-        var href = link.getAttribute('href');
+        var href = link.getAttribute('data-base-href') || link.getAttribute('href');
         if (!href || href.startsWith('http') || href.startsWith('#')) return;
         try {
             var url = new URL(href, base);
             url.searchParams.set('lang', currentLang);
-            if (!url.searchParams.has('source')) url.searchParams.set('source', 'affirmation_footer');
-            link.setAttribute('href', url.pathname + url.search);
+            if (link.classList.contains('related-card') && !url.searchParams.has('source')) {
+                url.searchParams.set('source', 'affirmation_footer');
+            }
+            link.setAttribute('href', url.pathname + url.search + url.hash);
         } catch(e) {}
         if (!link.dataset.trackedCta) {
             link.dataset.trackedCta = 'true';
@@ -58,12 +82,14 @@ if (document.readyState === 'loading') {
         langOptions.forEach(opt => {
             opt.addEventListener('click', async () => {
                 await i18n.setLanguage(opt.getAttribute('data-lang'));
+                preserveLanguageLinks();
                 langOptions.forEach(o => o.classList.remove('active'));
                 opt.classList.add('active');
                 langMenu.classList.add('hidden');
                 if (app && app.renderHistory && app.renderFavorites) {
                     app.renderHistory();
                     app.renderFavorites();
+                    app.renderCuratedResources();
                 }
             });
         });
@@ -93,6 +119,165 @@ class AffirmationApp {
     this.quotableCacheTime = 0;
 
     this.init();
+  }
+
+  getAmazonDomain(lang) {
+    const map = { ja: 'amazon.co.jp', de: 'amazon.de', fr: 'amazon.fr', es: 'amazon.es', hi: 'amazon.in' };
+    return map[lang] || 'amazon.com';
+  }
+
+  renderCuratedResources() {
+    const container = document.getElementById('curated-resources-card');
+    if (!container) return;
+    const t = (key, fb) => {
+      const val = window.i18n?.t?.(key);
+      return val && val !== key ? val : fb;
+    };
+    const lang = getActiveLang();
+    const domain = this.getAmazonDomain(lang);
+    const items = [
+      {
+        key: 'selfCompassion',
+        asin: '0061733520',
+        title: t('curated.neffTitle', 'Self-Compassion — Kristin Neff'),
+        desc: t('curated.neffDesc', 'Research-based exercises to quiet the harsh inner critic and build steady self-worth.')
+      },
+      {
+        key: 'atomicHabits',
+        asin: '0735211299',
+        title: t('curated.clearTitle', 'Atomic Habits — James Clear'),
+        desc: t('curated.clearDesc', 'Practical system for turning tiny daily mindset rituals into lasting positive identity.')
+      }
+    ];
+
+    container.innerHTML = `
+      <div class="curated-resources-header">
+        <h3 class="curated-resources-title">${t('curated.title', 'Recommended Self-Compassion & Habit Books')}</h3>
+        <span class="curated-disclosure">${t('curated.disclosure', 'Affiliate links')}</span>
+      </div>
+      <p class="curated-resources-subtitle">${t('curated.subtitle', 'Pair your daily affirmation card with proven practices for resilience and confidence.')}</p>
+      <div class="curated-list">
+        ${items.map(item => `
+          <a class="curated-item" href="https://www.${domain}/dp/${item.asin}?tag=dopabrain-20" target="_blank" rel="noopener sponsored nofollow" data-resource-key="${item.key}">
+            <div class="curated-item-top">
+              <span class="curated-item-title">${item.title}</span>
+              <span class="curated-item-cta">${t('curated.cta', 'View Book ->')}</span>
+            </div>
+            <span class="curated-item-desc">${item.desc}</span>
+          </a>
+        `).join('')}
+      </div>`;
+
+    container.querySelectorAll('.curated-item').forEach(link => {
+      link.addEventListener('click', () => {
+        if (typeof gtag === 'function') {
+          gtag('event', 'curated_resource_click', {
+            app_name: 'affirmation',
+            resource_key: link.getAttribute('data-resource-key'),
+            result_type: this.currentCard ? this.currentCard.category : 'all',
+            content_locale: lang,
+            cta_surface: 'curated_resources'
+          });
+          gtag('event', 'content_cta_click', {
+            cta_type: 'curated_book',
+            destination: link.getAttribute('href'),
+            source: 'affirmation'
+          });
+        }
+      });
+    });
+  }
+
+  wrapCanvasLines(ctx, text, maxWidth) {
+    const words = String(text || '').split(/\s+/);
+    const lines = [];
+    let current = '';
+    words.forEach(w => {
+      const test = current ? current + ' ' + w : w;
+      if (ctx.measureText(test).width > maxWidth && current) {
+        lines.push(current);
+        current = w;
+      } else {
+        current = test;
+      }
+    });
+    if (current) lines.push(current);
+    return lines;
+  }
+
+  saveStoryCard() {
+    const canvas = document.getElementById('shareCanvas');
+    if (!canvas || !this.currentCard) return;
+    const t = (key, fb) => {
+      const val = window.i18n?.t?.(key);
+      return val && val !== key ? val : fb;
+    };
+    const lang = getActiveLang();
+    const categoryInfo = this.getCategoryInfo(this.currentCard.category);
+    const ctx = canvas.getContext('2d');
+    canvas.width = 1080;
+    canvas.height = 1920;
+
+    const grad = ctx.createLinearGradient(0, 0, 1080, 1920);
+    grad.addColorStop(0, '#1f0b1c');
+    grad.addColorStop(0.5, '#3b102d');
+    grad.addColorStop(1, '#110d20');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, 1080, 1920);
+
+    ctx.fillStyle = 'rgba(233, 30, 99, 0.16)';
+    ctx.beginPath();
+    ctx.arc(540, 740, 380, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = '#f472b6';
+    ctx.font = 'bold 34px system-ui, -apple-system, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('DOPABRAIN · DAILY AFFIRMATION', 540, 180);
+
+    ctx.fillStyle = '#fbcfe8';
+    ctx.font = 'bold 42px system-ui, -apple-system, sans-serif';
+    ctx.fillText(categoryInfo.emoji + '  ' + categoryInfo.name, 540, 340);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 58px system-ui, -apple-system, sans-serif';
+    const lines = this.wrapCanvasLines(ctx, '"' + this.currentCard.text + '"', 840).slice(0, 9);
+    const startY = Math.max(540, 880 - lines.length * 42);
+    lines.forEach((line, idx) => {
+      ctx.fillText(line, 540, startY + idx * 84);
+    });
+
+    if (this.currentCard.author) {
+      ctx.fillStyle = '#f9a8d4';
+      ctx.font = '38px system-ui, -apple-system, sans-serif';
+      ctx.fillText('— ' + this.currentCard.author, 540, startY + lines.length * 84 + 60);
+    }
+
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = '30px system-ui, -apple-system, sans-serif';
+    ctx.fillText('dopabrain.com/affirmation/?lang=' + lang, 540, 1780);
+
+    try {
+      const url = canvas.toDataURL('image/png');
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'affirmation-' + this.currentCard.category + '.png';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      showAffToast(t('actions.saved', 'Card Saved!'));
+      if (typeof gtag === 'function') {
+        gtag('event', 'save_image', {
+          event_category: 'affirmation',
+          app_name: 'affirmation',
+          result_type: this.currentCard.category,
+          save_surface: 'result_story_1080x1920'
+        });
+      }
+    } catch (e) {
+      showAffToast(t('actions.saveFailed', 'Could not save card.'));
+    }
   }
 
   // Map category ID to i18n key name
@@ -510,14 +695,17 @@ class AffirmationApp {
   // 공유하기
   async shareCard() {
     const appTitle = i18n.t('header.title').replace('✨ ', '').trim();
-    const text = `${this.currentCard.text}\n\n- ${appTitle}`;
+    const shareUrl = getShareUrl();
+    const text = `${this.currentCard.text}\n\n- ${appTitle}\n${shareUrl}`;
 
     if (navigator.share) {
       try {
         await navigator.share({
           title: appTitle,
-          text: text
+          text: text,
+          url: shareUrl
         });
+        if (typeof gtag === 'function') gtag('event', 'share', { method: 'web_share', content_type: 'affirmation_card' });
       } catch (err) {
         if (err.name !== 'AbortError') {
           this.fallbackShare(text);
@@ -531,10 +719,18 @@ class AffirmationApp {
   // 공유 폴백 (클립보드 복사)
   fallbackShare(text) {
     navigator.clipboard.writeText(text).then(() => {
-      alert(i18n.t('share.copiedSuccess'));
+      showAffToast(i18n.t('share.copiedSuccess'));
+      if (typeof gtag === 'function') gtag('event', 'share', { method: 'copy', content_type: 'affirmation_card' });
     }).catch(() => {
-      alert(i18n.t('share.notAvailable'));
+      showAffToast(i18n.t('share.notAvailable'));
     });
+  }
+
+  shareTwitterCard() {
+    const appTitle = i18n.t('header.title').replace('✨ ', '').trim();
+    const text = `${this.currentCard ? this.currentCard.text : appTitle} - DopaBrain`;
+    window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(getShareUrl()) + '&text=' + encodeURIComponent(text), '_blank', 'noopener');
+    if (typeof gtag === 'function') gtag('event', 'share', { method: 'twitter', content_type: 'affirmation_card' });
   }
 
   // 테마 설정
@@ -648,6 +844,13 @@ class AffirmationApp {
     premiumBody.appendChild(journalDiv);
 
     premiumModal.classList.remove('hidden');
+    if (typeof gtag === 'function') {
+      gtag('event', 'test_complete', {
+        event_category: 'affirmation',
+        app_name: 'affirmation',
+        result_type: card.category
+      });
+    }
   }
 
   // 심층 확언 생성
@@ -694,12 +897,26 @@ class AffirmationApp {
   setupEventListeners() {
     // 새 카드 버튼
     document.getElementById('newCardBtn').addEventListener('click', () => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'test_start', {
+          event_category: 'affirmation',
+          app_name: 'affirmation'
+        });
+      }
       this.loadRandomCard();
+    });
+
+    document.getElementById('saveCardBtn')?.addEventListener('click', () => {
+      this.saveStoryCard();
     });
 
     // 공유 버튼
     document.getElementById('shareBtn').addEventListener('click', () => {
       this.shareCard();
+    });
+
+    document.getElementById('twitterShareBtn')?.addEventListener('click', () => {
+      this.shareTwitterCard();
     });
 
     // 즐겨찾기 버튼
@@ -733,6 +950,7 @@ class AffirmationApp {
 
 // 앱 초기화
 const app = new AffirmationApp();
+app.renderCuratedResources();
 
 // Hide app loader
 const loader = document.getElementById('app-loader');
@@ -744,9 +962,7 @@ if (loader) {
 // Service Worker 등록
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js')
-      .then((reg) => console.log('SW registered:', reg.scope))
-      .catch((err) => console.log('SW registration failed:', err));
+    navigator.serviceWorker.register('sw.js').catch(() => {});
   });
 }
 

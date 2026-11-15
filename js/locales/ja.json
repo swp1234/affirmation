@@ -8,18 +8,21 @@
     "title": "アファメーション"
   },
   "premium": {
-    "button": "AI深い癒しのアファメーション",
-    "badge": "プレミアム",
-    "title": "AI深い癒しのアファメーション",
+    "button": "深層リフレクションガイド",
+    "badge": "GUIDE",
+    "title": "深層リフレクションガイド",
     "todayAffirmation": "今日のアファメーション",
-    "deepInterpretation": "AI深い解釈",
+    "deepInterpretation": "心理学的アプローチ",
     "practiceGuide": "実践ガイド",
     "meditation": "瞑想",
     "journalQuestion": "今日のジャーナルの質問"
   },
   "actions": {
     "newCard": "新しいカードを引く",
-    "share": "共有する"
+    "share": "共有する",
+    "saveCard": "カードを保存",
+    "saved": "保存しました！",
+    "saveFailed": "保存に失敗しました。"
   },
   "categories": {
     "title": "カテゴリー",
@@ -274,5 +277,15 @@
   },
   "nav": {
     "back": "DopaBrain ホーム"
+  },
+  "curated": {
+    "title": "おすすめのセルフケア・習慣本",
+    "disclosure": "アフィリエイト広告",
+    "subtitle": "毎日のアファメーションとあわせて、自己肯定感と継続力を育む定番書です。",
+    "cta": "詳しく見る ->",
+    "neffTitle": "セルフ・コンパッション — クリスティン・ネフ",
+    "neffDesc": "厳しい自己批判を和らげ、しなやかな自己受容を育てる実践ワーク。",
+    "clearTitle": "ジェームズ・クリアー式 複利で伸びる1つの習慣",
+    "clearDesc": "小さな毎日の習慣を確かな自己効力感へ変えるベストセラー。"
   }
 }

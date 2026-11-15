@@ -8,18 +8,21 @@
     "title": "Afirmaciones"
   },
   "premium": {
-    "button": "Obtener Afirmación Profunda de IA",
-    "badge": "PREMIUM",
-    "title": "Afirmación Profunda de IA",
+    "button": "Guía de Reflexión Profunda",
+    "badge": "GUÍA",
+    "title": "Guía de Reflexión Profunda",
     "todayAffirmation": "Afirmación de Hoy",
-    "deepInterpretation": "Interpretación Profunda de IA",
+    "deepInterpretation": "Perspectiva Psicológica",
     "practiceGuide": "Guía de Práctica",
     "meditation": "Meditación",
     "journalQuestion": "Pregunta del Diario de Hoy"
   },
   "actions": {
     "newCard": "Sacar Nueva Tarjeta",
-    "share": "Compartir"
+    "share": "Compartir",
+    "saveCard": "Guardar Tarjeta",
+    "saved": "Tarjeta Guardada",
+    "saveFailed": "No se pudo guardar."
   },
   "categories": {
     "title": "Categorías",
@@ -274,5 +277,15 @@
   },
   "nav": {
     "back": "Inicio de DopaBrain"
+  },
+  "curated": {
+    "title": "Libros de Autocompasión y Hábitos",
+    "disclosure": "Enlaces de afiliado",
+    "subtitle": "Complementa tu tarjeta diaria con herramientas prácticas de bienestar y constancia.",
+    "cta": "Ver Libro ->",
+    "neffTitle": "Sé amable contigo mismo — Kristin Neff",
+    "neffDesc": "Ejercicios científicos para silenciar la autocrítica y fortalecer tu autoestima.",
+    "clearTitle": "Hábitos Atómicos — James Clear",
+    "clearDesc": "Método paso a paso para convertir pequeños rituales positivos en identidad."
   }
 }

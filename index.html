@@ -6,7 +6,7 @@
   <meta name="robots" content="max-image-preview:large">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
   <meta name="description" content="Draw a daily affirmation card and transform your mindset. 100+ powerful messages for confidence and motivation. Try it now — completely free!">
-    <meta name="dateModified" content="2026-11-07">
+    <meta name="dateModified" content="2026-11-15">
   <meta name="keywords" content="긍정 확언, 긍정 메시지, 자존감 향상, 동기부여 명언, 일일 명언, 긍정 문구, 오늘의 명언, 자존감 높이기, 명상, 마음챙김">
   <meta name="theme-color" content="#e91e63">
   <title>Daily Affirmation Cards — Boost Your Confidence Free</title>
@@ -206,11 +206,11 @@
         </div>
       </div>
 
-      <!-- 프리미엄 콘텐츠 버튼 -->
+      <!-- 심층 성찰 가이드 버튼 -->
       <button class="premium-btn" id="premiumBtn">
         <span class="premium-icon">✨</span>
-        <span data-i18n="premium.button">AI 심층 확언 받기</span>
-        <span class="premium-badge" data-i18n="premium.badge">PREMIUM</span>
+        <span data-i18n="premium.button">Deep Reflection Guide</span>
+        <span class="premium-badge" data-i18n="premium.badge">GUIDE</span>
       </button>
 
       <!-- 액션 버튼 -->
@@ -218,13 +218,18 @@
         <button class="action-btn primary-btn" id="newCardBtn">
           <span data-i18n="actions.newCard">새로운 카드 뽑기</span>
         </button>
-        <button class="action-btn secondary-btn" id="shareBtn" onclick="shareApp()">
+        <button class="action-btn secondary-btn" id="saveCardBtn">
+          <span data-i18n="actions.saveCard">Save Story Card</span>
+        </button>
+        <button class="action-btn secondary-btn" id="shareBtn">
           <span data-i18n="actions.share">공유하기</span>
         </button>
-        <button class="action-btn secondary-btn" onclick="shareTwitter()">
+        <button class="action-btn secondary-btn" id="twitterShareBtn">
           <span>𝕏 Twitter</span>
         </button>
       </div>
+      <canvas id="shareCanvas" width="1080" height="1920" style="display:none;" aria-hidden="true"></canvas>
+      <div id="curated-resources-card" class="curated-resources"></div>
     </section>
 
     <!-- 카테고리 필터 -->
@@ -305,7 +310,7 @@
 
   <!-- Science & E-E-A-T Self-Affirmation Guide Section -->
   <section class="about-section collapsible-section" id="about-section" style="max-width:680px;margin:28px auto;padding:0 16px;">
-      <details style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:14px;overflow:hidden;">
+      <details open style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:14px;overflow:hidden;">
           <summary data-i18n="about.toggle" style="min-height:48px;padding:14px 18px;color:#e91e63;cursor:pointer;font-size:15px;font-weight:700;list-style:none;display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;touch-action:manipulation;">About Daily Affirmations & Self-Affirmation Theory</summary>
           <div class="about-content" style="padding:0 18px 20px;box-sizing:border-box;">
               <h2 data-i18n="about.heading1" style="font-size:15px;color:#fff;margin:14px 0 8px;font-weight:700;border-left:3px solid #e91e63;padding-left:8px;">Self-Affirmation Theory & Neuroplasticity</h2>
@@ -356,7 +361,7 @@
       <button class="premium-close" id="closePremiumBtn" aria-label="Close">&times;</button>
       <div class="premium-header">
         <span class="premium-modal-icon">✨</span>
-        <h2 data-i18n="premium.title">AI 심층 확언</h2>
+        <h2 data-i18n="premium.title">Deep Reflection Guide</h2>
       </div>
       <div class="premium-body" id="premiumBody"></div>
     </div>
@@ -371,30 +376,13 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
-          .then(registration => console.log('Service Worker registered'))
-          .catch(error => console.log('Service Worker registration failed:', error));
+        navigator.serviceWorker.register('sw.js').catch(() => {});
       });
-    }
-  </script>
-  <script>
-    function shareApp() {
-      const url = window.location.href;
-      if (navigator.share) {
-        navigator.share({ title: document.title, url }).catch(() => {});
-      } else {
-        navigator.clipboard.writeText(url).then(() => {
-          alert(window.i18n && window.i18n.t ? window.i18n.t('share.copiedSuccess') : 'Link copied!');
-        }).catch(() => { prompt('Copy:', url); });
-      }
-    }
-    function shareTwitter() {
-      window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent(document.title + ' - DopaBrain'), '_blank');
     }
   </script>
   <div style="max-width:420px;margin:20px auto;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);">
     <h3 data-i18n="related.title" style="font-size:16px;color:#a0a0b8;margin-bottom:12px;text-align:center;">More to Explore</h3>
-    <div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:10px;">
+    <div class="related-grid" style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:10px;">
       <a href="/stress-check/?lang=ko&amp;start=1&amp;source=affirmation_footer" data-base-href="/stress-check/" class="related-card" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;min-height:44px;min-width:44px;box-sizing:border-box;"><span style="font-size:28px;">⚡</span><span data-i18n="related.stressCheck" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Stress Check</span></a>
       <a href="/hsp-test/?lang=ko&amp;start=1&amp;source=affirmation_footer" data-base-href="/hsp-test/" class="related-card" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;min-height:44px;min-width:44px;box-sizing:border-box;"><span style="font-size:28px;">🌿</span><span data-i18n="related.hspTest" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">HSP Test</span></a>
       <a href="/future-self/?lang=ko&amp;start=1&amp;source=affirmation_footer" data-base-href="/future-self/" class="related-card" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;min-height:44px;min-width:44px;box-sizing:border-box;"><span style="font-size:28px;">⏳</span><span data-i18n="related.futureSelf" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Future Self</span></a>

@@ -8,18 +8,21 @@
     "title": "正能量"
   },
   "premium": {
-    "button": "获取AI深度肯定语",
-    "badge": "高级",
-    "title": "AI深度肯定语",
+    "button": "获取深度反思指南",
+    "badge": "GUIDE",
+    "title": "深度反思指南",
     "todayAffirmation": "今日肯定语",
-    "deepInterpretation": "AI深度解读",
+    "deepInterpretation": "心理学深度视角",
     "practiceGuide": "实践指南",
     "meditation": "冥想",
     "journalQuestion": "今日日志问题"
   },
   "actions": {
     "newCard": "抽取新卡片",
-    "share": "分享"
+    "share": "分享",
+    "saveCard": "保存卡片图片",
+    "saved": "卡片已保存！",
+    "saveFailed": "保存失败，请重试。"
   },
   "categories": {
     "title": "分类",
@@ -274,5 +277,15 @@
   },
   "nav": {
     "back": "DopaBrain 首页"
+  },
+  "curated": {
+    "title": "推荐自我关怀与习惯养成书籍",
+    "disclosure": "含推广链接",
+    "subtitle": "将每日肯定语与实证心理学方法结合，稳步建立内心韧性与自信习惯。",
+    "cta": "查看详情 ->",
+    "neffTitle": "《自我关怀的力量》— 克里斯汀·内夫",
+    "neffDesc": "用温和而坚定的自我接纳取代内在苛责，重建稳定的自我价值感。",
+    "clearTitle": "《掌控习惯》(Atomic Habits) — 詹姆斯·克利尔",
+    "clearDesc": "把每天微小的积极信念转化为可持续的长期身份认同。"
   }
 }

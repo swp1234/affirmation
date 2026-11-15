@@ -8,18 +8,21 @@
     "title": "Onaylamalar"
   },
   "premium": {
-    "button": "YZ Derinlemesine Onaylama Sistemi",
-    "badge": "PREMIUM",
-    "title": "YZ Derinlemesine Onaylama",
+    "button": "Derin Yansıma Rehberi",
+    "badge": "REHBER",
+    "title": "Derin Yansıma Rehberi",
     "todayAffirmation": "Bugünün Onaylaması",
-    "deepInterpretation": "YZ Derinlemesine Yorumlama",
+    "deepInterpretation": "Psikolojik Bakış Açısı",
     "practiceGuide": "Pratik Kılavuzu",
     "meditation": "Meditasyon",
     "journalQuestion": "Bugünün Günlük Sorusu"
   },
   "actions": {
     "newCard": "Yeni Kart Çek",
-    "share": "Paylaş"
+    "share": "Paylaş",
+    "saveCard": "Kartı Kaydet",
+    "saved": "Kart Kaydedildi!",
+    "saveFailed": "Kart kaydedilemedi."
   },
   "categories": {
     "title": "Kategoriler",
@@ -274,5 +277,15 @@
   },
   "nav": {
     "back": "DopaBrain Ana Sayfa"
+  },
+  "curated": {
+    "title": "Öz-Şefkat ve Alışkanlık Kitapları",
+    "disclosure": "İş ortaklığı bağlantıları",
+    "subtitle": "Günlük olumlama kartınızı içsel dayanıklılık ve kalıcı rutinlerle destekleyin.",
+    "cta": "İncele ->",
+    "neffTitle": "Öz-Şefkat — Kristin Neff",
+    "neffDesc": "Sert iç eleştirmeni yatıştırmak ve sağlam öz-değer kurmak için bilimsel pratikler.",
+    "clearTitle": "Atomik Alışkanlıklar — James Clear",
+    "clearDesc": "Küçük günlük zihin ritüellerini kalıcı pozitif kimliğe dönüştürme rehberi."
   }
 }

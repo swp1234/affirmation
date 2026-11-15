@@ -8,18 +8,21 @@
     "title": "Affirmations"
   },
   "premium": {
-    "button": "Obtenir une Affirmation Profonde IA",
-    "badge": "PREMIUM",
-    "title": "Affirmation Profonde IA",
+    "button": "Guide de Réflexion Approfondie",
+    "badge": "GUIDE",
+    "title": "Guide de Réflexion Approfondie",
     "todayAffirmation": "Affirmation d'Aujourd'hui",
-    "deepInterpretation": "Interprétation Profonde IA",
+    "deepInterpretation": "Perspective Psychologique",
     "practiceGuide": "Guide de Pratique",
     "meditation": "Méditation",
     "journalQuestion": "Question de Journal d'Aujourd'hui"
   },
   "actions": {
     "newCard": "Tirer une Nouvelle Carte",
-    "share": "Partager"
+    "share": "Partager",
+    "saveCard": "Enregistrer la Carte",
+    "saved": "Carte Enregistrée !",
+    "saveFailed": "Échec de la sauvegarde."
   },
   "categories": {
     "title": "Catégories",
@@ -274,5 +277,15 @@
   },
   "nav": {
     "back": "Accueil DopaBrain"
+  },
+  "curated": {
+    "title": "Livres sur l’Autocompassion & les Habitudes",
+    "disclosure": "Liens affiliés",
+    "subtitle": "Prolongez votre carte du jour par des pratiques concrètes de sérénité et constance.",
+    "cta": "Voir le Livre ->",
+    "neffTitle": "S’aimer : Comment se réconcilier avec soi-même — Kristin Neff",
+    "neffDesc": "Des exercices fondés sur la recherche pour apaiser le critique intérieur.",
+    "clearTitle": "Un rien peut tout changer (Atomic Habits) — James Clear",
+    "clearDesc": "Transformer de minuscules rituels quotidiens en confiance durable."
   }
 }

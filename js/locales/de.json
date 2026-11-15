@@ -8,18 +8,21 @@
     "title": "Affirmationen"
   },
   "premium": {
-    "button": "Hol dir Tiefe KI-Affirmation",
-    "badge": "PREMIUM",
-    "title": "Tiefe KI-Affirmation",
+    "button": "Tiefgehender Reflexions-Guide",
+    "badge": "GUIDE",
+    "title": "Tiefgehender Reflexions-Guide",
     "todayAffirmation": "Heutige Affirmation",
-    "deepInterpretation": "Tiefe KI-Interpretation",
+    "deepInterpretation": "Psychologische Perspektive",
     "practiceGuide": "Praktische Anleitung",
     "meditation": "Meditation",
     "journalQuestion": "Heutige Tagebuch-Frage"
   },
   "actions": {
     "newCard": "Neue Karte ziehen",
-    "share": "Teilen"
+    "share": "Teilen",
+    "saveCard": "Karte Speichern",
+    "saved": "Karte Gespeichert!",
+    "saveFailed": "Speichern fehlgeschlagen."
   },
   "categories": {
     "title": "Kategorien",
@@ -274,5 +277,15 @@
   },
   "nav": {
     "back": "DopaBrain Startseite"
+  },
+  "curated": {
+    "title": "Bücher zu Selbstmitgefühl & Gewohnheiten",
+    "disclosure": "Affiliate-Links",
+    "subtitle": "Verbinden Sie tägliche Affirmationen mit bewährten Übungen für Resilienz und Ruhe.",
+    "cta": "Ansehen ->",
+    "neffTitle": "Selbstmitgefühl — Kristin Neff",
+    "neffDesc": "Forschungsbasierte Wege aus der strengen Selbstkritik hin zu innerer Stärke.",
+    "clearTitle": "Die 1%-Methode (Atomic Habits) — James Clear",
+    "clearDesc": "Wie winzige tägliche Rituale nachhaltig dein Selbstbild stärken."
   }
 }

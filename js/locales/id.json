@@ -8,18 +8,21 @@
     "title": "Afirmasi"
   },
   "premium": {
-    "button": "Dapatkan Afirmasi Mendalam AI",
-    "badge": "PREMIUM",
-    "title": "Afirmasi Mendalam AI",
+    "button": "Panduan Refleksi Mendalam",
+    "badge": "PANDUAN",
+    "title": "Panduan Refleksi Mendalam",
     "todayAffirmation": "Afirmasi Hari Ini",
-    "deepInterpretation": "Interpretasi Mendalam AI",
+    "deepInterpretation": "Perspektif Psikologi",
     "practiceGuide": "Panduan Praktik",
     "meditation": "Meditasi",
     "journalQuestion": "Pertanyaan Jurnal Hari Ini"
   },
   "actions": {
     "newCard": "Ambil Kartu Baru",
-    "share": "Bagikan"
+    "share": "Bagikan",
+    "saveCard": "Simpan Kartu",
+    "saved": "Kartu Tersimpan!",
+    "saveFailed": "Gagal menyimpan kartu."
   },
   "categories": {
     "title": "Kategori",
@@ -274,5 +277,15 @@
   },
   "nav": {
     "back": "Beranda DopaBrain"
+  },
+  "curated": {
+    "title": "Buku Self-Compassion & Kebiasaan Baik",
+    "disclosure": "Tautan afiliasi",
+    "subtitle": "Padukan afirmasi harianmu dengan metode teruji untuk membangun ketahanan diri.",
+    "cta": "Lihat Buku ->",
+    "neffTitle": "Self-Compassion — Kristin Neff",
+    "neffDesc": "Latihan berbasis riset untuk meredakan kritik diri dan menumbuhkan rasa cukup.",
+    "clearTitle": "Atomic Habits — James Clear",
+    "clearDesc": "Sistem praktis mengubah ritual positif kecil menjadi kebiasaan jangka panjang."
   }
 }

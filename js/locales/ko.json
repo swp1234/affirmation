@@ -8,18 +8,21 @@
     "title": "긍정 확언"
   },
   "premium": {
-    "button": "AI 심층 확언 받기",
-    "badge": "PREMIUM",
-    "title": "AI 심층 확언",
+    "button": "심층 성찰 가이드 보기",
+    "badge": "GUIDE",
+    "title": "심층 성찰 가이드",
     "todayAffirmation": "오늘의 확언",
-    "deepInterpretation": "AI 심층 해석",
+    "deepInterpretation": "심리적 통찰 & 해석",
     "practiceGuide": "실천 가이드",
     "meditation": "명상 문구",
     "journalQuestion": "오늘의 저널 질문"
   },
   "actions": {
     "newCard": "새로운 카드 뽑기",
-    "share": "공유하기"
+    "share": "공유하기",
+    "saveCard": "카드 이미지 저장",
+    "saved": "카드 저장됨!",
+    "saveFailed": "카드 저장에 실패했습니다."
   },
   "categories": {
     "title": "카테고리",
@@ -274,5 +277,15 @@
   },
   "nav": {
     "back": "DopaBrain 홈"
+  },
+  "curated": {
+    "title": "추천 자존감 · 습관 도서",
+    "disclosure": "제휴 링크 포함",
+    "subtitle": "매일의 긍정 확언과 함께 내면의 회복탄력성과 좋은 루틴을 길러보세요.",
+    "cta": "도서 보기 ->",
+    "neffTitle": "자기 연민 (Self-Compassion) — 크리스틴 네프",
+    "neffDesc": "거친 자기 비판을 멈추고 흔들리지 않는 자존감을 세우는 심리 연습.",
+    "clearTitle": "아주 작은 습관의 힘 (Atomic Habits)",
+    "clearDesc": "제임스 클리어 — 1%의 작은 긍정 루틴을 정체성으로 굳히는 과학적 방법."
   }
 }

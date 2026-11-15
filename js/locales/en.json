@@ -8,18 +8,21 @@
     "title": "Affirmations"
   },
   "premium": {
-    "button": "Get AI Deep Affirmation",
-    "badge": "PREMIUM",
-    "title": "AI Deep Affirmation",
+    "button": "Deep Reflection Guide",
+    "badge": "GUIDE",
+    "title": "Deep Reflection Guide",
     "todayAffirmation": "Today's Affirmation",
-    "deepInterpretation": "AI Deep Interpretation",
+    "deepInterpretation": "Mindset & Psychology Perspective",
     "practiceGuide": "Practice Guide",
     "meditation": "Meditation",
     "journalQuestion": "Today's Journal Question"
   },
   "actions": {
     "newCard": "Draw New Card",
-    "share": "Share"
+    "share": "Share",
+    "saveCard": "Save Story Card",
+    "saved": "Card Saved!",
+    "saveFailed": "Could not save card."
   },
   "categories": {
     "title": "Categories",
@@ -274,5 +277,15 @@
   },
   "nav": {
     "back": "DopaBrain Home"
+  },
+  "curated": {
+    "title": "Recommended Self-Compassion & Habit Books",
+    "disclosure": "Affiliate links",
+    "subtitle": "Pair your daily affirmation card with proven practices for resilience and confidence.",
+    "cta": "View Book ->",
+    "neffTitle": "Self-Compassion — Kristin Neff",
+    "neffDesc": "Research-based exercises to quiet the harsh inner critic and build steady self-worth.",
+    "clearTitle": "Atomic Habits — James Clear",
+    "clearDesc": "Practical system for turning tiny daily mindset rituals into lasting positive identity."
   }
 }

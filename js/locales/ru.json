@@ -245,7 +245,9 @@
     "whiteNoise": "Белый шум",
     "detoxTimer": "Цифровой детокс",
     "stressCheck": "Тест на стресс",
-    "dailyTarot": "Таро дня"
+    "dailyTarot": "Таро дня",
+    "hspTest": "Тест ВЧЛ (HSP)",
+    "futureSelf": "Будущее Я"
   },
   "about": {
     "toggle": "О ежедневных аффирмациях и теории самоподтверждения",

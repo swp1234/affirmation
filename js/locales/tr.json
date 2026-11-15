@@ -245,7 +245,9 @@
     "whiteNoise": "Beyaz Gürültü",
     "detoxTimer": "Detoks Zamanlayıcı",
     "stressCheck": "Stres Testi",
-    "dailyTarot": "Günlük Tarot"
+    "dailyTarot": "Günlük Tarot",
+    "hspTest": "HSP Hassasiyet Testi",
+    "futureSelf": "Gelecekteki Ben"
   },
   "about": {
     "toggle": "Günlük Olumlamalar ve Kendini Olumlama Kuramı Hakkında",

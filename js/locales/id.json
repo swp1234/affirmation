@@ -245,7 +245,9 @@
     "whiteNoise": "White Noise",
     "detoxTimer": "Timer Detoks",
     "stressCheck": "Cek Stres",
-    "dailyTarot": "Tarot Harian"
+    "dailyTarot": "Tarot Harian",
+    "hspTest": "Tes HSP",
+    "futureSelf": "Diri Masa Depan"
   },
   "about": {
     "toggle": "Tentang Afirmasi Harian & Teori Penegasan Diri",

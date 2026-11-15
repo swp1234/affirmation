@@ -245,7 +245,9 @@
     "whiteNoise": "Ruido Blanco",
     "detoxTimer": "Desintoxicación Digital",
     "stressCheck": "Test de Estrés",
-    "dailyTarot": "Tarot Diario"
+    "dailyTarot": "Tarot Diario",
+    "hspTest": "Test HSP",
+    "futureSelf": "Yo Futuro"
   },
   "about": {
     "toggle": "Sobre las Afirmaciones Diarias y la Teoría de Autoafirmación",

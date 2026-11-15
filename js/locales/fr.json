@@ -245,7 +245,9 @@
     "whiteNoise": "Bruit Blanc",
     "detoxTimer": "Minuteur Détox",
     "stressCheck": "Test de Stress",
-    "dailyTarot": "Tarot du Jour"
+    "dailyTarot": "Tarot du Jour",
+    "hspTest": "Test HSP",
+    "futureSelf": "Moi Futur"
   },
   "about": {
     "toggle": "À propos des Affirmations Positives & Théorie de l'Auto-affirmation",

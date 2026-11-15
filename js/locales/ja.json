@@ -245,7 +245,9 @@
     "whiteNoise": "ホワイトノイズ",
     "detoxTimer": "デトックスタイマー",
     "stressCheck": "ストレスチェック",
-    "dailyTarot": "今日のタロット"
+    "dailyTarot": "今日のタロット",
+    "hspTest": "HSP 繊細さん診断",
+    "futureSelf": "未来の自分"
   },
   "about": {
     "toggle": "アファメーションの科学と自己肯定感理論について",

@@ -245,7 +245,9 @@
     "whiteNoise": "White Noise",
     "detoxTimer": "Detox Timer",
     "stressCheck": "Stress Check",
-    "dailyTarot": "Daily Tarot"
+    "dailyTarot": "Daily Tarot",
+    "hspTest": "HSP Test",
+    "futureSelf": "Future Self"
   },
   "about": {
     "toggle": "About Daily Affirmations & Self-Affirmation Theory",

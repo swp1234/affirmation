@@ -62,10 +62,17 @@ if (document.readyState === 'loading') {
 // I18n 초기화
 // ========================================
 
-(async function initI18n() {
+async function syncAffirmationI18n() {
     try {
         await i18n.loadTranslations(i18n.getCurrentLanguage());
         i18n.updateUI();
+        if (typeof app !== 'undefined' && app) {
+            app.renderCard();
+            app.renderFavorites();
+            app.renderHistory();
+            app.renderStats();
+            app.renderCuratedResources();
+        }
 
         const langToggle = document.getElementById('lang-toggle');
         const langMenu = document.getElementById('lang-menu');
@@ -86,9 +93,11 @@ if (document.readyState === 'loading') {
                 langOptions.forEach(o => o.classList.remove('active'));
                 opt.classList.add('active');
                 langMenu.classList.add('hidden');
-                if (app && app.renderHistory && app.renderFavorites) {
+                if (typeof app !== 'undefined' && app) {
+                    app.renderCard();
                     app.renderHistory();
                     app.renderFavorites();
+                    app.renderStats();
                     app.renderCuratedResources();
                 }
             });
@@ -96,7 +105,7 @@ if (document.readyState === 'loading') {
     } catch (e) {
         console.warn('i18n init failed:', e);
     }
-})();
+}
 
 // ========================================
 // 긍정 확언 앱 - 메인 로직
@@ -662,7 +671,9 @@ class AffirmationApp {
     ];
 
     const visitedLabel = i18n.t('calendar.visited');
-    let html = `<div class="streak-cal-header">${year}${i18n.t('calendar.year')} ${monthNames[month]} ${visitedLabel}</div>`;
+    const yearRaw = i18n.t('calendar.year');
+    const yearSuffix = yearRaw === 'calendar.year' ? '' : yearRaw;
+    let html = `<div class="streak-cal-header">${year}${yearSuffix} ${monthNames[month]} ${visitedLabel}</div>`;
     html += '<div class="streak-cal-days">';
     dayNames.forEach(d => { html += `<div class="streak-cal-day-name">${d}</div>`; });
 
@@ -951,6 +962,7 @@ class AffirmationApp {
 // 앱 초기화
 const app = new AffirmationApp();
 app.renderCuratedResources();
+syncAffirmationI18n();
 
 // Hide app loader
 const loader = document.getElementById('app-loader');

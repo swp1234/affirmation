@@ -289,5 +289,11 @@
     "neffDesc": "Des exercices fondés sur la recherche pour apaiser le critique intérieur.",
     "clearTitle": "Un rien peut tout changer (Atomic Habits) — James Clear",
     "clearDesc": "Transformer de minuscules rituels quotidiens en confiance durable."
+  },
+  "nextStep": {
+    "label": "Prochaine étape recommandée",
+    "title": "Test de Stress & Plan 7 Jours",
+    "desc": "Évaluez votre équilibre de stress sur 5 axes et recevez un plan sur 7 jours.",
+    "cta": "Tester mon stress →"
   }
 }

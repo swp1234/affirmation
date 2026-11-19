@@ -289,5 +289,11 @@
     "neffDesc": "Sert iç eleştirmeni yatıştırmak ve sağlam öz-değer kurmak için bilimsel pratikler.",
     "clearTitle": "Atomik Alışkanlıklar — James Clear",
     "clearDesc": "Küçük günlük zihin ritüellerini kalıcı pozitif kimliğe dönüştürme rehberi."
+  },
+  "nextStep": {
+    "label": "Önerilen Sonraki Adım",
+    "title": "Stres Testi ve 7 Günlük Plan",
+    "desc": "5 alanda stres dengeni ölç ve 7 günlük kişisel sıfırlama planını oluştur.",
+    "cta": "Stres Testini Başlat →"
   }
 }

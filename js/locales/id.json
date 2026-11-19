@@ -289,5 +289,11 @@
     "neffDesc": "Latihan berbasis riset untuk meredakan kritik diri dan menumbuhkan rasa cukup.",
     "clearTitle": "Atomic Habits — James Clear",
     "clearDesc": "Sistem praktis mengubah ritual positif kecil menjadi kebiasaan jangka panjang."
+  },
+  "nextStep": {
+    "label": "Langkah Berikutnya",
+    "title": "Tes Tingkat Stres & Rencana 7 Hari",
+    "desc": "Cek keseimbangan stresmu di 5 area dan buat rencana pemulihan 7 hari gratis.",
+    "cta": "Mulai Tes Stres →"
   }
 }

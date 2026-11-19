@@ -289,5 +289,11 @@
     "neffDesc": "Ejercicios científicos para silenciar la autocrítica y fortalecer tu autoestima.",
     "clearTitle": "Hábitos Atómicos — James Clear",
     "clearDesc": "Método paso a paso para convertir pequeños rituales positivos en identidad."
+  },
+  "nextStep": {
+    "label": "Siguiente paso recomendado",
+    "title": "Test de Estrés y Plan de 7 Días",
+    "desc": "Evalúa tu equilibrio de estrés en 5 áreas y recibe un plan gratuito de 7 días.",
+    "cta": "Hacer Test de Estrés →"
   }
 }

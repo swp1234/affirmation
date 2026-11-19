@@ -149,6 +149,9 @@
       ]
     }
     </script>
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+    <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 </head>
 <body>
   <a href="#main-content" class="skip-link" data-i18n="accessibility.skipMain">Skip to main content</a>
@@ -229,7 +232,19 @@
         </button>
       </div>
       <canvas id="shareCanvas" width="1080" height="1920" style="display:none;" aria-hidden="true"></canvas>
-      <div id="curated-resources-card" class="curated-resources"></div>
+              <section class="next-step-card" id="nextStepCard" aria-label="Stress Level Check & 7-Day Plan">
+            <p class="next-step-label" data-i18n="nextStep.label">Recommended Next Step</p>
+            <div class="next-step-main">
+                <span class="next-step-emoji" aria-hidden="true">⚡</span>
+                <div class="next-step-content">
+                    <h4 class="next-step-title" data-i18n="nextStep.title">Stress Level Check & 7-Day Plan</h4>
+                    <p class="next-step-desc" data-i18n="nextStep.desc">Check your current stress balance across 5 areas and build a private 7-day reset plan.</p>
+                </div>
+            </div>
+            <a href="/stress-check/?lang=en&amp;start=1&amp;source=affirmation_result" class="next-step-cta" id="nextStepCta" data-i18n="nextStep.cta">Take Stress Check →</a>
+        </section>
+
+<div id="curated-resources-card" class="curated-resources"></div>
     </section>
 
     <!-- 카테고리 필터 -->
@@ -390,5 +405,35 @@
     </div>
   </div>
   <script src="/portal/js/cross-promo.js" defer></script>
+
+    <script>
+      (function () {
+        var cta = document.getElementById('nextStepCta');
+        if (!cta) return;
+        function syncHref() {
+          var lang = (window.i18n && (window.i18n.currentLang || (typeof window.i18n.getCurrentLanguage === 'function' && window.i18n.getCurrentLanguage())))
+            || new URLSearchParams(window.location.search).get('lang')
+            || document.documentElement.lang
+            || 'en';
+          try {
+            var u = new URL(cta.getAttribute('href'), window.location.origin);
+            u.searchParams.set('lang', lang);
+            u.searchParams.set('source', 'affirmation_result');
+            cta.setAttribute('href', u.pathname + u.search);
+          } catch (e) {}
+        }
+        syncHref();
+        cta.addEventListener('click', function () {
+          syncHref();
+          if (typeof gtag === 'function') {
+            gtag('event', 'content_cta_click', {
+              cta_surface: 'next_step_hero',
+              destination: cta.getAttribute('href'),
+              source: 'affirmation_result'
+            });
+          }
+        });
+      })();
+    </script>
 </body>
 </html>

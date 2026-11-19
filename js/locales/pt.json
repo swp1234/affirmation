@@ -289,5 +289,11 @@
     "neffDesc": "Práticas baseadas em pesquisas para acolher suas falhas e fortalecer seu valor.",
     "clearTitle": "Hábitos Atômicos — James Clear",
     "clearDesc": "Como pequenos rituais diários constroem uma mentalidade positiva duradoura."
+  },
+  "nextStep": {
+    "label": "Próximo passo recomendado",
+    "title": "Teste de Estresse e Plano 7 Dias",
+    "desc": "Avalie seu equilíbrio de estresse em 5 áreas e monte um plano gratuito de 7 dias.",
+    "cta": "Fazer Teste de Estresse →"
   }
 }

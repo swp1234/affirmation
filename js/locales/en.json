@@ -289,5 +289,11 @@
     "neffDesc": "Research-based exercises to quiet the harsh inner critic and build steady self-worth.",
     "clearTitle": "Atomic Habits — James Clear",
     "clearDesc": "Practical system for turning tiny daily mindset rituals into lasting positive identity."
+  },
+  "nextStep": {
+    "label": "Recommended Next Step",
+    "title": "Stress Level Check & 7-Day Plan",
+    "desc": "Check your current stress balance across 5 areas and build a private 7-day reset plan.",
+    "cta": "Take Stress Check →"
   }
 }

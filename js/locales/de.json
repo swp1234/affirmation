@@ -289,5 +289,11 @@
     "neffDesc": "Forschungsbasierte Wege aus der strengen Selbstkritik hin zu innerer Stärke.",
     "clearTitle": "Die 1%-Methode (Atomic Habits) — James Clear",
     "clearDesc": "Wie winzige tägliche Rituale nachhaltig dein Selbstbild stärken."
+  },
+  "nextStep": {
+    "label": "Empfohlener nächster Schritt",
+    "title": "Stresslevel-Check & 7-Tage-Plan",
+    "desc": "Prüfe deine Stressbalance in 5 Bereichen und erstelle deinen privaten 7-Tage-Plan.",
+    "cta": "Stresstest starten →"
   }
 }
